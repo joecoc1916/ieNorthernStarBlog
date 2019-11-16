@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ProjectDirectoryStructure</title>
+  </head>
+  <body>
+    <div class="field-item even">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <p><b style="font-family: Times New Roman,Times,serif;">Example 1: Project
+          root outside of web-accessible <em>docroot</em> directory. (USING).</b></p>
+      <pre class="  language-php"><span style="font-family: Times New Roman,Times,serif;"><code
+class="txt  language-php">my<span class="token operator">-</span>web<span class="token operator">-</span>site<span
+class="token operator">-</span>project
+<span class="token operator">-</span> <span class="token punctuation">.</span>git
+<span class="token operator">-</span> <span class="token punctuation">.</span>docker<span
+class="token operator">-</span>compose<span class="token punctuation">.</span>yml
+<span class="token operator">-</span> build<span class="token operator">-</span>scripts<span
+class="token operator">/</span>
+<span class="token operator">-</span> docroot<span class="token operator">/</span>
+  <span class="token operator">-</span> index<span class="token punctuation">.</span>php
+</code></span></pre></div>
+    <p></p>
+  </body>
+</html>

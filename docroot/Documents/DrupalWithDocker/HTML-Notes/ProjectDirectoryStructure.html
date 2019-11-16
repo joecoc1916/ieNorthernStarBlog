@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ProjectDirectoryStructure</title>
+  </head>
+  <body>
+    <div class="field-item even">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <p><b style="font-family: Times New Roman,Times,serif;">Example 1: Project
+          root outside of web-accessible <em>docroot</em> directory. (USING).</b></p>
+      <pre class="  language-php"><span style="font-family: Times New Roman,Times,serif;"><code
+class="txt  language-php">my<span class="token operator">-</span>web<span class="token operator">-</span>site<span
+class="token operator">-</span>project
+<span class="token operator">-</span> <span class="token punctuation">.</span>git
+<span class="token operator">-</span> <span class="token punctuation">.</span>docker<span
+class="token operator">-</span>compose<span class="token punctuation">.</span>yml
+<span class="token operator">-</span> build<span class="token operator">-</span>scripts<span
+class="token operator">/</span>
+<span class="token operator">-</span> docroot<span class="token operator">/</span>
+ <span class="token operator">-</span> index<span class="token punctuation">.</span>php
+</code></span></pre>
+      <h2>
+        <h2>The project directory name is significant!</h2>
+      </h2>
+      <p>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <b>Always place the <code class="  language-php">docker<span class="token operator">-</span>compose<span
+              class="token punctuation">.</span>yml</code> file in the project
+          root because of the way Compose auto-generates container names. </b>This
+        name is only unique to each system; two containers running on different
+        machines will have different container IDs, but can have the same
+        name.&nbsp; Docker Compose relies on the name of the directory
+        containing <code class="  language-php">docker<span class="token operator">-</span>compose<span
+            class="token punctuation">.</span>yml</code> to name containers. </p>
+      <p>Docker-Compose File Structure:</p>
+      <p>Line 1.&nbsp; The <code class="  language-php">version</code> key must
+        be at the beginning of the file,</p>
+      <div class="field-item even">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <h2>The services section</h2>
+        <div class="field-item even">
+          <meta http-equiv="content-type" content="text/html; charset=utf-8">
+          <pre class="  language-php"><code class="yaml  language-php">version<span
+class="token punctuation">:</span> <span class="token string">'3'</span>
+services<span class="token punctuation">:</span>
+  web<span class="token punctuation">:</span>
+    image<span class="token punctuation">:</span> osiolabs<span class="token operator">/</span>drupaldevwithdocker<span
+class="token operator">-</span>php
+  db<span class="token punctuation">:</span>
+    image<span class="token punctuation">:</span> osiolabs<span class="token operator">/</span>drupaldevwithdocker<span
+class="token operator">-</span>mysql
+</code></pre>
+          <p>The above has 2 containers in it:</p>
+          <ul>
+            <li>The <strong>web</strong> container uses an image that was
+              created specifically for this series, and provides Apache and PHP
+              7.</li>
+            <li>The <strong>db</strong> container also uses an image that was
+              created specifically for this series. It provides a MySQL server.</li>
+          </ul>
+          <p>
+            <meta http-equiv="content-type" content="text/html; charset=utf-8">
+            Fortunately, there are many, many container images we can use; many
+            particularly useful to us as Drupal developers.</p>
+          <p></p>
+        </div>
+      </div>
+      <h2>
+        <p></p>
+      </h2>
+      <div class="field-item even">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      </div>
+    </div>
+    <p></p>
+  </body>
+</html>

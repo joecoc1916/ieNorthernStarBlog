@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!-->
+<html dir="ltr" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#" xmlns:product="http://ogp.me/ns/product#" class="js wf-proximanova-n7-active wf-proximanova-n4-active wf-proximanova-i4-active wf-active" lang="en"><!--<![endif]--><head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/x3mtrn8v.js"></script><script type="text/javascript" src="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/3963617017"></script><script type="text/javascript" async="" src="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/library.js"></script><script src="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/nr-1130.js"></script><script type="text/javascript" async="" src="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/ec.js"></script><script type="text/javascript" async="" src="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/analytics.js"></script><script async="" src="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/gtm.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"3963617017",applicationID:"29167046"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<link rel="shortcut icon" href="https://drupalize.me/sites/all/themes/dmemain/favicon.ico" type="image/vnd.microsoft.icon">
+<script type="text/javascript">dataLayer = [{"drupalLanguage":"en","drupalCountry":"US","userName":"Jcoeph C. O\u0027Connor","userMail":"joecoc1916@protonmail.com","userRoles":["authenticated user","premium subscription"],"userCreated":"1573500738","userAccess":"1573756296","userUid":"40184","membership_status":"Active","membership_type":"regular","recurly_plan":"Monthly Personal Membership","is_group":false}];</script>
+<meta name="description" content="A common task when developing a Drupal site is loading the database into your local development environment. When working with non-Docker local development environments, command line tools or a graphical application are used to load the database dump. These methods also work for Docker with a bit of container configuration. With Docker, you can include all the tooling in">
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)">
+<link rel="canonical" href="https://drupalize.me/tutorial/import-and-export-databases-container">
+<link rel="shortlink" href="https://drupalize.me/node/3036">
+<meta property="og:site_name" content="Drupalize.Me">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://drupalize.me/tutorial/import-and-export-databases-container">
+<meta property="og:title" content="Import and Export Databases into a Container">
+<meta property="og:description" content="A common task when developing a Drupal site is loading the database into your local development environment. When working with non-Docker local development environments, command line tools or a graphical application are used to load the database dump. These methods also work for Docker with a bit of container configuration. With Docker, you can include all the tooling in containers, reducing the need for utilities on the host OS. In this tutorial, we'll: Outline the challenges for loading a database into a container Identify the methods by which a database can be loaded into a container">
+<meta property="og:updated_time" content="2019-11-13T11:12:27-06:00">
+<meta property="article:published_time" content="2018-01-10T08:00:00-06:00">
+<meta property="article:modified_time" content="2019-11-13T11:12:27-06:00">
+  <title>Import and Export Databases into a Container | Drupalize.Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <meta name="monitor-verification-string" content="Drupalize.Me + Taylor = &lt;3">
+
+  <link type="text/css" rel="stylesheet" href="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/css_ywqYrtSodM0qVMzAkOSnqZ_iBnAVpkSeD_yPtUN9tBk.css" media="all">
+<link type="text/css" rel="stylesheet" href="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/css_GIjdLiEynkkG-Z8V0ePacmJ4PVcfxv0eBlYeL2Inan4.css" media="screen">
+<link type="text/css" rel="stylesheet" href="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/css_fBHtErelcsc4VfLbs13dQi9-IFgBYK9TTttUp_NUVzM.css" media="all">
+<link type="text/css" rel="stylesheet" href="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/css_hpfOUEpOPbUP4mSKwrt6p1Fo1GEhkB363e5g_K131h8.css" media="all">
+<link type="text/css" rel="stylesheet" href="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/css_YmRbCvNBMtO05za9oOInNZHM0Jl_wWTZ2Nuil9afnXg.css" media="all">
+
+  <script type="text/javascript" src="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/js_0RyHJ63yYLuaWsodCPCgSD8dcTIA0dqcDf8-7c2XdBw.js"></script>
+<script type="text/javascript" src="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/js_fVTrO8-7pemKUEq-mo-qZqhH8gbNE-wgjMez4QXZb00.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+<script type="text/javascript" src="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/js_CtrPKfhEyyyvv5wmH20mARoPVeDXdbPHmn_YF4Ay_k0.js"></script>
+<script type="text/javascript" src="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/js_6C_JqI9xk3IxtGKxnvWaXjEH1B9pz636ix4aeYS9-rc.js"></script>
+<script type="text/javascript" src="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/fuf6cds.js"></script>
+<style type="text/css">.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}</style><style type="text/css">@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/7d485b/00000000000000003b9ad1b1/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/7d485b/00000000000000003b9ad1b1/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/7d485b/00000000000000003b9ad1b1/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/c9cde8/00000000000000003b9ad1b9/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/c9cde8/00000000000000003b9ad1b9/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/c9cde8/00000000000000003b9ad1b9/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/4ba64f/00000000000000003b9ad1ba/27/l?subset_id=2&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/4ba64f/00000000000000003b9ad1ba/27/d?subset_id=2&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/4ba64f/00000000000000003b9ad1ba/27/a?subset_id=2&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}</style><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+try{Typekit.load();}catch(e){}
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WS38CK');
+//--><!]]>
+</script>
+<script type="text/javascript" src="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/js_cIY6YPV3uE-zFlT6mNnV3nhrU0eGDc309bPV8QH1TAQ.js"></script>
+<script type="text/javascript" src="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/js_L_Mb3M_ec1e5-mBhb9vyclYkgJ9nvRji4_tfiN_HuwI.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"dmemain","theme_token":"t7_K3mE7vLeX71X64a2lbqJq3AodyKLpw17Gyu1W7A0","js":{"sites\/all\/modules\/contrib\/picture\/picturefill2\/picturefill.min.js":1,"sites\/all\/modules\/contrib\/picture\/picture.min.js":1,"0":1,"\/\/www.googleadservices.com\/pagead\/conversion.js":1,"sites\/all\/themes\/dmemain\/js\/viewmode\/card.js":1,"sites\/all\/themes\/dmemain\/js\/playlist.js":1,"sites\/all\/themes\/dmemain\/js\/pages\/video.js":1,"sites\/all\/themes\/dmemain\/js\/share.js":1,"sites\/all\/themes\/dmemain\/js\/feedback.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/prism\/prism.js":1,"sites\/all\/modules\/contrib\/prism\/js\/prism.settings.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"1":1,"sites\/all\/modules\/custom\/vidhist\/scripts\/vidhist.uuid.js":1,"sites\/all\/modules\/custom\/vidhist\/scripts\/vidhist.js":1,"sites\/all\/modules\/contrib\/ejectorseat\/ejectorseat.js":1,"sites\/all\/modules\/custom\/vidhist\/scripts\/vidhist_jwplayer.js":1,"sites\/all\/modules\/features\/drupalizetutorial\/js\/drupalizetutorial_progress.js":1,"sites\/all\/modules\/contrib\/flag\/theme\/flag.js":1,"sites\/all\/modules\/custom\/jswatchdog\/jswatchdog.js":1,"\/\/use.typekit.net\/fuf6cds.js":1,"2":1,"3":1,"sites\/all\/themes\/dmemain\/js\/knockout.js":1,"sites\/all\/modules\/features\/drupalizetutorial\/drupalizetutorial.js":1,"sites\/all\/modules\/contrib\/webform\/js\/webform.js":1,"sites\/all\/modules\/contrib\/datalayer\/datalayer.js":1,"sites\/all\/themes\/dmemain\/js\/script.js":1,"sites\/all\/themes\/dmemain\/js\/jquery.tooltipster.min.js":1,"sites\/all\/themes\/dmemain\/js\/jquery.magnific-popup.min.js":1,"sites\/all\/themes\/dmemain\/js\/draggableviews_table.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/libraries\/prism\/prism.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/contrib\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/custom\/membership_entity\/membership_entity.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/contrib\/picture\/picture_wysiwyg.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/flag\/theme\/flag.css":1,"public:\/\/honeypot\/honeypot.css":1,"sites\/all\/modules\/contrib\/webform\/css\/webform.css":1,"sites\/all\/themes\/dmemain\/css\/normalize.css":1,"sites\/all\/themes\/dmemain\/css\/style.css":1,"sites\/all\/themes\/dmemain\/modules\/system\/system.menus.css":1,"sites\/all\/themes\/dmemain\/modules\/system\/system.messages.css":1,"sites\/all\/themes\/dmemain\/ds_2col.css":1}},"ejectorSeat":{"interval":"60","url":"\/ejectorseat\/check","ignoreFocus":false},"vidHist":{"nid":"3036","uid":"40184","dataPath":"\/?q=_vidhist-post-data","dataInterval":15000,"dataMinimumReportTime":"10","positionPath":"\/?q=_vidhist-get-position","securityToken":"EcVC8D0e8BlnaVliq1A-OAC5Euf7bo2IBCpUqmmc_ts"},"dme":{"nid":"3036"},"urlIsAjaxTrusted":{"\/search":true,"\/tutorial\/import-and-export-databases-container?p=3040":true},"jswatchdogLimit":3,"dmemain":{"themePath":"https:\/\/drupalize.me\/sites\/all\/themes\/dmemain"},"dataLayer":{"languages":{"en":{"language":"en","name":"English","native":"English","direction":0,"enabled":1,"plurals":0,"formula":"","domain":"","prefix":"","weight":0,"javascript":""}},"defaultLang":"en"}});
+//--><!]]>
+</script>
+
+  <meta name="apple-mobile-web-app-title" content="Drupalize.Me">
+  <meta name="google-site-verification" content="J6NXI_f01vAsVTXxc2YB-R2l0BXYlElfx7ZK_sbM_v4">
+  <link rel="apple-touch-icon" type="image/png" href="https://drupalize.me/tutorial/sites/all/themes/dmemain/images/icon.57.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="https://drupalize.me/tutorial/sites/all/themes/dmemain/images/icon.72.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="https://drupalize.me/tutorial/sites/all/themes/dmemain/images/icon.114.png">
+<script src="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/a"></script></head>
+<body class="html not-front logged-in no-sidebars page-node page-node- page-node-3036 node-type-tutorial language-php">
+    <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WS38CK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+
+    
+<header class="l-header" role="banner">
+  <div class="l-container">
+    
+    <h1 class="site-name"><a href="https://drupalize.me/">Drupalize.Me</a></h1>
+
+    <nav class="l-navigation navigation--container" role="navigation">
+  <a class="navigation--toggle"><span class="navigation--toggle-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </span> Menu</a>
+    <div class="region region-navigation">
+    <div id="block-views-ab071781dda84edd1ed905bc0716b2a1" class="block block-views search--block-form">
+
+    
+  <div class="content">
+    <form action="/search" method="get" id="views-exposed-form-drupalizesitewidesearch-page" accept-charset="UTF-8"><div><div class="search--form"><div class="form-item form-type-textfield form-item-query">
+ <input type="text" id="edit-query" name="query" size="30" maxlength="128" class="form-text">
+</div>
+<input type="submit" id="edit-submit-drupalizesitewidesearch" name="" value="Search" class="form-submit"></div>
+    <div class="search--form--resultsinfo"> <span class="search--form--count">Showing 0 results</span>
+</div></div></form>  </div>
+</div>
+<div id="block-dmeblocks-primary-navigation" class="secondary-info block">
+
+    
+  <div class="content">
+    
+<!-- dmeblocks-primary_navigation.tpl.php -->
+<ul class="navigation--menu">
+          <li class="navigation--menu-item"><a href="https://drupalize.me/?t=1573756309" alt="Home">Home</a></li>
+        <li class="navigation--menu-item"><a href="https://drupalize.me/user" alt="Account">Account</a></li>
+    <li class="navigation--menu-item"><a href="https://drupalize.me/guides" alt="Guides">Guides</a></li>
+        <li class="navigation--menu-item"><a href="https://drupalize.me/user/logout" alt="Log out">Log out</a></li>
+  </ul>
+<!-- /dmeblocks-primary_navigation.tpl.php -->
+  </div>
+</div>
+  </div>
+</nav>
+  </div>
+</header>
+
+<main role="main">
+  
+  <div class="">
+    <a id="main-content"></a>
+    
+    
+    
+    
+      <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    
+<article id="node-3036" class="tutorial node node-tutorial clearfix">
+
+            <meta property="dateCreated" content="2018-01-10T08:00:00-06:00">
+          <meta property="drupalVersion" content="">
+          <meta property="isFree" content="no">
+      
+  <div class="tutorial--header">
+    <div class="l-container">
+              <div class="tutorial--header-icon">
+          <div class="field field-name-field-tutorial-icon field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><picture>
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="https://drupalize.me/sites/default/files/styles/category_icon_285x/public/tutorial_icons/docker-icon-white_12.png?itok=R8xhjMGl&amp;timestamp=1515554435 285w, https://drupalize.me/sites/default/files/styles/category_icon_570x/public/tutorial_icons/docker-icon-white_12.png?itok=aKLrAD3r&amp;timestamp=1515554435 537w" sizes="20vw">
+<!--[if IE 9]></video><![endif]-->
+<img src="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/docker-icon-white_12.png" alt="" title="">
+</picture></div></div></div>        </div>
+      
+      <div class="tutorial--header-title">
+                <h1><a href="https://drupalize.me/tutorial/import-and-export-databases-container">Import and Export Databases into a Container</a></h1>
+        
+        <div class="tutorial--meta content--meta--actions">
+          <div class="tutorial--actions">
+            <span class="flag-wrapper flag-queue flag-queue-3036">
+      <a href="https://drupalize.me/flag/unflag/queue/3036?destination=node/3036%3Fp%3D3040&amp;token=jTKwx4QnFoGaDJFIYzBKdXhyfscQ4vvwrIHVMpy53aM" title="Remove this tutorial from your queue" class="flag unflag-action flag-link-toggle flag-processed" rel="nofollow"><span class="icon"></span><span class="text">Remove from queue</span></a><span class="flag-throbber">&nbsp;</span>
+    </span>
+ &nbsp;&nbsp;
+            <a href="#share-modal" class="share-link"><span class="icon"></span><span class="text">Share</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tutorial--main">
+    <div class="l-container">
+      <div class="tutorial--body">
+        <div class="tutorial--body-meta">
+          <div class="tutorial--date">
+            Last updated <span property"schema:datemodified"="" content="2019-11-13CST11:11:27">November 13, 2019</span>
+          </div>
+          <div class="tutorial--tags">
+            <a href="https://drupalize.me/tutorials?taxonomy_categories_tid%5B%5D=216" class="tutorial--tag">Backend and Infrastructure</a>          </div>
+        </div>
+                  <div class="field field-name-body field-type-text-with-summary field-label-hidden text-content"><div class="field-items"><div class="field-item even"><p>A
+ common task when developing a Drupal site is loading the database into 
+your local development environment. When working with non-Docker local 
+development environments, command line tools or a graphical application 
+are used to load the database dump. These methods also work for Docker 
+with a bit of container configuration. With Docker, you can include all 
+the tooling in containers, reducing the need for utilities on the host 
+OS.</p>
+
+<p>In this tutorial, we'll:</p>
+
+<ul>
+<li>Outline the challenges for loading a database into a container</li>
+<li>Identify the methods by which a database can be loaded into a container</li>
+</ul>
+
+<h2>Goal</h2>
+
+<p>Successfully import and export a database into a container.</p>
+
+<h2>Prerequisites</h2>
+
+<ul>
+<li><a href="https://drupalize.me/tutorial/start-stop-and-list-container-sets">Start, Stop, and List Container Sets</a></li>
+<li><a href="https://drupalize.me/tutorial/use-bind-volumes">Use Bind Volumes</a></li>
+<li><a href="https://drupalize.me/tutorial/expose-ports">Expose Ports</a></li>
+<li><a href="https://drupalize.me/tutorial/set-environment-variables">Set Environment Variables</a></li>
+</ul>
+
+<h2>The Docker Compose file</h2>
+
+<p>In this tutorial, we'll be describing a couple of different methods 
+for importing and exporting a database into a container, all of which 
+can be facilitated by a <em>docker-compose.yml</em> file with the following contents:</p>
+
+<pre class="  language-php"><code class="yaml  language-php">version<span class="token punctuation">:</span> <span class="token string">'3'</span>
+services<span class="token punctuation">:</span>
+  web<span class="token punctuation">:</span>
+    image<span class="token punctuation">:</span> osiolabs<span class="token operator">/</span>drupaldevwithdocker<span class="token operator">-</span>php
+    volumes<span class="token punctuation">:</span>
+      <span class="token operator">-</span> <span class="token punctuation">.</span><span class="token operator">/</span>docroot<span class="token punctuation">:</span><span class="token operator">/</span><span class="token keyword">var</span><span class="token operator">/</span>www<span class="token operator">/</span>html<span class="token punctuation">:</span>cached
+    ports<span class="token punctuation">:</span>
+      <span class="token operator">-</span> <span class="token string">"80:80"</span>
+  db<span class="token punctuation">:</span>
+    image<span class="token punctuation">:</span> osiolabs<span class="token operator">/</span>drupaldevwithdocker<span class="token operator">-</span>mysql
+    volumes<span class="token punctuation">:</span>
+      <span class="token operator">-</span> <span class="token punctuation">.</span><span class="token operator">/</span>db<span class="token operator">-</span>backups<span class="token punctuation">:</span><span class="token operator">/</span><span class="token keyword">var</span><span class="token operator">/</span>mysql<span class="token operator">/</span>backups<span class="token punctuation">:</span>delegated
+    environment<span class="token punctuation">:</span>
+      <span class="token constant">MYSQL_ROOT_PASSWORD</span><span class="token punctuation">:</span> root
+      <span class="token constant">MYSQL_DATABASE</span><span class="token punctuation">:</span> drupaldb
+      <span class="token constant">MYSQL_USER</span><span class="token punctuation">:</span> drupal
+      <span class="token constant">MYSQL_PASSWORD</span><span class="token punctuation">:</span> verybadpassword
+    ports<span class="token punctuation">:</span>
+      <span class="token operator">-</span> <span class="token string">"3306:3306"</span>
+  pma<span class="token punctuation">:</span>
+    image<span class="token punctuation">:</span> phpmyadmin<span class="token operator">/</span>phpmyadmin
+    environment<span class="token punctuation">:</span>
+      <span class="token constant">PMA_HOST</span><span class="token punctuation">:</span> db
+      <span class="token constant">PMA_USER</span><span class="token punctuation">:</span> root
+      <span class="token constant">PMA_PASSWORD</span><span class="token punctuation">:</span> root
+      <span class="token constant">PHP_UPLOAD_MAX_FILESIZE</span><span class="token punctuation">:</span> <span class="token constant">1G</span>
+      <span class="token constant">PHP_MAX_INPUT_VARS</span><span class="token punctuation">:</span> <span class="token constant">1G</span>
+    ports<span class="token punctuation">:</span>
+     <span class="token operator">-</span> <span class="token string">"8001:80"</span>
+</code></pre>
+
+<p>The rest of the tutorial will highlight certain sections of this <em>docker-compose.yml</em> file with a corresponding method for database import/export.</p>
+
+<h2>Setting the stage</h2>
+
+<p>Before we can start loading a database, we need to have a set of 
+containers to use as our local development environment. For a Drupal 
+site, we need at least two containers: One for Apache and mod_php, and 
+another to provide us a MySQL database:</p>
+
+<pre class="  language-php"><code class="yaml  language-php">version<span class="token punctuation">:</span> <span class="token string">'3'</span>
+services<span class="token punctuation">:</span>
+  web<span class="token punctuation">:</span>
+    image<span class="token punctuation">:</span> osiolabs<span class="token operator">/</span>drupaldevwithdocker<span class="token operator">-</span>php
+    ports<span class="token punctuation">:</span>
+      <span class="token operator">-</span> <span class="token string">"80:80"</span>
+  db<span class="token punctuation">:</span>
+    image<span class="token punctuation">:</span> osiolabs<span class="token operator">/</span>drupaldevwithdocker<span class="token operator">-</span>mysql
+    environment<span class="token punctuation">:</span>
+      <span class="token constant">MYSQL_ROOT_PASSWORD</span><span class="token punctuation">:</span> root
+      <span class="token constant">MYSQL_DATABASE</span><span class="token punctuation">:</span> drupaldb
+      <span class="token constant">MYSQL_USER</span><span class="token punctuation">:</span> drupal
+      <span class="token constant">MYSQL_PASSWORD</span><span class="token punctuation">:</span> verybadpassword
+</code></pre>
+
+<p>Our project directory looks fairly standard for a Drupal site, too:</p>
+
+<pre class="  language-php"><code class="  language-php"><span class="token operator">/</span>path<span class="token operator">/</span>to<span class="token operator">/</span>my_project
+<span class="token operator">+-</span><span class="token operator">-</span> <span class="token punctuation">.</span>git<span class="token operator">/</span>
+<span class="token operator">+-</span><span class="token operator">-</span> docker<span class="token operator">-</span>compose<span class="token punctuation">.</span>yml
+<span class="token operator">+-</span><span class="token operator">-</span> docroot<span class="token operator">/</span>
+    <span class="token operator">+-</span><span class="token operator">-</span> core<span class="token operator">/</span>
+    <span class="token operator">+-</span><span class="token operator">-</span> index<span class="token punctuation">.</span>php
+</code></pre>
+
+<p>The Compose file (<em>docker-compose.yml</em>) is in the repository root. For convenience, our site files are in a subdirectory of the repository: <code class="  language-php">docroot</code>.
+ This makes it much easier to define a bind volume in Docker, as well as
+ keeps the site files separate from project-related files like <em>docker-compose.yml</em>.</p>
+
+<h2>Method #1: Using a database client</h2>
+
+<p>If you have a database client already installed on your host OS, such as the MySQL CLI client, or a graphical client like <a href="https://www.sequelpro.com/">Sequel Pro</a>, you can use it to load a database dump into the container.</p>
+
+<p>First, we need to <a href="https://drupalize.me/tutorial/expose-ports">expose the database port</a> on our database container:</p>
+
+<pre class="  language-php"><code class="yaml  language-php">version<span class="token punctuation">:</span> <span class="token string">'3'</span>
+services<span class="token punctuation">:</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+  db<span class="token punctuation">:</span>
+    image<span class="token punctuation">:</span> osiolabs<span class="token operator">/</span>drupaldevwithdocker<span class="token operator">-</span>mysql
+    ports<span class="token punctuation">:</span>
+      <span class="token operator">-</span> <span class="token string">"3306:3306"</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+</code></pre>
+
+<p>Then, we <a href="https://drupalize.me/tutorial/start-stop-and-list-container-sets">start the container set</a> as we normally would:</p>
+
+<pre class="  language-php"><code class="shell  language-php">$ cd <span class="token operator">/</span>path<span class="token operator">/</span>to<span class="token operator">/</span>my_project
+$ docker<span class="token operator">-</span>compose up <span class="token operator">-</span>d
+</code></pre>
+
+<p>If using the MySQL CLI client to talk to our Compose file above, the command would look like this:</p>
+
+<pre class="  language-php"><code class="shell  language-php">$ mysql <span class="token operator">-</span>u drupal <span class="token operator">-</span>p <span class="token operator">-</span>C drupaldb <span class="token operator">-</span>h <span class="token number">127.0</span><span class="token punctuation">.</span><span class="token number">0.1</span> <span class="token operator">-</span>P <span class="token number">3306</span>
+</code></pre>
+
+<p>This will put you into a mysql prompt where you can run mysql commands, such as <code class="  language-php">show databases<span class="token punctuation">;</span></code> to list the databases in this container.</p>
+
+<p>In this way, it's a lot like communicating with a database installed 
+on the host OS. Since a containerized database with an exposed port 
+looks exactly like a database installed on the host OS, the client does 
+not know the difference. By default, a container isn't given a unique IP
+ address. It shares the same IP with the host OS.</p>
+
+<p>Using a database client on the host OS tends to work well for small 
+to medium websites. Once the database site exceeds a certain point, 
+however, you will start to get timeout problems that require tuning the 
+database network configuration.</p>
+
+<h2>Method #2: Using a bind volume</h2>
+
+<p>When loading the largest of database dumps, it's often better to rely
+ on the database CLI client on the database server itself. We can do 
+something very similar with Docker by using a bind volume.</p>
+
+<p>First we need a directory in which to share the database dump easily 
+from the hostOS to the container. We update our Compose file to provide a
+ directory on the host OS in which to save database dumps. This 
+directory can be named anything, but for simplicity, let's  call it <em>db-backups/</em> and create it in the root of our project directory:</p>
+
+<pre class="  language-php"><code class="  language-php"><span class="token operator">/</span>path<span class="token operator">/</span>to<span class="token operator">/</span>my_project
+<span class="token operator">+-</span><span class="token operator">-</span> <span class="token punctuation">.</span>git<span class="token operator">/</span>
+<span class="token operator">+-</span><span class="token operator">-</span> db<span class="token operator">-</span>backups<span class="token operator">/</span>
+<span class="token operator">|</span>   <span class="token operator">+-</span><span class="token operator">-</span> <span class="token punctuation">.</span>gitignore
+<span class="token operator">|</span>   <span class="token operator">+-</span><span class="token operator">-</span> mydb_2017<span class="token number">-12</span><span class="token operator">-</span><span class="token number">12</span><span class="token punctuation">.</span>sql
+<span class="token operator">+-</span><span class="token operator">-</span> docker<span class="token operator">-</span>compose<span class="token punctuation">.</span>yml
+<span class="token operator">+-</span><span class="token operator">-</span> docroot<span class="token operator">/</span>
+    <span class="token operator">+-</span><span class="token operator">-</span> core<span class="token operator">/</span>
+    <span class="token operator">+-</span><span class="token operator">-</span> index<span class="token punctuation">.</span>php
+</code></pre>
+
+<p>Note the <em>.gitignore</em> in our database dump directory. The <em>.gitignore</em> is configured to ignore <em>*.sql</em> files and any commonly compressed <em>*.sql</em> files. This prevents us from accidentally committing database dumps to the repo.</p>
+
+<p>Example <em>.gitignore</em> for <em>db-backups/</em>:</p>
+
+<pre class="  language-php"><code class="  language-php"><span class="token punctuation">.</span>tar<span class="token punctuation">.</span>gz
+<span class="token punctuation">.</span>zip
+<span class="token punctuation">.</span>sql
+</code></pre>
+
+<p>Next, we need to add a <code class="  language-php">volumes</code> key to our <em>docker-compose.yml</em> file to mount the directory as a bind volume.</p>
+
+<pre class="  language-php"><code class="yaml  language-php">version<span class="token punctuation">:</span> <span class="token string">'3'</span>
+services<span class="token punctuation">:</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+  db<span class="token punctuation">:</span>
+    image<span class="token punctuation">:</span> osiolabs<span class="token operator">/</span>drupaldevwithdocker<span class="token operator">-</span>mysql
+    volumes<span class="token punctuation">:</span>
+      <span class="token operator">-</span> <span class="token punctuation">.</span><span class="token operator">/</span>db<span class="token operator">-</span>backups<span class="token punctuation">:</span><span class="token operator">/</span><span class="token keyword">var</span><span class="token operator">/</span>mysql<span class="token operator">/</span>backups<span class="token punctuation">:</span>delegated
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+</code></pre>
+
+<p>Save the Compose file and restart the containers:</p>
+
+<pre class="  language-php"><code class="shell  language-php">$ cd <span class="token operator">/</span>path<span class="token operator">/</span>to<span class="token operator">/</span>my_project
+$ docker<span class="token operator">-</span>compose kill
+$ docker<span class="token operator">-</span>compose up <span class="token operator">-</span>d
+</code></pre>
+
+<p>If you don't already have a database dump, create one with a tool of your choice (<code class="  language-php">mysqldump</code>, <code class="  language-php">drush sql<span class="token operator">-</span>dump</code>, <a href="https://drupal.org/project/backup_migrate">Backup and Migrate module</a>, or favorite GUI database tool such as Sequel Pro) and save it to your project's <em>db-backups/</em> directory.</p>
+
+<p>Once you have your containers up and running and a database backup saved to <em>db-backups/</em>, use <code class="  language-php">docker<span class="token operator">-</span>compose exec</code> to enter into the <code class="  language-php">db</code> container and load the database. Don't forget to change the filename to the name of the backup file in your <em>db-backups/</em> directory. You don't need to include the <em>db-backups/</em> path because of how we set up the <code class="  language-php">volumes</code> key in the <em>docker-compose.yml</em> file.</p>
+
+<p>Example procedure (change values as appropriate to your setup):</p>
+
+<pre class="  language-php"><code class="shell  language-php">$ cd <span class="token operator">/</span>path<span class="token operator">/</span>to<span class="token operator">/</span>my_project
+$ docker<span class="token operator">-</span>compose exec db <span class="token operator">/</span>bin<span class="token operator">/</span>bash
+<span class="token comment" spellcheck="true">
+# cd /var/mysql/backups
+</span><span class="token comment" spellcheck="true"># mysql -u root -p -C drupaldb &lt; mydb_2017-12-12.sql
+</span><span class="token comment" spellcheck="true"># exit
+</span>
+$
+</code></pre>
+
+<p>By <code class="  language-php">exec</code>ing into the database container, we're effectively running the <code class="  language-php">mysql</code> command as if we were on the database server. This gets around network communication problems and helps avoid errors like <code class="  language-php">The MySQL server has gone away</code>. Using a bind volume in this way is effective even for multi-gigabyte databases.</p>
+
+<h2>Method #3: Use another container</h2>
+
+<p>Sometimes you don't have all the necessary tools on your host OS. 
+This is particularly true if you needed to replace your laptop or 
+workstation recently. Instead of installing a bunch of additional tools 
+on the bare metal, you could instead add containers to the set that 
+contain the tools.</p>
+
+<p>Many Drupal developers are familiar with web-based SQL interfaces 
+like phpMyAdmin. phpMyAdmin is available as a Docker container, and with
+ a few additional lines of YAML, you can add that to your set.</p>
+
+<p>First, we add the phpMyAdmin container to the <em>docker-compose.yml</em> file:</p>
+
+<pre class="  language-php"><code class="yaml  language-php">version<span class="token punctuation">:</span> <span class="token string">'3'</span>
+services<span class="token punctuation">:</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+  pma<span class="token punctuation">:</span>
+    image<span class="token punctuation">:</span> phpmyadmin<span class="token operator">/</span>phpmyadmin
+    environment<span class="token punctuation">:</span>
+      <span class="token constant">PMA_HOST</span><span class="token punctuation">:</span> db
+      <span class="token constant">PMA_USER</span><span class="token punctuation">:</span> root
+      <span class="token constant">PMA_PASSWORD</span><span class="token punctuation">:</span> root
+      <span class="token constant">PHP_UPLOAD_MAX_FILESIZE</span><span class="token punctuation">:</span> <span class="token constant">1G</span>
+      <span class="token constant">PHP_MAX_INPUT_VARS</span><span class="token punctuation">:</span> <span class="token constant">1G</span>
+    ports<span class="token punctuation">:</span>
+     <span class="token operator">-</span> <span class="token string">"8001:80"</span>
+</code></pre>
+
+<p>The <code class="  language-php">pma</code> container takes several 
+configuration parameters as environment variables. This includes the 
+hostname of the database server (in our case the service name of the <code class="  language-php">db</code> container), the username, password, and additional configuration options.</p>
+
+<p>phpMyAdmin can be accessed by a web browser, but we already have our web server container using port <code class="  language-php"><span class="token number">80</span></code>. To avoid a port conflict, we re-map port 80 of the <code class="  language-php">pma</code> container to an alternate port on the host OS. In the above example, port <code class="  language-php"><span class="token number">8001</span></code>.</p>
+
+<p>Then, all we need to do is stop and restart the container set:</p>
+
+<pre class="  language-php"><code class="shell  language-php">$ cd <span class="token operator">/</span>path<span class="token operator">/</span>to<span class="token operator">/</span>my_project
+$ docker<span class="token operator">-</span>compose kill
+$ docker<span class="token operator">-</span>compose up <span class="token operator">-</span>d
+</code></pre>
+
+<p>We can then visit phpMyAdmin by opening a web browser, and navigating to <code class="  language-php">http<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span><span class="token number">127.0</span><span class="token punctuation">.</span><span class="token number">0.1</span><span class="token punctuation">:</span><span class="token number">8001</span></code>. After that, we can use the tool to import the database.</p>
+
+<p>Adding another container that provides a tool to work with other 
+containers has some advantages. It's easier for less technically 
+experienced users who can use a provided, pre-configured graphical tool.
+ It also removes the need to install additional tooling on each team 
+member's laptop or workstation, making moving systems much faster.</p>
+
+<h2>Putting it all together</h2>
+
+<p>We don't need to decide on only one of these methods. In many cases, 
+configuring your containers to use both method 1 and 2 is effective. If 
+disk and memory space isn't a concern (the <code class="  language-php">pma</code> container is size optimized out of the box), providing all three gives developers the most options. Here again is the <em>docker-compose.yml</em> with options that facilitate each of the methods described in this tutorial.</p>
+
+<pre class="  language-php"><code class="yaml  language-php">version<span class="token punctuation">:</span> <span class="token string">'3'</span>
+services<span class="token punctuation">:</span>
+  web<span class="token punctuation">:</span>
+    image<span class="token punctuation">:</span> osiolabs<span class="token operator">/</span>drupaldevwithdocker<span class="token operator">-</span>php
+    volumes<span class="token punctuation">:</span>
+      <span class="token operator">-</span> <span class="token punctuation">.</span><span class="token operator">/</span>docroot<span class="token punctuation">:</span><span class="token operator">/</span><span class="token keyword">var</span><span class="token operator">/</span>www<span class="token operator">/</span>html<span class="token punctuation">:</span>cached
+    ports<span class="token punctuation">:</span>
+      <span class="token operator">-</span> <span class="token string">"80:80"</span>
+  db<span class="token punctuation">:</span>
+    image<span class="token punctuation">:</span> osiolabs<span class="token operator">/</span>drupaldevwithdocker<span class="token operator">-</span>mysql
+    volumes<span class="token punctuation">:</span>
+      <span class="token operator">-</span> <span class="token punctuation">.</span><span class="token operator">/</span>db<span class="token operator">-</span>backups<span class="token punctuation">:</span><span class="token operator">/</span><span class="token keyword">var</span><span class="token operator">/</span>mysql<span class="token operator">/</span>backups<span class="token punctuation">:</span>delegated
+    environment<span class="token punctuation">:</span>
+      <span class="token constant">MYSQL_ROOT_PASSWORD</span><span class="token punctuation">:</span> root
+      <span class="token constant">MYSQL_DATABASE</span><span class="token punctuation">:</span> drupaldb
+      <span class="token constant">MYSQL_USER</span><span class="token punctuation">:</span> drupal
+      <span class="token constant">MYSQL_PASSWORD</span><span class="token punctuation">:</span> verybadpassword
+    ports<span class="token punctuation">:</span>
+      <span class="token operator">-</span> <span class="token string">"3306:3306"</span>
+  pma<span class="token punctuation">:</span>
+    image<span class="token punctuation">:</span> phpmyadmin<span class="token operator">/</span>phpmyadmin
+    environment<span class="token punctuation">:</span>
+      <span class="token constant">PMA_HOST</span><span class="token punctuation">:</span> db
+      <span class="token constant">PMA_USER</span><span class="token punctuation">:</span> root
+      <span class="token constant">PMA_PASSWORD</span><span class="token punctuation">:</span> root
+      <span class="token constant">PHP_UPLOAD_MAX_FILESIZE</span><span class="token punctuation">:</span> <span class="token constant">1G</span>
+      <span class="token constant">PHP_MAX_INPUT_VARS</span><span class="token punctuation">:</span> <span class="token constant">1G</span>
+    ports<span class="token punctuation">:</span>
+     <span class="token operator">-</span> <span class="token string">"8001:80"</span>
+</code></pre>
+
+<h2>Troubleshooting</h2>
+
+<p>Getting errors starting up your containers? You may need to use different port mappings (edit your <em>docker-compose.yml</em>)
+ and choose a different port number for your host machine). On Mac OS, 
+you may also need to edit Preferences in your Docker app to allow 
+certain macOS directories (and their subdirectories) to be bind mounted 
+into Docker containers. Directories can be added for this purpose in <em>Docker &gt; Preferences &gt; File Sharing</em>.</p>
+
+<h2>Recap</h2>
+
+<p>Loading a database dump into a database container is a mundane task 
+we need to consider when switching to a Docker-based workflow. It's not 
+significantly different from working with a database server installed on
+ your host OS, but it does require straightening out several key 
+details. Once set up and committed to version control, however, all 
+developers can take advantage of the several methods of importing a 
+database as circumstances demand.</p>
+
+<h2>Further your understanding</h2>
+
+<ul>
+<li>Could you connect a web server container to a non-containerized database?</li>
+</ul>
+
+<h2>Additional resources</h2>
+
+<ul>
+<li><a href="https://hub.docker.com/r/phpmyadmin/phpmyadmin/">Official phpMyAdmin Docker image</a> (hub.docker.com)</li>
+</ul>
+</div></div></div><div class="field field-name-field-video-coming-soon-bool field-type-list-boolean field-label-hidden"><div class="field-items"><div class="field-item even"></div></div></div>
+                      <div class="feedback jquery-once-1-processed">
+              <form class="webform-client-form webform-client-form-2848" action="/tutorial/import-and-export-databases-container?p=3040" method="post" id="webform-client-form-2848" accept-charset="UTF-8"><div><div class="webform-progressbar">
+  
+
+  
+  </div>
+<div class="form-item webform-component webform-component-radios webform-component--yes-no">
+  <label for="edit-submitted-yes-no">Was this helpful? <span class="form-required" title="This field is required.">*</span></label>
+ <div id="edit-submitted-yes-no" class="form-radios"><div class="form-item form-type-radio form-item-submitted-yes-no">
+ <input required="required" type="radio" id="edit-submitted-yes-no-1" name="submitted[yes_no]" value="yes" class="form-radio">  <label class="option" for="edit-submitted-yes-no-1">Yes </label>
+
+</div>
+<div class="form-item form-type-radio form-item-submitted-yes-no">
+ <input required="required" type="radio" id="edit-submitted-yes-no-2" name="submitted[yes_no]" value="no" class="form-radio">  <label class="option" for="edit-submitted-yes-no-2">No </label>
+
+</div>
+</div>
+</div>
+<div class="form-item webform-component webform-component-textarea webform-component--feedback feedback--hidden">
+  <label for="edit-submitted-feedback">Any additional feedback? </label>
+ <div class="form-textarea-wrapper"><textarea id="edit-submitted-feedback" name="submitted[feedback]" cols="60" rows="3" class="form-textarea"></textarea></div>
+</div>
+<input type="hidden" name="details[sid]">
+<input type="hidden" name="details[page_num]" value="1">
+<input type="hidden" name="details[page_count]" value="1">
+<input type="hidden" name="details[finished]" value="0">
+<input type="hidden" name="form_build_id" value="form-J7kFI6ceANLRZXU1RXNpDlURmMEo-bOVY4BR4jaNCDU">
+<input type="hidden" name="form_token" value="jQWdN6pWAlCUSVFC-YbeUqe_wl0DdoIBPbdPtaIdCfo">
+<input type="hidden" name="form_id" value="webform_client_form_2848">
+<input type="hidden" name="honeypot_time" value="1573756309|2HTPcFw1PgI_TsHlkQoI9F_Wr_FVaXAGN5FMMtzn8xc">
+<div class="twitter_name-textfield"><div class="form-item form-type-textfield form-item-twitter-name">
+  <label for="edit-twitter-name">Leave this field blank </label>
+ <input autocomplete="off" type="text" id="edit-twitter-name" name="twitter_name" size="20" maxlength="128" class="form-text">
+</div>
+</div><div class="form-actions feedback--hidden"><input class="webform-submit button-primary form-submit" type="submit" name="op" value="Submit"></div></div></form>            </div>
+                  
+        
+        
+                  <div class="tutorial--links">
+                          <a href="https://drupalize.me/tutorial/expose-ports?p=3040" class="tutorial--link-previous">
+                ◀ Previous tutorial              </a>
+                                      <a href="https://drupalize.me/tutorial/docker-hub?p=3040" class="tutorial--link-next">
+                Next tutorial ▶
+              </a>
+                      </div>
+        
+        <div id="bottom-of-tutorial"></div>
+        <div id="block-dmeblocks-share-modal" class="secondary-info block">
+
+    
+  <div class="content">
+    <div id="share-modal" class="mfp-hide">
+  <h4>Share</h4>
+  <div class="share--sns">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdrupalize.me%2Ftutorial%2Fimport-and-export-databases-container" onclick="javascript:window.open(this.href,
+      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=635');return false;" class="share--sns-link icon-facebook tooltip tooltipstered">Share to Facebook</a>
+    <a href="https://twitter.com/intent/tweet?text=Check%20out%20%22Import%20and%20Export%20Databases%20into%20a%20Container%22%20on%20Drupalize.Me%20-%20https%3A%2F%2Fdrupalize.me%2Ftutorial%2Fimport-and-export-databases-container" onclick="javascript:window.open(this.href,
+      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=635');return false;" class="share--sns-link icon-twitter tooltip tooltipstered">Share to Twitter</a>
+    <a href="https://plus.google.com/share?url=https%3A%2F%2Fdrupalize.me%2Ftutorial%2Fimport-and-export-databases-container" onclick="javascript:window.open(this.href,
+      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=512');return false;" class="share--sns-link icon-google tooltip tooltipstered">Share to Google+</a>
+  </div>
+  </div>  </div>
+</div>
+      </div>
+
+      <aside class="tutorial--navigation jquery-once-2-processed">
+                  <div class="tutorial--navigation-header">
+            <h2><a href="https://drupalize.me/series/drupal-development-docker">Drupal Development with Docker</a></h2>
+          </div>
+            
+<div class="playlist--container card-videos-list playlist--autoload processed" id="playlist-3040" data-playlist="3040" data-loaded="false">
+  <!-- ko if: isLoading() --><!-- /ko -->
+
+  <ul class="playlist--list">
+    <!-- ko foreach: videos -->
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/best-practice-drupal-development?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">1</span>
+          <span class="playlist--item--title" data-bind="text:title">Best Practice Drupal Development</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())">
+            <span class="playlist--item--free" data-bind="visible:isFree()">Free</span>
+            <span class="playlist--item--percent" data-bind="visible:watched()" style="display: none;"><span data-bind="text:watchedPercent">0</span>% watched</span>
+          </div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/what-is-docker?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">2</span>
+          <span class="playlist--item--title" data-bind="text:title">What Is Docker?</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())">
+            <span class="playlist--item--free" data-bind="visible:isFree()">Free</span>
+            <span class="playlist--item--percent" data-bind="visible:watched()" style="display: none;"><span data-bind="text:watchedPercent">0</span>% watched</span>
+          </div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/install-docker?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">3</span>
+          <span class="playlist--item--title" data-bind="text:title">Install Docker</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())">
+            <span class="playlist--item--free" data-bind="visible:isFree()">Free</span>
+            <span class="playlist--item--percent" data-bind="visible:watched()" style="display: none;"><span data-bind="text:watchedPercent">0</span>% watched</span>
+          </div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/run-container-interactively?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--completed">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">4</span>
+          <span class="playlist--item--title" data-bind="text:title">Run a Container Interactively</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/what-is-container?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--completed">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">5</span>
+          <span class="playlist--item--title" data-bind="text:title">What Is a Container?</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/what-is-image?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--completed">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">6</span>
+          <span class="playlist--item--title" data-bind="text:title">What Is an Image?</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/use-detached-container?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--completed">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">7</span>
+          <span class="playlist--item--title" data-bind="text:title">Use a Detached Container</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/run-sets-containers?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--completed">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">8</span>
+          <span class="playlist--item--title" data-bind="text:title">Run Sets of Containers</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/create-compose-file?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--completed">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">9</span>
+          <span class="playlist--item--title" data-bind="text:title">Create a Compose File</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/start-stop-and-list-container-sets?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--completed">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">10</span>
+          <span class="playlist--item--title" data-bind="text:title">Start, Stop, and List Container Sets</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/get-data-containers?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--completed">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">11</span>
+          <span class="playlist--item--title" data-bind="text:title">Get Data into Containers</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/use-bind-volumes?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--completed">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">12</span>
+          <span class="playlist--item--title" data-bind="text:title">Use Bind Volumes</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/set-environment-variables?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--completed">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">13</span>
+          <span class="playlist--item--title" data-bind="text:title">Set Environment Variables</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/expose-ports?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--completed">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">14</span>
+          <span class="playlist--item--title" data-bind="text:title">Expose Ports</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial active" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/import-and-export-databases-container?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--completed">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">15</span>
+          <span class="playlist--item--title" data-bind="text:title">Import and Export Databases into a Container</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/docker-hub?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">16</span>
+          <span class="playlist--item--title" data-bind="text:title">Docker Hub</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/list-delete-and-update-images?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">17</span>
+          <span class="playlist--item--title" data-bind="text:title">List, Delete, and Update Images</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/use-tags-docker?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">18</span>
+          <span class="playlist--item--title" data-bind="text:title">Use Tags in Docker</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/run-drupal-docker?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--completed">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">19</span>
+          <span class="playlist--item--title" data-bind="text:title">Run Drupal in Docker</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/dockerize-existing-project?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--completed">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">20</span>
+          <span class="playlist--item--title" data-bind="text:title">Dockerize an Existing Project</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())">
+            <span class="playlist--item--free" data-bind="visible:isFree()">Free</span>
+            <span class="playlist--item--percent" data-bind="visible:watched()" style="display: none;"><span data-bind="text:watchedPercent">0</span>% watched</span>
+          </div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/add-docker-specific-settings-file?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">21</span>
+          <span class="playlist--item--title" data-bind="text:title">Add a Docker-Specific Settings File</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/centralize-docker-configuration-environment-file?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">22</span>
+          <span class="playlist--item--title" data-bind="text:title">Centralize Docker Configuration with an Environment File</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/multi-client-workflow-docker?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">23</span>
+          <span class="playlist--item--title" data-bind="text:title">Multi-Client Workflow with Docker</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/dockerize-multisite-drupal-install?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">24</span>
+          <span class="playlist--item--title" data-bind="text:title">Dockerize a Multisite Drupal Install</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/use-external-services-docker?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">25</span>
+          <span class="playlist--item--title" data-bind="text:title">Use External Services in Docker</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/custom-docker-images?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">26</span>
+          <span class="playlist--item--title" data-bind="text:title">Custom Docker Images</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/share-containers-your-team?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">27</span>
+          <span class="playlist--item--title" data-bind="text:title">Share Containers with Your Team</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/create-automatic-build-hub?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">28</span>
+          <span class="playlist--item--title" data-bind="text:title">Create an Automatic Build for Hub</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/configure-and-use-hub-tags?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">29</span>
+          <span class="playlist--item--title" data-bind="text:title">Configure and Use Hub Tags</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/run-self-hosted-container-registry?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">30</span>
+          <span class="playlist--item--title" data-bind="text:title">Run a Self-Hosted Container Registry</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/add-files-image?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">31</span>
+          <span class="playlist--item--title" data-bind="text:title">Add Files to an Image</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/install-applications-container?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">32</span>
+          <span class="playlist--item--title" data-bind="text:title">Install Applications in a Container</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/application-configuration?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">33</span>
+          <span class="playlist--item--title" data-bind="text:title">Application Configuration</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/default-applications-docker?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">34</span>
+          <span class="playlist--item--title" data-bind="text:title">Default Applications in Docker</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/custom-entrypoints?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">35</span>
+          <span class="playlist--item--title" data-bind="text:title">Custom Entrypoints</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/customize-existing-image?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">36</span>
+          <span class="playlist--item--title" data-bind="text:title">Customize an Existing Image</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/container-security?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">37</span>
+          <span class="playlist--item--title" data-bind="text:title">Container Security</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    
+
+      <!-- ko ifnot:comingSoon() -->
+      <!-- This block is used for all published items.  -->
+      <li class="playlist--item tutorial" data-bind="css:addClasses()">
+        <a href="https://drupalize.me/tutorial/docker-production?p=3040" class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}" data-total="0" data-resume="0">
+          <span data-bind="css: readFlag" class="playlist--item--incomplete">&nbsp;</span>          <span class="playlist--item--count" data-bind="text:$index() + 1">38</span>
+          <span class="playlist--item--title" data-bind="text:title">Docker in Production</span>
+          <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+          <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime" style="display: none;"></span>
+        </a>
+      </li>
+      <!-- /ko -->
+
+      <!-- ko if:comingSoon() --><!-- /ko -->
+
+    <!-- /ko -->
+    <!-- ko foreach: collections --><!-- /ko -->
+  </ul>
+</div>
+              </aside>
+    </div>
+  </div>
+
+</article>
+  </div>
+</div>
+  </div>
+
+      </div>
+</main>
+
+<footer class="l-footer">
+  <div class="l-container">
+      <div class="region region-footer">
+    <div id="block-menu-menu-footer" class="block block-menu">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="https://drupalize.me/about" title="Learn more about the Drupalize.Me team">About us</a></li>
+<li class="leaf"><a href="https://drupalize.me/blog" title="">Blog</a></li>
+<li class="leaf"><a href="https://drupalize.me/student-discount" title="">Student discounts</a></li>
+<li class="leaf"><a href="https://drupalize.me/faq" title="">FAQ</a></li>
+<li class="leaf"><a href="https://drupalize.me/support" title="Get support on anything Drupalize.Me related">Support</a></li>
+<li class="leaf"><a href="https://drupalize.me/privacy" title="">Privacy policy</a></li>
+<li class="leaf"><a href="https://drupalize.me/terms-conditions" title="">Terms of use</a></li>
+<li class="last leaf"><a href="https://drupalize.me/support" title="Get in touch with us">Contact us</a></li>
+</ul>  </div>
+</div>
+<div id="block-dmeblocks-newsletter" class="block block-dmeblocks footer--newsletter">
+
+    
+  <div class="content">
+    <!-- dmeblocks-newsletter.tpl.php -->
+<h2 class="block-title">Stay Informed</h2>
+<p>
+  Sign up for our mailing list to get Drupal tips and tricks in your inbox!</p>
+
+<script type="text/javascript" src="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+<script type="text/javascript">
+  // Wrap the default mailchimp code in a function so that we can trigger it on
+  // click instead of the default behaviour which is to open the pop-up
+  // immediately.
+  function showMailingPopUp() {
+    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us4.list-manage.com","uuid":"8efa4b8bd449a20f0b8255801","lid":"379eb97e77"}) });
+
+    document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+  }
+</script>
+
+<button id="open-mailchimp-popup" class="action-link" onclick="showMailingPopUp(); return false;">Subscribe</button>
+<!-- /dmeblocks-newsletter.tpl.php -->
+  </div>
+</div>
+<div id="block-dmeblocks-social-navigation" class="block block-dmeblocks footer--social">
+
+    
+  <div class="content">
+    
+<!-- dmeblocks-social_navigation.tpl.php -->
+<h2 class="block-title">Stay Connected</h2>
+<ul class="social-nav">
+  <li><a class="drupal" href="https://drupal.org/drupalizeme" alt="Drupal.org" target="_blank">Drupal.org</a></li>
+  <li><a class="twitter" href="https://twitter.com/drupalizeme" alt="Twitter" target="_blank">Twitter</a></li>
+  <li><a class="facebook" href="https://www.facebook.com/pages/Drupalizeme/226965084026508" alt="Facebook" target="_blank">Facebook</a></li>
+  <li><a class="google-plus" href="https://plus.google.com/+DrupalizeMe" alt="Google+" target="_blank">Google+</a></li>
+  <li><a class="rss" href="https://drupalize.me/blog/feed" alt="RSS">RSS</a></li>
+  <li><a class="youtube" href="https://www.youtube.com/user/Lullabot" alt="RSS">Youtube</a></li>
+</ul>
+<!-- /dmeblocks-social_navigation.tpl.php -->
+  </div>
+</div>
+<div id="block-dmeblocks-pantheon" class="block block-dmeblocks footer--pantheon">
+
+    
+  <div class="content">
+    
+<!-- dmeblocks-pantheon.tpl.php -->
+Powered by: <a class="pantheon" href="https://pantheon.io/" target="_blank">Pantheon</a>
+  </div>
+</div>
+  </div>
+    <p class="footer--copyright">Drupalize.Me is a service of <a href="https://osiolabs.com/">Osio Labs</a>, © 2019</p>  </div>
+</footer>
+  <script type="text/javascript" src="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/js_7Ukqb3ierdBEL0eowfOKzTkNu-Le97OPm-UqTS5NENU.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var google_conversion_id = 1004527117;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+//--><!]]>
+</script>
+<script type="text/javascript" src="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/conversion.js"></script>
+<script type="text/javascript" src="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/js_OfgbriR0FlwM4Kv8AK9uvF_-FANo_9_KesRTD0RI11E.js"></script>
+
+
+  <!-- Google Code for Remarketing Tag -->
+  <noscript>
+    <div>
+      <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1004527117/?value=0&amp;guid=ON&amp;script=0"/>
+    </div>
+  </noscript>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3963617017","applicationID":"29167046","transactionName":"Z1ADYBRXVkYAUEJZCV4aIFcSX1dbTl1ZVANvRQBTA2lOXARE","queueTime":0,"applicationTime":1162,"atts":"SxcAFlxNRUg=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<script type="text/javascript" id="">window.zEmbed||function(){var a=[];window.zEmbed=function(){a.push(arguments)};window.zE=window.zE||window.zEmbed;document.zendeskHost="drupalizeme.zendesk.com";document.zEQueue=a}();</script>
+<script type="text/javascript" id="" src="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/main.js"></script><script type="text/javascript" id="">var intercomSettings={app_id:"x3mtrn8v",user_id:google_tag_manager["GTM-WS38CK"].macro(3),name:google_tag_manager["GTM-WS38CK"].macro(4),email:google_tag_manager["GTM-WS38CK"].macro(5),created_at:google_tag_manager["GTM-WS38CK"].macro(6),custom_data:{membership_status:google_tag_manager["GTM-WS38CK"].macro(7),membership_type:google_tag_manager["GTM-WS38CK"].macro(8),custom_attributes:{group_owner:google_tag_manager["GTM-WS38CK"].macro(9),group_seats_active:google_tag_manager["GTM-WS38CK"].macro(10),group_seats_total:google_tag_manager["GTM-WS38CK"].macro(11)}}};
+(function(){function a(){var b=document.createElement("script");b.type="text/javascript";b.async=!0;b.src="https://api.intercom.io/api/js/library.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a)}window.attachEvent?window.attachEvent("onload",a):window.addEventListener("load",a,!1)})();</script>
+<script type="text/javascript" id="">zE(function(){zE.setLocale("en-US")});</script><iframe data-product="web_widget" title="No content" tabindex="-1" aria-hidden="true" style="width: 0px; height: 0px; border: 0px none; position: absolute; top: -9999px;" src="16.Import%20and%20Export%20Databases%20into%20a%20Container%20|%20Drupalize.Me_files/a_003.html"></iframe><div><iframe title="Opens a widget where you can find more information" style="border: medium none; background: transparent none repeat scroll 0% 0%; z-index: 999998; transform: translateZ(0px); position: fixed; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); transition-property: opacity, top, bottom; opacity: 1; width: 139px; height: 50px; max-height: 551px; min-height: 50px; margin: 10px 20px; right: 0px; bottom: 0px;width: 139px;" id="launcher" tabindex="0" class="zEWidget-launcher zEWidget-launcher--active"></iframe></div><div><iframe title="Find more information here" style="border: medium none; background: transparent none repeat scroll 0% 0%; z-index: 999999; transform: translateZ(0px); position: fixed; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); transition-property: opacity, top, bottom; opacity: 0; width: 357px; height: 100%; max-height: 565px; min-height: 150px; margin-left: 8px; margin-right: 8px; top: -9999px; visibility: hidden;" id="webWidget" tabindex="-1" class="zEWidget-webWidget "></iframe></div><iframe id="intercom-frame" style="position: absolute !important; opacity: 0 !important; width: 1px !important; height: 1px !important; top: 0 !important; left: 0 !important; border: none !important; display: block !important; z-index: -1 !important;" aria-hidden="true" tabindex="-1" title="Intercom"></iframe><div id="intercom-css-container"><style data-emotion="intercom-global"></style></div><div id="intercom-container" class="intercom-namespace"><style>html.intercom-mobile-messenger-active,html.intercom-mobile-messenger-active > body,html.intercom-modal-open,#intercom-container-body{overflow:hidden !important;}html.intercom-mobile-messenger-active,html.intercom-mobile-messenger-active > body{position:static !important;}html.intercom-mobile-messenger-active > body{height:0 !important;margin:0 !important;}iframe#intercom-frame{position:absolute !important;opacity:0 !important;width:1px !important;height:1px !important;top:0 !important;left:0 !important;border:none !important;display:block !important;z-index:-1 !important;}</style><div class="intercom-app" aria-live="polite"><div id="intercom-modal-container"></div></div></div></body></html>

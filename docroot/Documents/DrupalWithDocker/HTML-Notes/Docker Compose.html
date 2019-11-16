@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Docker Compose</title>
+  </head>
+  <body>
+    <p style="margin-left: 70px;">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <br>
+    </p>
+    <div class="tutorial--header-title">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <h1 style="margin-left: 78px;"><a href="https://drupalize.me/tutorial/run-sets-containers">Run
+          Sets of Containers</a></h1>
+    </div>
+    <p style="margin-left: 70px;"><b><i>Part of Docker's fundamental design was
+          the idea that one container only runs one process. <br>
+        </i></b></p>
+    <p style="margin-left: 70px;"><br>
+    </p>
+    <div class="field-item even">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <p style="margin-left: 55px;"><u>In this tutorial, we'll:</u></p>
+      <ul>
+        <li>Introduce Docker Compose</li>
+        <li>Run multiple containers at once using Docker Compose</li>
+        <li>Identify the purpose of <em>docker-compose.yml</em></li>
+        <li>Learn what resources a set of containers share</li>
+      </ul>
+      <h2></h2>
+    </div>
+    <p style="margin-left: 70px;"><br>
+    </p>
+    <div class="field-item even">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <h2 style="margin-left: 41px;">Goal</h2>
+      <p style="margin-left: 51px;">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <b>Understand the purpose of Docker Compose and install it to run sets
+          of containers.</b></p>
+      <p style="margin-left: 51px;"><b><br>
+        </b></p>
+      <p style="margin-left: 51px;"><br>
+      </p>
+      <div class="field-item even" style="height: 119px;">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <h2 style="margin-left: 34px;">Docker Compose</h2>
+        <p style="margin-left: 69px;">
+          <meta http-equiv="content-type" content="text/html; charset=utf-8">
+          This grouping is sometimes<b> called a "<u>stack</u>" or a "<u>container
+              set</u>". <br>
+          </b></p>
+        <h1 style="text-align: center;"><code class="  language-php">
+            <meta http-equiv="content-type" content="text/html; charset=utf-8">
+            <code class="  language-php">docker<span class="token operator">-</span>compose<span
+                class="token punctuation">.</span>yml</code></code></h1>
+        <p style="margin-left: 71.1111px;">
+          <meta http-equiv="content-type" content="text/html; charset=utf-8">
+          <i><b>The Compose file includes containers' names, network
+              connectivity, restart policy, and many, many more details.</b></i></p>
+        <p style="margin-left: 52.2222px;">
+          <meta http-equiv="content-type" content="text/html; charset=utf-8">
+          <b>Once the <code class="  language-php"><span class="token punctuation">.</span>yml</code>
+            file is created, use the <code class="  language-php">docker<span class="token operator">-</span>compose</code>
+            command to manage the containers described in <code class="  language-php">docker<span
+                class="token operator">-</span>compose<span class="token punctuation">.</span>yml</code>.</b>&nbsp;
+          Docker-compose sets up a virtual network for us between the various
+          containers, easch with there own node.&nbsp; <b>Compose also runs a
+            Domain Name Server (DNS) inside the network for us.</b></p>
+        <p>
+          <meta http-equiv="content-type" content="text/html; charset=utf-8">
+          <u><i><b>Each of these containers needs to talk to each other in order
+                to run our Drupal sites.</b></i></u>&nbsp; Compose helps us here
+          as well.</p>
+        <section class="section">
+          <meta http-equiv="content-type" content="text/html; charset=utf-8">
+          <p><a href="https://docs.docker.com/compose/" target="_blank">Using
+              Compose is basically a three-step process:<br>
+            </a></p>
+          <ol>
+            <li>
+              <p>Define your app’s environment with a <code class="highlighter-rouge">Dockerfile</code>
+                so it can be reproduced
+                anywhere.</p>
+            </li>
+            <li>
+              <p>Define the services that make up your app in <code class="highlighter-rouge">docker-compose.yml</code>
+                so they can be run together in an isolated environment.</p>
+            </li>
+            <li>
+              <p>Run <code class="highlighter-rouge">docker-compose up</code>
+                and Compose starts and runs your entire app.</p>
+            </li>
+            <li><a href="https://docs.docker.com/compose/compose-file/">For more
+                info on Compose File</a></li>
+          </ol>
+          <p>
+            <meta http-equiv="content-type" content="text/html; charset=utf-8">
+            <b><strong>Furthermore, it is best to always</strong> place the <code
+                class="  language-php">docker<span class="token operator">-</span>compose<span
+                  class="token punctuation">.</span>yml</code> file under
+              version control.</b></p>
+          <p>
+            <meta http-equiv="content-type" content="text/html; charset=utf-8">
+            That way, any changes to the file can be tracked, and all developers
+            can share the same configuration of containers for the project. This
+            cuts down on it-works-on-my-machine problems by standardizing the
+            project's development infrastructure. </p>
+          <p></p>
+          <p></p>
+        </section>
+        <p></p>
+        <p></p>
+        <p style="margin-left: 69px; text-align: center;"></p>
+        <p style="margin-left: 64px;"></p>
+      </div>
+      <p style="margin-left: 39px;"></p>
+    </div>
+    <p style="margin-left: 55px;"></p>
+  </body>
+</html>

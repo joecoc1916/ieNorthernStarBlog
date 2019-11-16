@@ -1,0 +1,1755 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!-->
+<html dir="ltr" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#" xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#" xmlns:product="http://ogp.me/ns/product#"
+  class="js wf-proximanova-n7-active wf-proximanova-n4-active wf-proximanova-i4-active wf-active"
+  lang="en">
+  <!--<![endif]-->
+  <head profile="http://www.w3.org/1999/xhtml/vocab">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" async="" src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/x3mtrn8v.js"></script>
+    <script type="text/javascript" src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/3963617017"></script>
+    <script type="text/javascript" async="" src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/library.js"></script>
+    <script src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/nr-1130.js"></script>
+    <script type="text/javascript" async="" src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/ec.js"></script>
+    <script type="text/javascript" async="" src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/analytics.js"></script>
+    <script async="" src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/gtm.js"></script>
+    <script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"3963617017",applicationID:"29167046"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+    <link rel="shortcut icon" href="https://drupalize.me/sites/all/themes/dmemain/favicon.ico"
+      type="image/vnd.microsoft.icon">
+    <script type="text/javascript">dataLayer = [{"drupalLanguage":"en","drupalCountry":"US","userName":"Jcoeph C. O\u0027Connor","userMail":"joecoc1916@protonmail.com","userRoles":["authenticated user","premium subscription"],"userCreated":"1573500738","userAccess":"1573838721","userUid":"40184","membership_status":"Active","membership_type":"regular","recurly_plan":"Monthly Personal Membership","is_group":false}];</script>
+    <meta name="description" content="In this lesson we take a look at the methods available to install Git on different operating systems including Windows, OS X, and Linux and how to ensure that you're environment is properly setup to start using Git. Then we walk through the installation on OS X and finally we'll cover how to invoke Git from the command line and set some basic configuration options like telling">
+    <meta name="generator" content="Drupal 7 (https://www.drupal.org)">
+    <link rel="canonical" href="https://drupalize.me/videos/installing-and-configuring-git">
+    <link rel="shortlink" href="https://drupalize.me/node/682">
+    <meta property="og:site_name" content="Drupalize.Me">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://drupalize.me/videos/installing-and-configuring-git">
+    <meta property="og:title" content="Installing and Configuring Git">
+    <meta property="og:description" content="In this lesson we take a look at the methods available to install Git on different operating systems including Windows, OS X, and Linux and how to ensure that you're environment is properly setup to start using Git. Then we walk through the installation on OS X and finally we'll cover how to invoke Git from the command line and set some basic configuration options like telling Git who we are. If you would like to see Git installed on Windows, you can take a look at our Drupal Ladder: Install Git lesson. Learning objectives:">
+    <meta property="og:updated_time" content="2014-07-31T14:16:53-05:00">
+    <meta property="og:image" content="https://drupalize.me/sites/default/files/videoasset_screenshots/git_3.png">
+    <meta property="article:published_time" content="2013-03-13T08:31:21-05:00">
+    <meta property="article:modified_time" content="2014-07-31T14:16:53-05:00">
+    <title>Installing and Configuring Git | Drupalize.Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="monitor-verification-string" content="Drupalize.Me + Taylor = &lt;3">
+    <link type="text/css" rel="stylesheet" href="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/css_ywqYrtSodM0qVMzAkOSnqZ_iBnAVpkSeD_yPtUN9tBk.css"
+      media="all">
+    <link type="text/css" rel="stylesheet" href="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/css_GIjdLiEynkkG-Z8V0ePacmJ4PVcfxv0eBlYeL2Inan4.css"
+      media="screen">
+    <link type="text/css" rel="stylesheet" href="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/css_fBHtErelcsc4VfLbs13dQi9-IFgBYK9TTttUp_NUVzM.css"
+      media="all">
+    <link type="text/css" rel="stylesheet" href="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/css_qV6aqBTkK_agwn1z1DNm9d_SXeiMzaBLOdtS_rmwULg.css"
+      media="all">
+    <link type="text/css" rel="stylesheet" href="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/css_YmRbCvNBMtO05za9oOInNZHM0Jl_wWTZ2Nuil9afnXg.css"
+      media="all">
+    <script type="text/javascript" src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/js_0RyHJ63yYLuaWsodCPCgSD8dcTIA0dqcDf8-7c2XdBw.js"></script>
+    <script type="text/javascript" src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/js_fVTrO8-7pemKUEq-mo-qZqhH8gbNE-wgjMez4QXZb00.js"></script>
+    <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+    <script type="text/javascript" src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/js_CtrPKfhEyyyvv5wmH20mARoPVeDXdbPHmn_YF4Ay_k0.js"></script>
+    <script type="text/javascript" src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/js_R2O4__-X5kXPRsf53E1cajro8YUfQ8ZPbad8ofOEUYw.js"></script>
+    <script type="text/javascript" src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/jwplayer.js"></script>
+    <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jwplayer.key="5NfuSqroNKVzvdXI5f1VG3eV9qG79Jf/WW0LdQ==";
+//--><!]]>
+</script>
+    <script type="text/javascript" src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/js_uqWx2Bbhh9TiduovvQa8KYv1k_xqwBrQEPbzybx1iKM.js"></script>
+    <script type="text/javascript" src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/fuf6cds.js"></script>
+    <style type="text/css">.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}</style>
+    <style type="text/css">@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/7d485b/00000000000000003b9ad1b1/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/7d485b/00000000000000003b9ad1b1/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/7d485b/00000000000000003b9ad1b1/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/c9cde8/00000000000000003b9ad1b9/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/c9cde8/00000000000000003b9ad1b9/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/c9cde8/00000000000000003b9ad1b9/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/4ba64f/00000000000000003b9ad1ba/27/l?subset_id=2&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/4ba64f/00000000000000003b9ad1ba/27/d?subset_id=2&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/4ba64f/00000000000000003b9ad1ba/27/a?subset_id=2&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}</style>
+    <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+try{Typekit.load();}catch(e){}
+//--><!]]>
+</script>
+    <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WS38CK');
+//--><!]]>
+</script>
+    <script type="text/javascript" src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/js_gFCCECTcVj-XAKNjxGUi2qCvd0DuptvT43Rt_vur6vQ.js"></script>
+    <script type="text/javascript" src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/js_L_Mb3M_ec1e5-mBhb9vyclYkgJ9nvRji4_tfiN_HuwI.js"></script>
+    <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"dmemain","theme_token":"t7_K3mE7vLeX71X64a2lbqJq3AodyKLpw17Gyu1W7A0","js":{"sites\/all\/modules\/contrib\/picture\/picturefill2\/picturefill.min.js":1,"sites\/all\/modules\/contrib\/picture\/picture.min.js":1,"sites\/all\/themes\/dmemain\/js\/playlist.js":1,"0":1,"\/\/www.googleadservices.com\/pagead\/conversion.js":1,"sites\/all\/themes\/dmemain\/js\/pages\/video.js":1,"sites\/all\/themes\/dmemain\/js\/share.js":1,"sites\/all\/themes\/dmemain\/js\/feedback.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/prism\/prism.js":1,"sites\/all\/modules\/contrib\/prism\/js\/prism.settings.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"1":1,"sites\/all\/modules\/custom\/vidhist\/scripts\/vidhist.uuid.js":1,"sites\/all\/modules\/custom\/vidhist\/scripts\/vidhist.js":1,"sites\/all\/modules\/contrib\/ejectorseat\/ejectorseat.js":1,"sites\/all\/modules\/custom\/vidhist\/scripts\/vidhist_jwplayer.js":1,"sites\/all\/modules\/contrib\/flag\/theme\/flag.js":1,"sites\/all\/themes\/dmemain\/js\/knockout.js":1,"sites\/all\/modules\/custom\/drupalizevideofield\/jwplayer\/jwplayer.js":1,"2":1,"sites\/all\/modules\/custom\/jswatchdog\/jswatchdog.js":1,"\/\/use.typekit.net\/fuf6cds.js":1,"3":1,"4":1,"sites\/all\/modules\/contrib\/webform\/js\/webform.js":1,"sites\/all\/modules\/contrib\/datalayer\/datalayer.js":1,"sites\/all\/themes\/dmemain\/js\/script.js":1,"sites\/all\/themes\/dmemain\/js\/jquery.tooltipster.min.js":1,"sites\/all\/themes\/dmemain\/js\/jquery.magnific-popup.min.js":1,"sites\/all\/themes\/dmemain\/js\/draggableviews_table.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/libraries\/prism\/prism.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/contrib\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/custom\/membership_entity\/membership_entity.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/contrib\/picture\/picture_wysiwyg.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/flag\/theme\/flag.css":1,"sites\/all\/themes\/dmemain\/css\/pages\/video.css":1,"public:\/\/honeypot\/honeypot.css":1,"sites\/all\/modules\/contrib\/webform\/css\/webform.css":1,"sites\/all\/themes\/dmemain\/css\/normalize.css":1,"sites\/all\/themes\/dmemain\/css\/style.css":1,"sites\/all\/themes\/dmemain\/modules\/system\/system.menus.css":1,"sites\/all\/themes\/dmemain\/modules\/system\/system.messages.css":1,"sites\/all\/themes\/dmemain\/ds_2col.css":1}},"ejectorSeat":{"interval":"60","url":"\/ejectorseat\/check","ignoreFocus":false},"vidHist":{"nid":"682","uid":"40184","dataPath":"\/?q=_vidhist-post-data","dataInterval":15000,"dataMinimumReportTime":"10","positionPath":"\/?q=_vidhist-get-position","securityToken":"EcVC8D0e8BlnaVliq1A-OAC5Euf7bo2IBCpUqmmc_ts"},"dme":{"nid":"682"},"urlIsAjaxTrusted":{"\/search":true,"\/videos\/installing-and-configuring-git?p=1173":true},"jwplayer":{"skin":"https:\/\/drupalize.me\/sites\/all\/modules\/custom\/drupalizevideofield\/jwplayer\/skins\/bekle.xml?v=6.12.4950","html5player":"https:\/\/drupalize.me\/sites\/all\/modules\/custom\/drupalizevideofield\/jwplayer\/jwplayer.html5.js?v=6.12.4950","flashplayer":"https:\/\/drupalize.me\/sites\/all\/modules\/custom\/drupalizevideofield\/jwplayer\/jwplayer.flash.swf?v=6.12.4950","width":"100%","primary":"html5","aspectratio":"16:9","playlist":[{"image":"https:\/\/drupalize.me\/sites\/default\/files\/videoasset_screenshots\/git_3.png","tracks":[{"file":"https:\/\/drupalize.me\/v\/captions\/file\/bb5f79cc-e14d-43e1-a447-2554c3725840---eng.srt","label":"English","kind":"captions"}]}],"abouttext":"Go to Drupalize.Me","aboutlink":"http:\/\/drupalize.me","entity_id":"636","entity_label":"Installing and Configuring Git"},"jswatchdogLimit":3,"dmemain":{"themePath":"https:\/\/drupalize.me\/sites\/all\/themes\/dmemain"},"dataLayer":{"languages":{"en":{"language":"en","name":"English","native":"English","direction":0,"enabled":1,"plurals":0,"formula":"","domain":"","prefix":"","weight":0,"javascript":""}},"defaultLang":"en"}});
+//--><!]]>
+</script> <meta name="apple-mobile-web-app-title" content="Drupalize.Me">
+    <meta name="google-site-verification" content="J6NXI_f01vAsVTXxc2YB-R2l0BXYlElfx7ZK_sbM_v4">
+    <link rel="apple-touch-icon" type="image/png" href="https://drupalize.me/videos/sites/all/themes/dmemain/images/icon.57.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="https://drupalize.me/videos/sites/all/themes/dmemain/images/icon.72.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="https://drupalize.me/videos/sites/all/themes/dmemain/images/icon.114.png">
+    <script src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/a"></script>
+    <style type="text/css"></style>
+  </head>
+  <body class="html not-front logged-in one-sidebar sidebar-first page-node page-node- page-node-682 node-type-video l-has-sidebar l-has-hero language-php">
+    <!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WS38CK"
+style="display:none;visibility:hidden" width="0" height="0"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="skip-link"> <a href="#main-content" class="element-invisible element-focusable">Skip
+        to main content</a> </div>
+    <header class="l-header" role="banner">
+      <div class="l-container">
+        <h1 class="site-name"><a href="https://drupalize.me/">Drupalize.Me</a></h1>
+        <nav class="l-navigation navigation--container" role="navigation"> <a class="navigation--toggle"><span
+              class="navigation--toggle-icon"> <span></span> <span></span> <span></span>
+              <span></span> </span> Menu</a>
+          <div class="region region-navigation">
+            <div id="block-views-ab071781dda84edd1ed905bc0716b2a1" class="block block-views search--block-form">
+              <div class="content">
+                <form action="/search" method="get" id="views-exposed-form-drupalizesitewidesearch-page"
+                  accept-charset="UTF-8">
+                  <div>
+                    <div class="search--form">
+                      <div class="form-item form-type-textfield form-item-query">
+                        <input id="edit-query" name="query" size="30" maxlength="128"
+                          class="form-text" type="text">
+                      </div>
+                      <input id="edit-submit-drupalizesitewidesearch" name="" value="Search"
+                        class="form-submit" type="submit"></div>
+                    <div class="search--form--resultsinfo"> <span class="search--form--count">Showing
+                        0 results</span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div id="block-dmeblocks-primary-navigation" class="secondary-info block">
+              <div class="content">
+                <!-- dmeblocks-primary_navigation.tpl.php -->
+                <ul class="navigation--menu">
+                  <li class="navigation--menu-item"><a href="https://drupalize.me/?t=1573838732"
+                      alt="Home">Home</a></li>
+                  <li class="navigation--menu-item"><a href="https://drupalize.me/user"
+                      alt="Account">Account</a></li>
+                  <li class="navigation--menu-item"><a href="https://drupalize.me/guides"
+                      alt="Guides">Guides</a></li>
+                  <li class="navigation--menu-item"><a href="https://drupalize.me/user/logout"
+                      alt="Log out">Log out</a></li>
+                </ul>
+                <!-- /dmeblocks-primary_navigation.tpl.php --> </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main role="main">
+      <div class="l-hero">
+        <div class="l-container">
+          <div class="region region-hero">
+            <div id="block-dmeblocks-video-player" class="secondary-info block">
+              <div class="content">
+                <div class="hero--shadow hero--has-playlist hero--has-transcript"
+                  vocab="http://schema.org/" typeof="VideoObject">
+                  <meta property="name" content="Installing and Configuring Git">
+                  <meta property="description" content="&lt;p&gt;In this lesson we take a look at the methods available to install Git on different operating systems including Windows, OS X, and Linux and how to ensure that you&amp;#39;re environment is properly setup to start using Git. Then we walk through the installation on OS X and finally we&amp;#39;ll cover how to invoke Git from the command line and set some basic configuration options like telling Git who we are. If you would like to see Git installed on Windows, you can take a look at our &lt;a href=&quot;videos/install-git&quot;&gt;Drupal Ladder: Install Git lesson&lt;/a&gt;. &lt;strong&gt;Learning objectives:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;	&lt;li&gt;Know where to go to download the latest verion of Git&lt;/li&gt;
+	&lt;li&gt;Be able to install Git on your operating system of choice.&lt;/li&gt;	&lt;li&gt;Be able to verify that Git is indeed running in your environment.&lt;/li&gt;
+	&lt;li&gt;Do some Git configuration with &lt;code&gt;`git config`, ~/.gitconfig&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;
+">
+                  <meta property="duration" content="TM10S48">
+                  <meta property="timeRequired" content="TM10S48">
+                  <meta property="thumbnailUrl" content="https://drupalize.me/sites/default/files/videoasset_screenshots/git_3.png">
+                  <meta property="dateCreated" content="2013-03-13T08:31:21-05:00">
+                  <meta property="uploadedDate" content="2013-03-13T08:31:21-05:00">
+                  <meta property="keywords" content="installation,Joe Shindelar,git,version control,configuration,git config">
+                  <meta property="drupalVersion" content="">
+                  <meta property="isFree" content="yes">
+                  <div class="video--player">
+                    <div class="video--wrapper">
+                      <div class="entity entity-videoasset videoasset-videoasset clearfix">
+                        <h2> Installing and Configuring Git </h2>
+                        <div class="content">
+                          <div class="field field-name-field-videoasset-levels field-type-drupalizevideofield field-label-hidden">
+                            <div class="field-items">
+                              <div class="field-item even">
+                                <div class="jwplayer aspectMode playlist-none jw-user-inactive"
+                                  id="drupalizeme-video-player" tabindex="0" style="width: 100%; background-color: rgb(0, 0, 0); display: inline-block; opacity: 1;">
+                                  <div class="jwclick" id="drupalizeme-video-player_menu"
+                                    style="display: none;">
+                                    <div class="jwclick_item">Go to Drupalize.Me
+                                      ...</div>
+                                  </div>
+                                  <span class="jwmain" id="drupalizeme-video-player_view"><span
+                                      class="jwvideo" id="drupalizeme-video-player_media"
+                                      style="opacity: 0;"><video x-webkit-airplay="allow"
+                                        webkit-playsinline="" style="transform: scale(0.861827, 0.8625); inset: -33px -59px; width: 854px; height: 480px;"></video></span><span
+                                      class="jwcontrols">
+                                      <div id="drupalizeme-video-player_caption"
+                                        class="jwcaptions">
+                                        <div style="display: none; height: auto; position: absolute; bottom: 20px; text-align: center; width: 100%;">
+                                          <div style="display: inline-block;"><span
+                                              style="color: rgb(255, 255, 255); display: inline-block; font-family: Arial, sans-serif; font-style: normal; font-weight: normal; text-align: center; text-decoration: none; overflow-wrap: break-word; background-color: rgb(0, 0, 0);"></span></div>
+                                        </div>
+                                      </div>
+                                      <div id="drupalizeme-video-player_extra_button">Next</div>
+                                      <div id="drupalizeme-video-player_display"
+                                        class="jwdisplay has-extra-button" style="display: block;">
+                                        <div class="jwpreview jwexactfit"></div>
+                                        <div class="jwdisplayIcon" id="drupalizeme-video-player_display_button"
+                                          style="opacity: 1; display: table; background-size: 18px 100%, 36px 100%, 18px 100%; cursor: pointer;">
+                                          <div class="jwtext" style="display: none;"></div>
+                                          <div class="jwicon" id="drupalizeme-video-player_display_button_replay"
+                                            style="transform: rotate(0deg);"></div>
+                                        </div>
+                                      </div>
+                                      <img class="jwlogo" id="drupalizeme-video-player_logo"
+                                        style="display: none; visibility: visible; opacity: 1;">
+                                      <div class="jwdock" id="drupalizeme-video-player_dock"
+                                        style="display: block; opacity: 1;">
+                                        <div class="jwdockbuttons">
+                                          <div class="capLeft"></div>
+                                          <div class="capRight"></div>
+                                          <div class="divider"></div>
+                                          <div class="button">
+                                            <div id="drupalizeme-video-player_dock_speed">&nbsp;</div>
+                                          </div>
+                                          <div class="divider"></div>
+                                          <div class="button">
+                                            <div id="drupalizeme-video-player_dock_transcript">&nbsp;</div>
+                                          </div>
+                                          <div class="divider"></div>
+                                          <div class="button">
+                                            <div id="drupalizeme-video-player_dock_layout">&nbsp;</div>
+                                          </div>
+                                        </div>
+                                        <div class="jwoverlay" id="drupalizeme-video-player_dock_speed_tooltip"
+                                          style="padding: 7px 8px 5px;">
+                                          <div class="jwarrow" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAACCAYAAABsfz2XAAAAEklEQVR42mP8//8/AymAkVQNAKxXBf28v71oAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 12px 2px; position: absolute; top: 0px; width: 12px; height: 2px; left: 50%;"></div>
+                                          <div class="jwborder jwtopleft" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAKklEQVR4AWMAgfDEbEUgngPEN4H4GTIGSSoD8Q2EIKaCOSAGPgU38SkAAMC4PNRpp1WXAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; top: 2px; left: 0px;"></div>
+                                          <div class="jwborder jwbottomleft" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAJElEQVR4AWMIT8y+CcTPcGGQgjmEFKgA8Q18CkBYGWrSLXQFACgvPfv57OSPAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; bottom: 0px; left: 0px;"></div>
+                                          <div class="jwborder jwtopright" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAJ0lEQVQIW2MIT8x+hoZvAvEcIFZkAAEsCmD4BhAr41MAwnMIKbgNACzFPNb81cASAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; top: 2px; right: 0px;"></div>
+                                          <div class="jwborder jwbottomright" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAI0lEQVR4AWMIT8x+hgffJqRgDj4FN4BYBZuCWyCdQKwMxAwAdNc9/fNuUQkAAAAASUVORK5CYII=&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; bottom: 0px; right: 0px;"></div>
+                                          <div class="jwborder jwleft" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAYAAABllJ3tAAAAEUlEQVR4AWMIT8x+hg8TVAAAJVYgkaI4kHwAAAAASUVORK5CYII=&quot;) repeat scroll center center / 8px 2px; width: 8px; left: 0px;"></div>
+                                          <div class="jwborder jwright" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAYAAABllJ3tAAAAEUlEQVR4AWMIT8x+hg8TVAAAJVYgkaI4kHwAAAAASUVORK5CYII=&quot;) repeat scroll center center / 8px 2px; width: 8px; right: 0px;"></div>
+                                          <div class="jwborder jwtop" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAYAAAC6Jt6KAAAAEUlEQVR4AWMIT8x+RgoehBoAPydhsboAB+sAAAAASUVORK5CYII=&quot;) repeat scroll center center / 12px 4px; height: 4px; top: 2px;"></div>
+                                          <div class="jwborder jwbottom" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAYAAAC6Jt6KAAAAEUlEQVR4AWMIT8x+RgoehBoAPydhsboAB+sAAAAASUVORK5CYII=&quot;) repeat scroll center center / 12px 4px; height: 4px; bottom: 0px;"></div>
+                                          <div class="jwback" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAACCAYAAABsfz2XAAAAEUlEQVR4AWMIT8x+RgomWQMARa0w2QoMJSQAAAAASUVORK5CYII=&quot;) repeat scroll center center / 12px 2px; inset: 6px 8px 4px;"></div>
+                                          <div class="jwcontents">
+                                            <div id="drupalizeme-video-player_dock_speed_label">Adjust
+                                              playback speed</div>
+                                          </div>
+                                        </div>
+                                        <div class="jwoverlay" id="drupalizeme-video-player_dock_transcript_tooltip"
+                                          style="padding: 7px 8px 5px;">
+                                          <div class="jwarrow" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAACCAYAAABsfz2XAAAAEklEQVR42mP8//8/AymAkVQNAKxXBf28v71oAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 12px 2px; position: absolute; top: 0px; width: 12px; height: 2px; left: 50%;"></div>
+                                          <div class="jwborder jwtopleft" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAKklEQVR4AWMAgfDEbEUgngPEN4H4GTIGSSoD8Q2EIKaCOSAGPgU38SkAAMC4PNRpp1WXAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; top: 2px; left: 0px;"></div>
+                                          <div class="jwborder jwbottomleft" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAJElEQVR4AWMIT8y+CcTPcGGQgjmEFKgA8Q18CkBYGWrSLXQFACgvPfv57OSPAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; bottom: 0px; left: 0px;"></div>
+                                          <div class="jwborder jwtopright" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAJ0lEQVQIW2MIT8x+hoZvAvEcIFZkAAEsCmD4BhAr41MAwnMIKbgNACzFPNb81cASAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; top: 2px; right: 0px;"></div>
+                                          <div class="jwborder jwbottomright" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAI0lEQVR4AWMIT8x+hgffJqRgDj4FN4BYBZuCWyCdQKwMxAwAdNc9/fNuUQkAAAAASUVORK5CYII=&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; bottom: 0px; right: 0px;"></div>
+                                          <div class="jwborder jwleft" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAYAAABllJ3tAAAAEUlEQVR4AWMIT8x+hg8TVAAAJVYgkaI4kHwAAAAASUVORK5CYII=&quot;) repeat scroll center center / 8px 2px; width: 8px; left: 0px;"></div>
+                                          <div class="jwborder jwright" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAYAAABllJ3tAAAAEUlEQVR4AWMIT8x+hg8TVAAAJVYgkaI4kHwAAAAASUVORK5CYII=&quot;) repeat scroll center center / 8px 2px; width: 8px; right: 0px;"></div>
+                                          <div class="jwborder jwtop" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAYAAAC6Jt6KAAAAEUlEQVR4AWMIT8x+RgoehBoAPydhsboAB+sAAAAASUVORK5CYII=&quot;) repeat scroll center center / 12px 4px; height: 4px; top: 2px;"></div>
+                                          <div class="jwborder jwbottom" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAYAAAC6Jt6KAAAAEUlEQVR4AWMIT8x+RgoehBoAPydhsboAB+sAAAAASUVORK5CYII=&quot;) repeat scroll center center / 12px 4px; height: 4px; bottom: 0px;"></div>
+                                          <div class="jwback" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAACCAYAAABsfz2XAAAAEUlEQVR4AWMIT8x+RgomWQMARa0w2QoMJSQAAAAASUVORK5CYII=&quot;) repeat scroll center center / 12px 2px; inset: 6px 8px 4px;"></div>
+                                          <div class="jwcontents">
+                                            <div id="drupalizeme-video-player_dock_transcript_label">Toggle
+                                              transcript</div>
+                                          </div>
+                                        </div>
+                                        <div class="jwoverlay" id="drupalizeme-video-player_dock_layout_tooltip"
+                                          style="padding: 7px 8px 5px;">
+                                          <div class="jwarrow" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAACCAYAAABsfz2XAAAAEklEQVR42mP8//8/AymAkVQNAKxXBf28v71oAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 12px 2px; position: absolute; top: 0px; width: 12px; height: 2px; left: 50%;"></div>
+                                          <div class="jwborder jwtopleft" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAKklEQVR4AWMAgfDEbEUgngPEN4H4GTIGSSoD8Q2EIKaCOSAGPgU38SkAAMC4PNRpp1WXAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; top: 2px; left: 0px;"></div>
+                                          <div class="jwborder jwbottomleft" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAJElEQVR4AWMIT8y+CcTPcGGQgjmEFKgA8Q18CkBYGWrSLXQFACgvPfv57OSPAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; bottom: 0px; left: 0px;"></div>
+                                          <div class="jwborder jwtopright" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAJ0lEQVQIW2MIT8x+hoZvAvEcIFZkAAEsCmD4BhAr41MAwnMIKbgNACzFPNb81cASAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; top: 2px; right: 0px;"></div>
+                                          <div class="jwborder jwbottomright" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAI0lEQVR4AWMIT8x+hgffJqRgDj4FN4BYBZuCWyCdQKwMxAwAdNc9/fNuUQkAAAAASUVORK5CYII=&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; bottom: 0px; right: 0px;"></div>
+                                          <div class="jwborder jwleft" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAYAAABllJ3tAAAAEUlEQVR4AWMIT8x+hg8TVAAAJVYgkaI4kHwAAAAASUVORK5CYII=&quot;) repeat scroll center center / 8px 2px; width: 8px; left: 0px;"></div>
+                                          <div class="jwborder jwright" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAYAAABllJ3tAAAAEUlEQVR4AWMIT8x+hg8TVAAAJVYgkaI4kHwAAAAASUVORK5CYII=&quot;) repeat scroll center center / 8px 2px; width: 8px; right: 0px;"></div>
+                                          <div class="jwborder jwtop" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAYAAAC6Jt6KAAAAEUlEQVR4AWMIT8x+RgoehBoAPydhsboAB+sAAAAASUVORK5CYII=&quot;) repeat scroll center center / 12px 4px; height: 4px; top: 2px;"></div>
+                                          <div class="jwborder jwbottom" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAYAAAC6Jt6KAAAAEUlEQVR4AWMIT8x+RgoehBoAPydhsboAB+sAAAAASUVORK5CYII=&quot;) repeat scroll center center / 12px 4px; height: 4px; bottom: 0px;"></div>
+                                          <div class="jwback" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAACCAYAAABsfz2XAAAAEUlEQVR4AWMIT8x+RgomWQMARa0w2QoMJSQAAAAASUVORK5CYII=&quot;) repeat scroll center center / 12px 2px; inset: 6px 8px 4px;"></div>
+                                          <div class="jwcontents">
+                                            <div id="drupalizeme-video-player_dock_layout_label">Switch
+                                              layout</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <span id="drupalizeme-video-player_controlbar"
+                                        class="jwcontrolbar" style="height: 30px; bottom: 10px; left: 10px; right: 10px; max-width: 800px; display: none; opacity: 0;"><span
+                                          class="jwbackground">&nbsp;</span><span
+                                          class="jwcapLeft">&nbsp;</span><span class="jwgroup jwleft"><span
+                                            class="jwplay"><span><button tabindex="-1"
+                                                type="button">&nbsp;</button></span><span
+                                              class="jwblankDivider"></span></span><span
+                                            class="jwprev" style="display: none;"><span><button
+                                                tabindex="-1" type="button">&nbsp;</button></span><span
+                                              class="jwblankDivider"></span></span><span
+                                            class="jwnext" style="display: none;"><span><button
+                                                tabindex="-1" type="button">&nbsp;</button></span><span
+                                              class="jwblankDivider"></span></span><span
+                                            id="drupalizeme-video-player_controlbar_elapsed"
+                                            class="jwtext jwelapsed jwhidden" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAeCAYAAAAPSW++AAAAD0lEQVQoU2NgGAWjYKQAAALuAAGL6/H9AAAAAElFTkSuQmCC&quot;) repeat-x scroll center center / 1px 30px;">00:00</span></span><span
+                                          class="jwgroup jwcenter" style="left: 66px; right: 148px;"><span
+                                            class="jwslider jwtime" style="display: block;"><span
+                                              class="jwtimeSliderCapLeft">&nbsp;</span><span
+                                              class="jwrail"><span class="jwrailgroup Rail"><span
+                                                  class="jwtimeSliderRailCapLeft">&nbsp;</span><span
+                                                  class="jwtimeSliderRail">&nbsp;</span><span
+                                                  class="jwtimeSliderRailCapRight jwcapRight">&nbsp;</span></span><span
+                                                class="jwrailgroup Buffer" style="width: 0%; opacity: 0;"><span
+                                                  class="jwtimeSliderBufferCapLeft">&nbsp;</span><span
+                                                  class="jwtimeSliderBuffer">&nbsp;</span><span
+                                                  class="jwtimeSliderBufferCapRight jwcapRight">&nbsp;</span></span><span
+                                                class="jwprogressOverflow" style="width: 0%; opacity: 0;"><span
+                                                  class="jwrailgroup Progress"><span
+                                                    class="jwtimeSliderProgressCapLeft">&nbsp;</span><span
+                                                    class="jwtimeSliderProgress">&nbsp;</span><span
+                                                    class="jwtimeSliderProgressCapRight jwcapRight">&nbsp;</span></span></span><span
+                                                class="jwtimeSliderThumb jwthumb"
+                                                style="margin-left: -7px; left: 0%; opacity: 0;">&nbsp;</span>
+                                              <div class="jwoverlay" id="drupalizeme-video-player_controlbar_timetooltip"
+                                                style="padding: 5px 8px 7px; left: 156px; opacity: 0; visibility: hidden; margin-left: -24px;">
+                                                <div class="jwarrow" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAACCAYAAABsfz2XAAAAEklEQVR42mP8//8/AymAkVQNAKxXBf28v71oAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 12px 2px; position: absolute; bottom: 0px; width: 12px; height: 2px; left: 50%; margin-left: -6px;"></div>
+                                                <div class="jwborder jwtopleft"
+                                                  style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAKklEQVR4AWMAgfDEbEUgngPEN4H4GTIGSSoD8Q2EIKaCOSAGPgU38SkAAMC4PNRpp1WXAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; top: 0px; left: 0px;"></div>
+                                                <div class="jwborder jwbottomleft"
+                                                  style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAJElEQVR4AWMIT8y+CcTPcGGQgjmEFKgA8Q18CkBYGWrSLXQFACgvPfv57OSPAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; bottom: 2px; left: 0px;"></div>
+                                                <div class="jwborder jwtopright"
+                                                  style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAJ0lEQVQIW2MIT8x+hoZvAvEcIFZkAAEsCmD4BhAr41MAwnMIKbgNACzFPNb81cASAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; top: 0px; right: 0px;"></div>
+                                                <div class="jwborder jwbottomright"
+                                                  style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAI0lEQVR4AWMIT8x+hgffJqRgDj4FN4BYBZuCWyCdQKwMxAwAdNc9/fNuUQkAAAAASUVORK5CYII=&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; bottom: 2px; right: 0px;"></div>
+                                                <div class="jwborder jwleft" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAYAAABllJ3tAAAAEUlEQVR4AWMIT8x+hg8TVAAAJVYgkaI4kHwAAAAASUVORK5CYII=&quot;) repeat scroll center center / 8px 2px; width: 8px; left: 0px;"></div>
+                                                <div class="jwborder jwright" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAYAAABllJ3tAAAAEUlEQVR4AWMIT8x+hg8TVAAAJVYgkaI4kHwAAAAASUVORK5CYII=&quot;) repeat scroll center center / 8px 2px; width: 8px; right: 0px;"></div>
+                                                <div class="jwborder jwtop" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAYAAAC6Jt6KAAAAEUlEQVR4AWMIT8x+RgoehBoAPydhsboAB+sAAAAASUVORK5CYII=&quot;) repeat scroll center center / 12px 4px; height: 4px; top: 0px;"></div>
+                                                <div class="jwborder jwbottom" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAYAAAC6Jt6KAAAAEUlEQVR4AWMIT8x+RgoehBoAPydhsboAB+sAAAAASUVORK5CYII=&quot;) repeat scroll center center / 12px 4px; height: 4px; bottom: 2px;"></div>
+                                                <div class="jwback" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAACCAYAAABsfz2XAAAAEUlEQVR4AWMIT8x+RgomWQMARa0w2QoMJSQAAAAASUVORK5CYII=&quot;) repeat scroll center center / 12px 2px; inset: 4px 8px 6px;"></div>
+                                                <div class="jwcontents">
+                                                  <div>
+                                                    <div id="drupalizeme-video-player_controlbar_thumb"
+                                                      style="display: none;"></div>
+                                                    <div class="jwoverlaytext">03:23</div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </span><span class="jwtimeSliderCapRight">&nbsp;</span></span><span
+                                            id="drupalizeme-video-player_controlbar_alt"
+                                            class="jwtext jwalt" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAeCAYAAAAPSW++AAAAD0lEQVQoU2NgGAWjYKQAAALuAAGL6/H9AAAAAElFTkSuQmCC&quot;) repeat-x scroll center center / 1px 30px; display: none;"></span></span><span
+                                          class="jwgroup jwright" style="right: 5px;"><span
+                                            id="drupalizeme-video-player_controlbar_duration"
+                                            class="jwtext jwduration jwhidden" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAeCAYAAAAPSW++AAAAD0lEQVQoU2NgGAWjYKQAAALuAAGL6/H9AAAAAElFTkSuQmCC&quot;) repeat-x scroll center center / 1px 30px;">00:00</span><span
+                                            class="jwhd" style=""><span class="jwblankDivider"></span><span><button
+                                                tabindex="-1" type="button" class="off">&nbsp;</button></span>
+                                            <div class="jwoverlay" id="drupalizeme-video-player_controlbar_hd_overlay"
+                                              style="padding: 5px 8px 7px; left: 50%; opacity: 0; visibility: hidden;">
+                                              <div class="jwarrow" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAACCAYAAABsfz2XAAAAEklEQVR42mP8//8/AymAkVQNAKxXBf28v71oAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 12px 2px; position: absolute; bottom: 0px; width: 12px; height: 2px; left: 50%;"></div>
+                                              <div class="jwborder jwtopleft" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAKklEQVR4AWMAgfDEbEUgngPEN4H4GTIGSSoD8Q2EIKaCOSAGPgU38SkAAMC4PNRpp1WXAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; top: 0px; left: 0px;"></div>
+                                              <div class="jwborder jwbottomleft"
+                                                style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAJElEQVR4AWMIT8y+CcTPcGGQgjmEFKgA8Q18CkBYGWrSLXQFACgvPfv57OSPAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; bottom: 2px; left: 0px;"></div>
+                                              <div class="jwborder jwtopright" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAJ0lEQVQIW2MIT8x+hoZvAvEcIFZkAAEsCmD4BhAr41MAwnMIKbgNACzFPNb81cASAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; top: 0px; right: 0px;"></div>
+                                              <div class="jwborder jwbottomright"
+                                                style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAI0lEQVR4AWMIT8x+hgffJqRgDj4FN4BYBZuCWyCdQKwMxAwAdNc9/fNuUQkAAAAASUVORK5CYII=&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; bottom: 2px; right: 0px;"></div>
+                                              <div class="jwborder jwleft" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAYAAABllJ3tAAAAEUlEQVR4AWMIT8x+hg8TVAAAJVYgkaI4kHwAAAAASUVORK5CYII=&quot;) repeat scroll center center / 8px 2px; width: 8px; left: 0px;"></div>
+                                              <div class="jwborder jwright" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAYAAABllJ3tAAAAEUlEQVR4AWMIT8x+hg8TVAAAJVYgkaI4kHwAAAAASUVORK5CYII=&quot;) repeat scroll center center / 8px 2px; width: 8px; right: 0px;"></div>
+                                              <div class="jwborder jwtop" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAYAAAC6Jt6KAAAAEUlEQVR4AWMIT8x+RgoehBoAPydhsboAB+sAAAAASUVORK5CYII=&quot;) repeat scroll center center / 12px 4px; height: 4px; top: 0px;"></div>
+                                              <div class="jwborder jwbottom" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAYAAAC6Jt6KAAAAEUlEQVR4AWMIT8x+RgoehBoAPydhsboAB+sAAAAASUVORK5CYII=&quot;) repeat scroll center center / 12px 4px; height: 4px; bottom: 2px;"></div>
+                                              <div class="jwback" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAACCAYAAABsfz2XAAAAEUlEQVR4AWMIT8x+RgomWQMARa0w2QoMJSQAAAAASUVORK5CYII=&quot;) repeat scroll center center / 12px 2px; inset: 4px 8px 6px;"></div>
+                                              <div class="jwcontents">
+                                                <div class="jwmenu" id="drupalizeme-video-player_controlbar_hd">
+                                                  <div class="jwoption active" id="drupalizeme-video-player_controlbar_hd_option_0">0</div>
+                                                  <div class="jwoption" id="drupalizeme-video-player_controlbar_hd_option_1">1</div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </span><span class="jwcc" style=""><span
+                                              class="jwblankDivider"></span><span><button
+                                                tabindex="-1" type="button" class="off">&nbsp;</button></span>
+                                            <div class="jwoverlay" id="drupalizeme-video-player_controlbar_cc_overlay"
+                                              style="padding: 5px 8px 7px; left: 50%; opacity: 0; visibility: hidden;">
+                                              <div class="jwarrow" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAACCAYAAABsfz2XAAAAEklEQVR42mP8//8/AymAkVQNAKxXBf28v71oAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 12px 2px; position: absolute; bottom: 0px; width: 12px; height: 2px; left: 50%;"></div>
+                                              <div class="jwborder jwtopleft" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAKklEQVR4AWMAgfDEbEUgngPEN4H4GTIGSSoD8Q2EIKaCOSAGPgU38SkAAMC4PNRpp1WXAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; top: 0px; left: 0px;"></div>
+                                              <div class="jwborder jwbottomleft"
+                                                style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAJElEQVR4AWMIT8y+CcTPcGGQgjmEFKgA8Q18CkBYGWrSLXQFACgvPfv57OSPAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; bottom: 2px; left: 0px;"></div>
+                                              <div class="jwborder jwtopright" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAJ0lEQVQIW2MIT8x+hoZvAvEcIFZkAAEsCmD4BhAr41MAwnMIKbgNACzFPNb81cASAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; top: 0px; right: 0px;"></div>
+                                              <div class="jwborder jwbottomright"
+                                                style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAI0lEQVR4AWMIT8x+hgffJqRgDj4FN4BYBZuCWyCdQKwMxAwAdNc9/fNuUQkAAAAASUVORK5CYII=&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; bottom: 2px; right: 0px;"></div>
+                                              <div class="jwborder jwleft" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAYAAABllJ3tAAAAEUlEQVR4AWMIT8x+hg8TVAAAJVYgkaI4kHwAAAAASUVORK5CYII=&quot;) repeat scroll center center / 8px 2px; width: 8px; left: 0px;"></div>
+                                              <div class="jwborder jwright" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAYAAABllJ3tAAAAEUlEQVR4AWMIT8x+hg8TVAAAJVYgkaI4kHwAAAAASUVORK5CYII=&quot;) repeat scroll center center / 8px 2px; width: 8px; right: 0px;"></div>
+                                              <div class="jwborder jwtop" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAYAAAC6Jt6KAAAAEUlEQVR4AWMIT8x+RgoehBoAPydhsboAB+sAAAAASUVORK5CYII=&quot;) repeat scroll center center / 12px 4px; height: 4px; top: 0px;"></div>
+                                              <div class="jwborder jwbottom" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAYAAAC6Jt6KAAAAEUlEQVR4AWMIT8x+RgoehBoAPydhsboAB+sAAAAASUVORK5CYII=&quot;) repeat scroll center center / 12px 4px; height: 4px; bottom: 2px;"></div>
+                                              <div class="jwback" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAACCAYAAABsfz2XAAAAEUlEQVR4AWMIT8x+RgomWQMARa0w2QoMJSQAAAAASUVORK5CYII=&quot;) repeat scroll center center / 12px 2px; inset: 4px 8px 6px;"></div>
+                                              <div class="jwcontents">
+                                                <div class="jwmenu" id="drupalizeme-video-player_controlbar_cc">
+                                                  <div class="jwoption active" id="drupalizeme-video-player_controlbar_cc_option_0">Off</div>
+                                                  <div class="jwoption" id="drupalizeme-video-player_controlbar_cc_option_1">English</div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </span><span class="jwmute"><span class="jwblankDivider"></span><span><button
+                                                tabindex="-1" type="button">&nbsp;</button></span>
+                                            <div class="jwoverlay" id="drupalizeme-video-player_controlbar_volumeoverlay"
+                                              style="padding: 5px 8px 7px; left: 50%; display: block; opacity: 0; visibility: hidden; margin-left: -14px;">
+                                              <div class="jwarrow" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAACCAYAAABsfz2XAAAAEklEQVR42mP8//8/AymAkVQNAKxXBf28v71oAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 12px 2px; position: absolute; bottom: 0px; width: 12px; height: 2px; left: 50%; margin-left: -6px;"></div>
+                                              <div class="jwborder jwtopleft" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAKklEQVR4AWMAgfDEbEUgngPEN4H4GTIGSSoD8Q2EIKaCOSAGPgU38SkAAMC4PNRpp1WXAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; top: 0px; left: 0px;"></div>
+                                              <div class="jwborder jwbottomleft"
+                                                style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAJElEQVR4AWMIT8y+CcTPcGGQgjmEFKgA8Q18CkBYGWrSLXQFACgvPfv57OSPAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; bottom: 2px; left: 0px;"></div>
+                                              <div class="jwborder jwtopright" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAJ0lEQVQIW2MIT8x+hoZvAvEcIFZkAAEsCmD4BhAr41MAwnMIKbgNACzFPNb81cASAAAAAElFTkSuQmCC&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; top: 0px; right: 0px;"></div>
+                                              <div class="jwborder jwbottomright"
+                                                style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAI0lEQVR4AWMIT8x+hgffJqRgDj4FN4BYBZuCWyCdQKwMxAwAdNc9/fNuUQkAAAAASUVORK5CYII=&quot;) repeat scroll center center / 8px 4px; width: 8px; height: 4px; bottom: 2px; right: 0px;"></div>
+                                              <div class="jwborder jwleft" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAYAAABllJ3tAAAAEUlEQVR4AWMIT8x+hg8TVAAAJVYgkaI4kHwAAAAASUVORK5CYII=&quot;) repeat scroll center center / 8px 2px; width: 8px; left: 0px;"></div>
+                                              <div class="jwborder jwright" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAYAAABllJ3tAAAAEUlEQVR4AWMIT8x+hg8TVAAAJVYgkaI4kHwAAAAASUVORK5CYII=&quot;) repeat scroll center center / 8px 2px; width: 8px; right: 0px;"></div>
+                                              <div class="jwborder jwtop" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAYAAAC6Jt6KAAAAEUlEQVR4AWMIT8x+RgoehBoAPydhsboAB+sAAAAASUVORK5CYII=&quot;) repeat scroll center center / 12px 4px; height: 4px; top: 0px;"></div>
+                                              <div class="jwborder jwbottom" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAYAAAC6Jt6KAAAAEUlEQVR4AWMIT8x+RgoehBoAPydhsboAB+sAAAAASUVORK5CYII=&quot;) repeat scroll center center / 12px 4px; height: 4px; bottom: 2px;"></div>
+                                              <div class="jwback" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAACCAYAAABsfz2XAAAAEUlEQVR4AWMIT8x+RgomWQMARa0w2QoMJSQAAAAASUVORK5CYII=&quot;) repeat scroll center center / 12px 2px; inset: 4px 8px 6px;"></div>
+                                              <div class="jwcontents"><span class="jwslider jwvolume jwvertical"><span
+                                                    class="jwvolumeCapTop">&nbsp;</span><span
+                                                    class="jwrail"><span class="jwrailgroup Rail"><span
+                                                        class="jwvolumeRailCapTop">&nbsp;</span><span
+                                                        class="jwvolumeRail">&nbsp;</span><span
+                                                        class="jwvolumeRailCapBottom jwcapBottom">&nbsp;</span></span><span
+                                                      class="jwrailgroup Progress"
+                                                      style="height: 90%; bottom: 0px;"><span
+                                                        class="jwvolumeProgressCapTop">&nbsp;</span><span
+                                                        class="jwvolumeProgress">&nbsp;</span><span
+                                                        class="jwvolumeProgressCapBottom jwcapBottom">&nbsp;</span><span
+                                                        class="jwvolumeThumb jwthumb"
+                                                        style="top: 0px;">&nbsp;</span></span></span><span
+                                                    class="jwvolumeCapBottom jwcapBottom">&nbsp;</span></span></div>
+                                            </div>
+                                          </span><span class="jwslider jwvolumeH jwhorizontal"
+                                            style="display: none;"><span class="jwrail"><span
+                                                class="jwrailgroup Rail"><span class="jwvolumeHRailCapLeft">&nbsp;</span><span
+                                                  class="jwvolumeHRail">&nbsp;</span><span
+                                                  class="jwvolumeHRailCapRight jwcapRight">&nbsp;</span></span><span
+                                                class="jwprogressOverflow" style="width: 90%; opacity: 1;"><span
+                                                  class="jwrailgroup Progress"><span
+                                                    class="jwvolumeHProgressCapLeft">&nbsp;</span><span
+                                                    class="jwvolumeHProgress">&nbsp;</span><span
+                                                    class="jwvolumeHProgressCapRight jwcapRight">&nbsp;</span></span></span></span></span><span
+                                            class="jwcast jwtoggle"><span class="jwblankDivider"></span><span><button
+                                                tabindex="-1" type="button">&nbsp;</button></span></span><span
+                                            class="jwfullscreen"><span class="jwblankDivider"></span><span><button
+                                                tabindex="-1" type="button">&nbsp;</button></span></span></span><span
+                                          class="jwcapRight">&nbsp;</span></span></span><span
+                                      class="jwinstream"></span>
+                                    <div id="drupalizeme-video-player_jwpsrv" style="position: absolute; top: 0px; z-index: 10;">
+                                      <div class="afs_ads" style="width: 1px; height: 1px; position: absolute; background: transparent none repeat scroll 0% 0%;">&nbsp;</div>
+                                    </div>
+                                  </span><span class="jwaspect"></span><span class="jwplaylistcontainer"></span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hero--sidebar">
+                    <div class="transcript">
+                      <div class="transcript--header">
+                        <ul class="transcript--menu nostyle">
+                          <li> <a href="#" class="scroll-toggle">Auto scroll on</a>
+                          </li>
+                          <li> <a href="#" class="close">Close</a> </li>
+                        </ul>
+                        <form onsubmit="return false;"> <label for="transcript--filter">Transcript
+                            filter</label> <input name="transcript-filter" placeholder="Filter transcript"
+                            class="filter" id="transcript-filter" type="search">
+                        </form>
+                      </div>
+                      <div class="transcript--list-wrapper">
+                        <ul class="transcript--list eng active" property="transcript"
+                          data-scrolling="on">
+                          <li> <a class="time" href="#" data-offset="0" data-offset-end="2">0:00</a>
+                            <div class="text">[Installing and Configuring Git]</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="2" data-offset-end="6">0:02</a>
+                            <div class="text">[Introduction to Git] [Chapter 3
+                              with Joe Shindelar] </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="6" data-offset-end="8">0:06</a>
+                            <div class="text">In this lesson, we're going to
+                              take a look at getting Git</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="8" data-offset-end="12">0:08</a>
+                            <div class="text">downloaded and installed, and some
+                              basic configuration options. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="12" data-offset-end="14">0:12</a>
+                            <div class="text">We'll start by going to the Git
+                              website </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="14" data-offset-end="16">0:14</a>
+                            <div class="text">and downloading the package that's
+                              appropriate</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="16" data-offset-end="19">0:16</a>
+                            <div class="text">for our operating system and then
+                              installing that. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="19" data-offset-end="23">0:19</a>
+                            <div class="text">After that, we're going to take a
+                              look at using the git config command</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="23" data-offset-end="26">0:23</a>
+                            <div class="text">in order to configure Git and tell
+                              it things like</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="26" data-offset-end="28">0:26</a>
+                            <div class="text">our name and our email address. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="28" data-offset-end="32">0:28</a>
+                            <div class="text">We'll also look at editing the
+                              .gitconfig file, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="32" data-offset-end="35">0:32</a>
+                            <div class="text">which contains that configuration
+                              information. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="35" data-offset-end="37">0:35</a>
+                            <div class="text">This allows us to do things like
+                              identify ourselves to Git</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="37" data-offset-end="43">0:37</a>
+                            <div class="text">and set other basic configuration
+                              options for our local host. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="43" data-offset-end="47">0:43</a>
+                            <div class="text">Okay. So the first thing you need
+                              to do to install Git</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="47" data-offset-end="51">0:47</a>
+                            <div class="text">is download the software itself. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="51" data-offset-end="56">0:51</a>
+                            <div class="text">You can do so by going to the Git
+                              website, at git-scm.com. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="56" data-offset-end="62">0:56</a>
+                            <div class="text">Once here, you can scroll down the
+                              page and click on the link for downloads. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="62" data-offset-end="64">1:02</a>
+                            <div class="text">And on the downloads page there's
+                              links for each </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="64" data-offset-end="67">1:04</a>
+                            <div class="text">of the different major operating
+                              systems:</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="67" data-offset-end="71">1:07</a>
+                            <div class="text">Mac OS X, Windows, Linux, and
+                              Solaris. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="71" data-offset-end="74">1:11</a>
+                            <div class="text">We're on a Mac, so we're going to
+                              download that version. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="74" data-offset-end="77">1:14</a>
+                            <div class="text">It's also got this handy little
+                              download option</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="77" data-offset-end="83">1:17</a>
+                            <div class="text">in the screen over here that tries
+                              to detect the appropriate version for your
+                              hardware. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="83" data-offset-end="89">1:23</a>
+                            <div class="text">This is appropriate for me. I'm
+                              going to get the latest stable release, 1.8.1.3.</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="89" data-offset-end="92">1:29</a>
+                            <div class="text">I'm going to download it for Mac.
+                            </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="92" data-offset-end="95">1:32</a>
+                            <div class="text">And it goes ahead and starts
+                              downloading the file for me. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="95" data-offset-end="98">1:35</a>
+                            <div class="text">I also want to point out that on
+                              the Linux side of things, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="98" data-offset-end="102">1:38</a>
+                            <div class="text">if I were to click on this link, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="102" data-offset-end="104">1:42</a>
+                            <div class="text">it actually gives me instructions
+                              for installing Git</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="104" data-offset-end="107">1:44</a>
+                            <div class="text">on a number of different Linux
+                              platforms. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="107" data-offset-end="110">1:47</a>
+                            <div class="text">So for the most part, you should
+                              be able to find your Linux platform</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="110" data-offset-end="114">1:50</a>
+                            <div class="text">in the list here, and just come
+                              and run the appropriate command. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="114" data-offset-end="116">1:54</a>
+                            <div class="text">Git's open source as well, so even
+                              if you can't find </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="116" data-offset-end="120">1:56</a>
+                            <div class="text">the version for your hardware, you
+                              could download the source</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="120" data-offset-end="123">2:00</a>
+                            <div class="text">and compile it if you felt so
+                              inclined. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="123" data-offset-end="126">2:03</a>
+                            <div class="text">So now that we've got a copy of
+                              the file downloaded, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="126" data-offset-end="130">2:06</a>
+                            <div class="text">I'm going to close my browser
+                              window</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="130" data-offset-end="135">2:10</a>
+                            <div class="text">and open up that file. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="139" data-offset-end="143">2:19</a>
+                            <div class="text">This process should be pretty much
+                              the same for Windows as well. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="143" data-offset-end="146">2:23</a>
+                            <div class="text">Download the installer; run the
+                              installer. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="146" data-offset-end="152">2:26</a>
+                            <div class="text">The actual application may be
+                              slightly different, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="152" data-offset-end="154">2:32</a>
+                            <div class="text">but the process is pretty much the
+                              same. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="156" data-offset-end="158">2:36</a>
+                            <div class="text">Yes, I'd like to open it. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="158" data-offset-end="160">2:38</a>
+                            <div class="text">I run through the installer. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="160" data-offset-end="165">2:40</a>
+                            <div class="text">I'm just going to say yes for all
+                              of these options. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="165" data-offset-end="169">2:45</a>
+                            <div class="text">And it tells me the installation
+                              was successful. Great. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="169" data-offset-end="174">2:49</a>
+                            <div class="text">I can confirm that by opening up a
+                              new terminal window. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="174" data-offset-end="178">2:54</a>
+                            <div class="text">Again, the access to the command
+                              line may be a little bit different</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="178" data-offset-end="180">2:58</a>
+                            <div class="text">depending on the environment
+                              you're using, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="180" data-offset-end="183">3:00</a>
+                            <div class="text">but on a Mac I just open up the
+                              terminal. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="183" data-offset-end="187">3:03</a>
+                            <div class="text">And if I type 'which git,' in the
+                              command line, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="187" data-offset-end="193">3:07</a>
+                            <div class="text">it tells me that a copy of Git has
+                              been installed into /usr/local/git/bin/git.</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="193" data-offset-end="198">3:13</a>
+                            <div class="text">I could also do something like git
+                              --version, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="198" data-offset-end="205">3:18</a>
+                            <div class="text">and that'll tell me what version
+                              of the Git software I've got installed, 1.8.1.3, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="205" data-offset-end="208">3:25</a>
+                            <div class="text">which is the latest stable
+                              release, the one we just downloaded and installed.
+                              Great. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="208" data-offset-end="213">3:28</a>
+                            <div class="text">Once I've got Git installed,
+                              there's a couple of things that I like to do right
+                              away, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="213" data-offset-end="215">3:33</a>
+                            <div class="text">some configuration tasks. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="215" data-offset-end="219">3:35</a>
+                            <div class="text">Like most software, Git has some
+                              preferences that you can set</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="219" data-offset-end="222">3:39</a>
+                            <div class="text">in order to tailor how things work
+                              a little bit. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="222" data-offset-end="224">3:42</a>
+                            <div class="text">I'd like to take a look at that
+                              now. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="224" data-offset-end="231">3:44</a>
+                            <div class="text">We're going to be using the git
+                              config command in order to set up some of these
+                              variables. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="231" data-offset-end="236">3:51</a>
+                            <div class="text">We can type git config -l</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="236" data-offset-end="239">3:56</a>
+                            <div class="text">to see a list of all the currently
+                              set config options.</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="239" data-offset-end="242">3:59</a>
+                            <div class="text">And right now there's just one. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="242" data-offset-end="246">4:02</a>
+                            <div class="text">I want to do a couple of things,
+                              like first off, identify myself to Git</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="246" data-offset-end="251">4:06</a>
+                            <div class="text">so that in the future, when I'm
+                              saving changes or committing those changes, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="251" data-offset-end="255">4:11</a>
+                            <div class="text">the application knows who to
+                              associate that change with. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="255" data-offset-end="263">4:15</a>
+                            <div class="text">I'm going to do so using the git
+                              config --global command. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="263" data-offset-end="268">4:23</a>
+                            <div class="text">So I'm setting some configuration
+                              in the global scope,</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="268" data-offset-end="275">4:28</a>
+                            <div class="text">and then I'm going to set the
+                              user.name property to my name. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="275" data-offset-end="284">4:35</a>
+                            <div class="text">Like so. I'm also going to do the
+                              same for the user.email property, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="284" data-offset-end="288">4:44</a>
+                            <div class="text">though, of course, I'll change it
+                              to my email instead of my name. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="294" data-offset-end="302">4:54</a>
+                            <div class="text">Now when I view the config, list
+                              of set config parameters, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="302" data-offset-end="305">5:02</a>
+                            <div class="text">you can see that it's showing the
+                              name and email address</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="305" data-offset-end="309">5:05</a>
+                            <div class="text">that I just specified. Great. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="309" data-offset-end="312">5:09</a>
+                            <div class="text">So where does Git store this
+                              information? </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="312" data-offset-end="317">5:12</a>
+                            <div class="text">By default, it's storing this in a
+                              file named .gitconfig</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="317" data-offset-end="322">5:17</a>
+                            <div class="text">in my user's home directory. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="322" data-offset-end="325">5:22</a>
+                            <div class="text">So when I'm in my home directory,
+                              if I do an ls -a </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="325" data-offset-end="328">5:25</a>
+                            <div class="text">to show all files, including the
+                              hidden ones, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="328" data-offset-end="332">5:28</a>
+                            <div class="text">you see one there named
+                              .gitconfig. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="332" data-offset-end="335">5:32</a>
+                            <div class="text">I can open this .gitconfig file in
+                              a text editor</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="335" data-offset-end="339">5:35</a>
+                            <div class="text">and go ahead and make changes to
+                              it. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="344" data-offset-end="348">5:44</a>
+                            <div class="text">So mine just has a couple lines:
+                              user in square brackets, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="348" data-offset-end="352">5:48</a>
+                            <div class="text">so the name space for this
+                              configuration key, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="352" data-offset-end="357">5:52</a>
+                            <div class="text">and then the key itself, like name
+                              or email. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="357" data-offset-end="360">5:57</a>
+                            <div class="text">Remember when we entered in our
+                              command git config, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="360" data-offset-end="365">6:00</a>
+                            <div class="text">and then we said user.name and
+                              then set it to Joe Shindelar? </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="365" data-offset-end="368">6:05</a>
+                            <div class="text">The first part that preceded the
+                              dot was the name space, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="368" data-offset-end="372">6:08</a>
+                            <div class="text">and then the dot, and then the key
+                              that we'd like to set. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="372" data-offset-end="378">6:12</a>
+                            <div class="text">So then that's how we ended up
+                              with user name in this config file. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="378" data-offset-end="381">6:18</a>
+                            <div class="text">That's what a git config file
+                              looks like if you open it up. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="381" data-offset-end="384">6:21</a>
+                            <div class="text">You can edit this config file
+                              directly, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="384" data-offset-end="388">6:24</a>
+                            <div class="text">and those changes would be
+                              reflected throughout your Git global environment,
+                            </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="388" data-offset-end="392">6:28</a>
+                            <div class="text">just as if you had issued the
+                              command git config and then the key</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="392" data-offset-end="397">6:32</a>
+                            <div class="text">or the value that you'd like to
+                              set. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="397" data-offset-end="400">6:37</a>
+                            <div class="text">I'd also point out that when
+                              you're working with Git</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="400" data-offset-end="404">6:40</a>
+                            <div class="text">you've got a global config, this
+                              .gitconfig file </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="404" data-offset-end="407">6:44</a>
+                            <div class="text">that is in your user's home
+                              directory, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="407" data-offset-end="410">6:47</a>
+                            <div class="text">and that's used throughout Git, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="410" data-offset-end="413">6:50</a>
+                            <div class="text">no matter what repository you're
+                              working within. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="413" data-offset-end="418">6:53</a>
+                            <div class="text">However, you can also have a
+                              .gitconfig file per repository. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="418" data-offset-end="422">6:58</a>
+                            <div class="text">I can have configurations set up
+                              for each repository. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="422" data-offset-end="425">7:02</a>
+                            <div class="text">This is really nice for me because
+                              I have multiple email addresses. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="425" data-offset-end="431">7:05</a>
+                            <div class="text">Some of them are associated with
+                              work, like my @lullabot.com address, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="431" data-offset-end="434">7:11</a>
+                            <div class="text">and then I've also got a gmail
+                              address that's my personal account. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="434" data-offset-end="436">7:14</a>
+                            <div class="text">Depending on the project that I'm
+                              working on, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="436" data-offset-end="440">7:16</a>
+                            <div class="text">I may want to attribute those
+                              commits to my Lullabot address</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="440" data-offset-end="445">7:20</a>
+                            <div class="text">for a client project, but when I'm
+                              working on a Drupal core project, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="445" data-offset-end="448">7:25</a>
+                            <div class="text">I may want to attribute those to
+                              my personal address. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="448" data-offset-end="453">7:28</a>
+                            <div class="text">So I can set my personal address
+                              in the global configuration, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="453" data-offset-end="456">7:33</a>
+                            <div class="text">and then I can set my work address
+                              on a per-project basis </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="456" data-offset-end="459">7:36</a>
+                            <div class="text">in the configuration for that
+                              individual project. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="459" data-offset-end="462">7:39</a>
+                            <div class="text">There are lots of different git
+                              config options. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="465" data-offset-end="470">7:45</a>
+                            <div class="text">If we view the man page for the
+                              config command, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="470" data-offset-end="473">7:50</a>
+                            <div class="text">we can see that there are lots of
+                              different operations </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="473" data-offset-end="475">7:53</a>
+                            <div class="text">that we can perform with this
+                              command, including setting </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="475" data-offset-end="480">7:55</a>
+                            <div class="text">and viewing all of the different
+                              key value pairs. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="480" data-offset-end="483">8:00</a>
+                            <div class="text">And it talks about the ability to
+                              set them </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="483" data-offset-end="489">8:03</a>
+                            <div class="text">for system-wide global, local, or
+                              even you can set configuration</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="489" data-offset-end="493">8:09</a>
+                            <div class="text">for a specific file within a
+                              repository,</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="493" data-offset-end="496">8:13</a>
+                            <div class="text">depending on the flag that you
+                              specify. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="498" data-offset-end="503">8:18</a>
+                            <div class="text">There are some options with the
+                              command for listing all of the different
+                              configurations. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="503" data-offset-end="506">8:23</a>
+                            <div class="text">You can also do something like
+                              show me all of the configuration</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="506" data-offset-end="510">8:26</a>
+                            <div class="text">that's been set on a global
+                              configuration file, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="510" data-offset-end="513">8:30</a>
+                            <div class="text">show me everything that's specific
+                              to just this project. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="518" data-offset-end="521">8:38</a>
+                            <div class="text">Lots of options here. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="521" data-offset-end="524">8:41</a>
+                            <div class="text">If you scroll down to the section
+                              about files, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="524" data-offset-end="528">8:44</a>
+                            <div class="text">it explains this concept of having
+                              a global config file, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="528" data-offset-end="531">8:48</a>
+                            <div class="text">a system-wide config file that
+                              probably lives somewhere</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="531" data-offset-end="536">8:51</a>
+                            <div class="text">like /etc/gitconfig.</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="536" data-offset-end="541">8:56</a>
+                            <div class="text">And the order that they're listed
+                              in here is the order of precedence for these
+                              files. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="541" data-offset-end="545">9:01</a>
+                            <div class="text">So if the configuration
+                              information is in the first file, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="545" data-offset-end="548">9:05</a>
+                            <div class="text">so inside of my Git repository, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="548" data-offset-end="554">9:08</a>
+                            <div class="text">that will take precedence over the
+                              one that's in my users.gitconfig file, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="554" data-offset-end="557">9:14</a>
+                            <div class="text">which will take precedence over
+                              the local one, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="557" data-offset-end="562">9:17</a>
+                            <div class="text">which will take precedence over
+                              the system-wide one. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="562" data-offset-end="565">9:22</a>
+                            <div class="text">That's good to know. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="565" data-offset-end="570">9:25</a>
+                            <div class="text">And then there are some examples
+                              of what a good .gitconfig file might contain. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="571" data-offset-end="574">9:31</a>
+                            <div class="text">All kinds of different options
+                              that relate to the different commands</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="574" data-offset-end="577">9:34</a>
+                            <div class="text">that we'll run throughout the
+                              course of this series. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="580" data-offset-end="583">9:40</a>
+                            <div class="text">So that's looking at a gitconfig
+                              file. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="583" data-offset-end="585">9:43</a>
+                            <div class="text">I'd like to have us set one more
+                              option</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="585" data-offset-end="588">9:45</a>
+                            <div class="text">that I think is really common for
+                              a global config in Git. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="588" data-offset-end="593">9:48</a>
+                            <div class="text">So let's try this again: git
+                              config. I'm going to set it for the global scope.
+                            </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="593" data-offset-end="601">9:53</a>
+                            <div class="text">In this case I'm going to set
+                              color.ui = true. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="601" data-offset-end="604">10:01</a>
+                            <div class="text">And I'll just run that command. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="604" data-offset-end="611">10:04</a>
+                            <div class="text">And if I do git config global -l,
+                            </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="611" data-offset-end="613">10:11</a>
+                            <div class="text">there it's showing me all of the
+                              configuration that's set</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="613" data-offset-end="618">10:13</a>
+                            <div class="text">in the global scope, and did
+                              indeed set color.ui equal to true. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="618" data-offset-end="621">10:18</a>
+                            <div class="text">What that will do is, throughout
+                              the course of the lessons</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="621" data-offset-end="623">10:21</a>
+                            <div class="text">in which we're learning to use
+                              Git, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="623" data-offset-end="626">10:23</a>
+                            <div class="text">it will allow for some
+                              differentiation between files</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="626" data-offset-end="631">10:26</a>
+                            <div class="text">in our command prompt by coloring
+                              them red and green, appropriately. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="631" data-offset-end="636">10:31</a>
+                            <div class="text">We'll see that a lot. So that's
+                              the basics of configuring Git. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="636" data-offset-end="638">10:36</a>
+                            <div class="text">There are all kinds of options
+                              available. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="638" data-offset-end="640">10:38</a>
+                            <div class="text">I encourage you to check out the
+                              documentation </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="640" data-offset-end="645">10:40</a>
+                            <div class="text">on the Git website for various
+                              configuration flags. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="645" data-offset-end="648">10:45</a>
+                            <div class="text">We'll also talk about a few more
+                              of these throughout the course of this series. </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="playlist">
+                      <div class="playlist--header">
+                        <h2><a href="https://drupalize.me/series/introduction-git">Introduction
+                            to Git</a></h2>
+                      </div>
+                      <div class="playlist--content jquery-once-2-processed">
+                        <div class="playlist--container card-videos-list playlist--autoload processed"
+                          id="playlist-1173" data-playlist="1173" data-loaded="false">
+                          <!-- ko if: isLoading() --><!-- /ko -->
+                          <ul class="playlist--list">
+                            <!-- ko foreach: videos -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/introduction-git-series?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="160" data-resume="159"> <span data-bind="css: readFlag"
+                                  class="playlist--item--completed">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">1</span>
+                                <span class="playlist--item--title" data-bind="text:title">Introduction
+                                  to the Git Series</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())">
+                                  <span class="playlist--item--free" data-bind="visible:isFree()">Free</span>
+                                  <span class="playlist--item--percent" data-bind="visible:watched()"><span
+                                      data-bind="text:watchedPercent">100</span>%
+                                    watched</span> </div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">2:40</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/what-version-control?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="277" data-resume="278"> <span data-bind="css: readFlag"
+                                  class="playlist--item--completed">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">2</span>
+                                <span class="playlist--item--title" data-bind="text:title">What
+                                  Is Version Control?</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())">
+                                  <span class="playlist--item--free" data-bind="visible:isFree()"
+                                    style="display: none;">Free</span> <span class="playlist--item--percent"
+                                    data-bind="visible:watched()"><span data-bind="text:watchedPercent">100</span>%
+                                    watched</span> </div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">4:37</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video active" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/installing-and-configuring-git?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="648" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">3</span>
+                                <span class="playlist--item--title" data-bind="text:title">Installing
+                                  and Configuring Git</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())">
+                                  <span class="playlist--item--free" data-bind="visible:isFree()">Free</span>
+                                  <span class="playlist--item--percent active" data-bind="visible:watched()"
+                                    style="display: none;"><span>99</span>%
+                                    watched</span> </div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">10:48</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/getting-help-git?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="570" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">4</span>
+                                <span class="playlist--item--title" data-bind="text:title">Getting
+                                  Help with Git</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">9:30</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/git-crash-course?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="720" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">5</span>
+                                <span class="playlist--item--title" data-bind="text:title">Git
+                                  Crash Course</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">12:00</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/working-git-branches-and-tags?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="780" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">6</span>
+                                <span class="playlist--item--title" data-bind="text:title">Working
+                                  with Git Branches and Tags</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">13:00</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/moving-through-git-history?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="519" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">7</span>
+                                <span class="playlist--item--title" data-bind="text:title">Moving
+                                  Through Git History</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">8:39</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/reviewing-changes-and-using-git-diff?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="372" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">8</span>
+                                <span class="playlist--item--title" data-bind="text:title">Reviewing
+                                  Changes and Using Git Diff</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">6:12</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/resolving-conflicts-git?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="820" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">9</span>
+                                <span class="playlist--item--title" data-bind="text:title">Resolving
+                                  Conflicts in Git</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">13:40</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/advanced-git-add-and-gitignore?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="1278" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">10</span>
+                                <span class="playlist--item--title" data-bind="text:title">Advanced
+                                  Git Add and .gitignore</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">21:18</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/quicker-git-commits-and-modifying-previous-commits?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="818" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">11</span>
+                                <span class="playlist--item--title" data-bind="text:title">Quicker
+                                  Git Commits and Modifying Previous Commits</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">13:38</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/removing-moving-and-renaming-files-git?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="390" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">12</span>
+                                <span class="playlist--item--title" data-bind="text:title">Removing,
+                                  Moving and Renaming Files with Git</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">6:30</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/reset-and-clean-git-commands?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="687" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">13</span>
+                                <span class="playlist--item--title" data-bind="text:title">Reset
+                                  and Clean Git Commands</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">11:27</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/reverting-git-commits?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="410" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">14</span>
+                                <span class="playlist--item--title" data-bind="text:title">Reverting
+                                  Git Commits</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">6:50</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/working-remote-git-repositories?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="1157" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">15</span>
+                                <span class="playlist--item--title" data-bind="text:title">Working
+                                  with Remote Git Repositories</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">19:17</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/git-stash-command?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="225" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">16</span>
+                                <span class="playlist--item--title" data-bind="text:title">Git
+                                  Stash Command</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">3:45</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/applying-and-creating-patches-git?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="376" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">17</span>
+                                <span class="playlist--item--title" data-bind="text:title">Applying
+                                  and Creating Patches with Git</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())">
+                                  <span class="playlist--item--free" data-bind="visible:isFree()">Free</span>
+                                  <span class="playlist--item--percent" data-bind="visible:watched()"
+                                    style="display: none;"><span data-bind="text:watchedPercent">0</span>%
+                                    watched</span> </div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">6:16</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/working-git-githubcom?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="226" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">18</span>
+                                <span class="playlist--item--title" data-bind="text:title">Working
+                                  with Git on Github.com</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">3:46</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/git-aliases-and-other-fun-configuration?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="609" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">19</span>
+                                <span class="playlist--item--title" data-bind="text:title">Git
+                                  Aliases and Other Fun Configuration</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">10:09</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/using-git-bisect?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="523" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">20</span>
+                                <span class="playlist--item--title" data-bind="text:title">Using
+                                  Git Bisect</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">8:43</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/git-workflow-putting-it-all-together?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="476" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">21</span>
+                                <span class="playlist--item--title" data-bind="text:title">Git
+                                  Workflow: Putting It All Together</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">7:56</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- /ko -->
+                            <!-- ko foreach: collections --><!-- /ko -->
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--UBUNTU: sudo apt-get install git
+which  gitgit --version
+git config -lgit config --global user.name "
+git config --global user.email joecoc1916@protonmail.com"-->
+      <div class="l-container">
+        <article class="l-content"> <a id="main-content"></a>
+          <h1 class="content-title" id="page-title">Installing and Configuring
+            Git</h1>
+          <div class="region region-content">
+            <div id="block-system-main" class="block block-system">
+              <div class="content">
+                <div id="node-682" class="node node-video clearfix">
+                  <div class="node--loading">Loading...</div>
+                  <div class="content">
+                    <div class="content--meta--wrapper">
+                      <div class="content--meta meta"><span class="content--meta--length">10
+                          minutes 48 seconds</span> <span class="content--meta--divider">//</span>
+                        <span class="content--meta--icons"><span class="icon-hd">HD</span><span
+                            class="icon-cc">CC</span></span> <span class="content--meta--divider">//</span>
+                      </div>
+                      <div class="content--meta--actions"> <span class="flag-wrapper flag-queue flag-queue-682">
+                          <a href="https://drupalize.me/flag/flag/queue/682?destination=node/682%3Fp%3D1173&amp;token=dlsq0nVJnBzv_VL4rf45LHN75PRBJqyvn_uWikJqWI0"
+                            title="Add this video to your queue" class="flag flag-action flag-link-toggle flag-processed"
+                            rel="nofollow"><span class="icon"></span><span class="text">Add
+                              to queue</span></a><span class="flag-throbber">&nbsp;</span>
+                        </span> <a href="#share-modal" class="share-link"><span
+                            class="icon"></span><span class="text">Share</span></a>
+                      </div>
+                    </div>
+                    <div class="field field-name-body field-type-text-with-summary field-label-hidden text-content">
+                      <div class="field-items">
+                        <div class="field-item even">
+                          <p>In this lesson we take a look at the methods
+                            available to install Git on different operating
+                            systems including Windows, OS X, and Linux and <u><i><b>how
+                                  to ensure that you're environment is properly
+                                  setup to start using Git</b></i></u>. Then we
+                            walk through the installation on OS X and finally
+                            we'll cover how to invoke Git from the command line
+                            and set some basic configuration options like
+                            telling Git who we are. If you would like to see Git
+                            installed on Windows, you can take a look at our <a
+                              href="https://drupalize.me/videos/install-git">Drupal
+                              Ladder: Install Git lesson</a>. <strong>Learning
+                              objectives:</strong></p>
+                          <ul>
+                            <li><b>Know where to go to download the latest
+                                verion of Git</b></li>
+                            <b>
+                            </b>
+                            <li><b>Be able to install Git on your operating
+                                system of choice.</b></li>
+                            <b>
+                            </b>
+                            <li><b>Be able to verify that Git is indeed running
+                                in your environment.</b></li>
+                            <b>
+                            </b>
+                            <li><b>Do some Git configuration with <code class="  language-php">`git
+                                  config`<span class="token punctuation">,</span>
+                                  <span class="token operator">~</span><span class="token operator">/</span><span
+                                    class="token punctuation">.</span>gitconfig</code></b></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="field field-name-field-video-resources field-type-text-long field-label-above">
+                      <div class="field-label">Additional resources:&nbsp;</div>
+                      <div class="field-items">
+                        <div class="field-item even">
+                          <p><a href="https://git-scm.com/">Download Git</a> <a
+                              href="https://drupalize.me/videos/install-git">Drupal
+                              Ladder: Install Git lesson</a> (installs Git on
+                            Windows instead of Mac)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="feedback jquery-once-1-processed">
+                      <form class="webform-client-form webform-client-form-2848"
+                        action="/videos/installing-and-configuring-git?p=1173" method="post"
+                        id="webform-client-form-2848" accept-charset="UTF-8">
+                        <div>
+                          <div class="webform-progressbar"> </div>
+                          <div class="form-item webform-component webform-component-radios webform-component--yes-no">
+                            <label for="edit-submitted-yes-no">Was this helpful?
+                              <span class="form-required" title="This field is required.">*</span></label>
+                            <div id="edit-submitted-yes-no" class="form-radios">
+                              <div class="form-item form-type-radio form-item-submitted-yes-no">
+                                <input required="required" id="edit-submitted-yes-no-1"
+                                  name="submitted[yes_no]" value="yes" class="form-radio"
+                                  type="radio"> <label class="option" for="edit-submitted-yes-no-1">Yes
+                                  </label></div>
+                              <div class="form-item form-type-radio form-item-submitted-yes-no">
+                                <input required="required" id="edit-submitted-yes-no-2"
+                                  name="submitted[yes_no]" value="no" class="form-radio"
+                                  type="radio"> <label class="option" for="edit-submitted-yes-no-2">No
+                                  </label></div>
+                            </div>
+                          </div>
+                          <div class="form-item webform-component webform-component-textarea webform-component--feedback feedback--hidden">
+                            <label for="edit-submitted-feedback">Any additional
+                              feedback? </label>
+                            <div class="form-textarea-wrapper"><textarea id="edit-submitted-feedback"
+name="submitted[feedback]" cols="60" rows="3" class="form-textarea"></textarea></div>
+                          </div>
+                          <input name="details[sid]" type="hidden">
+                          <input name="details[page_num]" value="1" type="hidden">
+                          <input name="details[page_count]" value="1" type="hidden">
+                          <input name="details[finished]" value="0" type="hidden">
+                          <input name="form_build_id" value="form-Bwaq1OLH7imz3K3FnQfe4m6hRBOymOuUlw7SUWStGRc"
+                            type="hidden">
+                          <input name="form_token" value="jQWdN6pWAlCUSVFC-YbeUqe_wl0DdoIBPbdPtaIdCfo"
+                            type="hidden">
+                          <input name="form_id" value="webform_client_form_2848"
+                            type="hidden">
+                          <input name="honeypot_time" value="1573838732|P-3T-ibHl7xxHCF_1EZrY15_pl-zSkgfSQ9JRdZ1__w"
+                            type="hidden">
+                          <div class="twitter_name-textfield">
+                            <div class="form-item form-type-textfield form-item-twitter-name">
+                              <label for="edit-twitter-name">Leave this field
+                                blank </label> <input autocomplete="off" id="edit-twitter-name"
+                                name="twitter_name" size="20" maxlength="128" class="form-text"
+                                type="text">
+                            </div>
+                          </div>
+                          <div class="form-actions feedback--hidden"><input class="webform-submit button-primary form-submit"
+                              name="op" value="Submit" type="submit"></div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-footer">
+            <div class="l-content-footer">
+              <div class="region region-content-footer">
+                <div id="block-dmeblocks-share-modal" class="secondary-info block">
+                  <div class="content">
+                    <div id="share-modal" class="mfp-hide">
+                      <h4>Share</h4>
+                      <div class="share--sns"> <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdrupalize.me%2Fvideos%2Finstalling-and-configuring-git"
+                          onclick="javascript:window.open(this.href,
+      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=635');return false;"
+                          class="share--sns-link icon-facebook tooltip tooltipstered">Share
+                          to Facebook</a> <a href="https://twitter.com/intent/tweet?text=Check%20out%20%22Installing%20and%20Configuring%20Git%22%20on%20Drupalize.Me%20-%20https%3A%2F%2Fdrupalize.me%2Fvideos%2Finstalling-and-configuring-git"
+                          onclick="javascript:window.open(this.href,
+      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=635');return false;"
+                          class="share--sns-link icon-twitter tooltip tooltipstered">Share
+                          to Twitter</a> <a href="https://plus.google.com/share?url=https%3A%2F%2Fdrupalize.me%2Fvideos%2Finstalling-and-configuring-git"
+                          onclick="javascript:window.open(this.href,
+      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=512');return false;"
+                          class="share--sns-link icon-google tooltip tooltipstered">Share
+                          to Google+</a> </div>
+                      <div class="share--embed">
+                        <h4>Embed HTML code</h4>
+                        <textarea rows="3" readonly="readonly">&lt;iframe 
+src="//drupalize.me/ajax/dmeembed/VOSIRW78RJFOQVGPBTAVHWZWJDPNBQYW" 
+width="720" height="405" frameborder="0" scrolling="no" 
+allowfullscreen&gt;&lt;/iframe&gt;</textarea> <label>Video size:</label> <input
+                          class="width" size="5" value="720" type="text"> <span
+                          class="video-size-center">x</span> <input class="height"
+                          size="5" value="405" disabled="disabled" type="text">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <aside class="l-sidebar">
+          <div class="region region-sidebar-first">
+            <div id="block-drupalizecollection-collection-user-stats" class="block block-drupalizecollection">
+              <h2 class="block-title">Series progress</h2>
+              <div class="content"> You have started <span>2 videos</span> in
+                this collection and watched <span>7 minutes 17 seconds</span>.
+              </div>
+            </div>
+            <div id="block-dmeblocks-report-problem" class="secondary-info block">
+              <div class="content"> <a href="https://drupalize.me/support?ref_title=Installing%20and%20Configuring%20Git&amp;ref_url=https%3A//drupalize.me/videos/installing-and-configuring-git%3Fp%3D1173">Report
+                  a problem with this tutorial</a> </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer class="l-footer">
+      <div class="l-container">
+        <div class="region region-footer">
+          <div id="block-menu-menu-footer" class="block block-menu">
+            <div class="content">
+              <ul class="menu">
+                <li class="first leaf"><a href="https://drupalize.me/about" title="Learn more about the Drupalize.Me team">About
+                    us</a></li>
+                <li class="leaf"><a href="https://drupalize.me/blog" title="">Blog</a></li>
+                <li class="leaf"><a href="https://drupalize.me/student-discount"
+                    title="">Student discounts</a></li>
+                <li class="leaf"><a href="https://drupalize.me/faq" title="">FAQ</a></li>
+                <li class="leaf"><a href="https://drupalize.me/support" title="Get support on anything Drupalize.Me related">Support</a></li>
+                <li class="leaf"><a href="https://drupalize.me/privacy" title="">Privacy
+                    policy</a></li>
+                <li class="leaf"><a href="https://drupalize.me/terms-conditions"
+                    title="">Terms of use</a></li>
+                <li class="last leaf"><a href="https://drupalize.me/support" title="Get in touch with us">Contact
+                    us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="block-dmeblocks-newsletter" class="block block-dmeblocks footer--newsletter">
+            <div class="content">
+              <!-- dmeblocks-newsletter.tpl.php -->
+              <h2 class="block-title">Stay Informed</h2>
+              <p> Sign up for our mailing list to get Drupal tips and tricks in
+                your inbox!</p>
+              <script type="text/javascript" src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/embed.js"
+data-dojo-config="usePlainJson: true, isDebug: false"></script>
+              <script type="text/javascript">
+  // Wrap the default mailchimp code in a function so that we can trigger it on
+  // click instead of the default behaviour which is to open the pop-up
+  // immediately.
+  function showMailingPopUp() {
+    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us4.list-manage.com","uuid":"8efa4b8bd449a20f0b8255801","lid":"379eb97e77"}) });
+
+    document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+  }
+</script><button id="open-mailchimp-popup" class="action-link" onclick="showMailingPopUp(); return false;">Subscribe</button>
+              <!-- /dmeblocks-newsletter.tpl.php --> </div>
+          </div>
+          <div id="block-dmeblocks-social-navigation" class="block block-dmeblocks footer--social">
+            <div class="content">
+              <!-- dmeblocks-social_navigation.tpl.php -->
+              <h2 class="block-title">Stay Connected</h2>
+              <ul class="social-nav">
+                <li><a class="drupal" href="https://drupal.org/drupalizeme" alt="Drupal.org"
+                    target="_blank">Drupal.org</a></li>
+                <li><a class="twitter" href="https://twitter.com/drupalizeme" alt="Twitter"
+                    target="_blank">Twitter</a></li>
+                <li><a class="facebook" href="https://www.facebook.com/pages/Drupalizeme/226965084026508"
+                    alt="Facebook" target="_blank">Facebook</a></li>
+                <li><a class="google-plus" href="https://plus.google.com/+DrupalizeMe"
+                    alt="Google+" target="_blank">Google+</a></li>
+                <li><a class="rss" href="https://drupalize.me/blog/feed" alt="RSS">RSS</a></li>
+                <li><a class="youtube" href="https://www.youtube.com/user/Lullabot"
+                    alt="RSS">Youtube</a></li>
+              </ul>
+              <!-- /dmeblocks-social_navigation.tpl.php --> </div>
+          </div>
+          <div id="block-dmeblocks-pantheon" class="block block-dmeblocks footer--pantheon">
+            <div class="content">
+              <!-- dmeblocks-pantheon.tpl.php -->
+              Powered by: <a class="pantheon" href="https://pantheon.io/" target="_blank">Pantheon</a>
+            </div>
+          </div>
+        </div>
+        <p class="footer--copyright"> Drupalize.Me is a service of <a href="https://osiolabs.com/">Osio
+            Labs</a>, © 2019 </p>
+      </div>
+    </footer>
+    <script type="text/javascript" src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/js_7Ukqb3ierdBEL0eowfOKzTkNu-Le97OPm-UqTS5NENU.js"></script>
+    <script type="text/javascript" src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/js_N3sDNtiJtQsmNjLi8W2TXpYWfd6z-tUnOTeCgAv_37U.js"></script>
+    <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var google_conversion_id = 1004527117;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+//--><!]]>
+</script>
+    <script type="text/javascript" src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/conversion.js"></script>
+    <script type="text/javascript" src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/js_xPGmum1nV0acKfxUA2yCj5j2P6S_fPAw9tZ8zWGQmNI.js"></script>
+    <!-- Google Code for Remarketing Tag --> <noscript>
+    <div>
+      <img style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1004527117/?value=0&guid=ON&script=0"
+width="1" height="1">
+    </div>
+  </noscript>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3963617017","applicationID":"29167046","transactionName":"Z1ADYBRXVkYAUEJZCV4aIFcSX1dbTl1ZVANvRQBTA2lOXARE","queueTime":0,"applicationTime":1132,"atts":"SxcAFlxNRUg=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+    <script type="text/javascript" id="">window.zEmbed||function(){var a=[];window.zEmbed=function(){a.push(arguments)};window.zE=window.zE||window.zEmbed;document.zendeskHost="drupalizeme.zendesk.com";document.zEQueue=a}();</script>
+    <script type="text/javascript" id="" src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/main.js"></script>
+    <script type="text/javascript" id="">var intercomSettings={app_id:"x3mtrn8v",user_id:google_tag_manager["GTM-WS38CK"].macro(3),name:google_tag_manager["GTM-WS38CK"].macro(4),email:google_tag_manager["GTM-WS38CK"].macro(5),created_at:google_tag_manager["GTM-WS38CK"].macro(6),custom_data:{membership_status:google_tag_manager["GTM-WS38CK"].macro(7),membership_type:google_tag_manager["GTM-WS38CK"].macro(8),custom_attributes:{group_owner:google_tag_manager["GTM-WS38CK"].macro(9),group_seats_active:google_tag_manager["GTM-WS38CK"].macro(10),group_seats_total:google_tag_manager["GTM-WS38CK"].macro(11)}}};
+(function(){function a(){var b=document.createElement("script");b.type="text/javascript";b.async=!0;b.src="https://api.intercom.io/api/js/library.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a)}window.attachEvent?window.attachEvent("onload",a):window.addEventListener("load",a,!1)})();</script>
+    <script type="text/javascript" id="">zE(function(){zE.setLocale("en-US")});</script><iframe
+      data-product="web_widget" title="No content" tabindex="-1" aria-hidden="true"
+      style="width: 0px; height: 0px; border: 0px none; position: absolute; top: -9999px;"
+      src="3.Installing%20and%20Configuring%20Git%20%7C%20Drupalize.Me_files/a_003.html"></iframe>
+    <div><iframe title="Opens a widget where you can find more information" style="border: medium none; background: transparent none repeat scroll 0% 0%; z-index: 999998; transform: translateZ(0px); position: fixed; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); transition-property: opacity, top, bottom; opacity: 1; width: 139px; height: 50px; max-height: 551px; min-height: 50px; margin: 10px 20px; right: 0px; bottom: 0px;width: 139px;"
+        id="launcher" tabindex="0" class="zEWidget-launcher zEWidget-launcher--active"></iframe></div>
+    <div><iframe title="Find more information here" style="border: medium none; background: transparent none repeat scroll 0% 0%; z-index: 999999; transform: translateZ(0px); position: fixed; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); transition-property: opacity, top, bottom; opacity: 0; width: 357px; height: 100%; max-height: 565px; min-height: 150px; margin-left: 8px; margin-right: 8px; top: -9999px; visibility: hidden;"
+        id="webWidget" tabindex="-1" class="zEWidget-webWidget "></iframe></div>
+    <iframe id="intercom-frame" style="position: absolute !important; opacity: 0 !important; width: 1px !important; height: 1px !important; top: 0 !important; left: 0 !important; border: none !important; display: block !important; z-index: -1 !important;"
+      aria-hidden="true" tabindex="-1" title="Intercom"></iframe>
+    <div id="intercom-css-container">
+      <style data-emotion="intercom-global"></style></div>
+    <div id="intercom-container" class="intercom-namespace">
+      <style>html.intercom-mobile-messenger-active,html.intercom-mobile-messenger-active > body,html.intercom-modal-open,#intercom-container-body{overflow:hidden !important;}html.intercom-mobile-messenger-active,html.intercom-mobile-messenger-active > body{position:static !important;}html.intercom-mobile-messenger-active > body{height:0 !important;margin:0 !important;}iframe#intercom-frame{position:absolute !important;opacity:0 !important;width:1px !important;height:1px !important;top:0 !important;left:0 !important;border:none !important;display:block !important;z-index:-1 !important;}</style>
+      <div class="intercom-app" aria-live="polite">
+        <div id="intercom-modal-container"></div>
+      </div>
+    </div>
+  </body>
+</html>

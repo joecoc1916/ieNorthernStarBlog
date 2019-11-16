@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!-->
+<html dir="ltr" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#" xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#" xmlns:product="http://ogp.me/ns/product#"
+  class="js wf-proximanova-n7-active wf-proximanova-n4-active wf-proximanova-i4-active wf-active"
+  lang="en">
+  <!--<![endif]-->
+  <head profile="http://www.w3.org/1999/xhtml/vocab">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" async="" src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/x3mtrn8v.js"></script>
+    <script type="text/javascript" src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/3963617017"></script>
+    <script type="text/javascript" async="" src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/library.js"></script>
+    <script src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/nr-1130.js"></script>
+    <script type="text/javascript" async="" src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/ec.js"></script>
+    <script type="text/javascript" async="" src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/analytics.js"></script>
+    <script async="" src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/gtm.js"></script>
+    <script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"3963617017",applicationID:"29167046"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+    <link rel="shortcut icon" href="https://drupalize.me/sites/all/themes/dmemain/favicon.ico"
+      type="image/vnd.microsoft.icon">
+    <script type="text/javascript">dataLayer = [{"drupalLanguage":"en","drupalCountry":"US","userName":"Jcoeph C. O\u0027Connor","userMail":"joecoc1916@protonmail.com","userRoles":["authenticated user","premium subscription"],"userCreated":"1573500738","userAccess":"1573835544","userUid":"40184","membership_status":"Active","membership_type":"regular","recurly_plan":"Monthly Personal Membership","is_group":false}];</script>
+    <meta name="description" content="In this lesson we'll explain some of the basic tennents of version control systems and get some terminology out of the way by explaining things like repositories, branches, checkouts, and commits and provide you with a baseline set of concepts that we can build on through the series. Learning Objectives:  Understand the basic terminology of version control including">
+    <meta name="generator" content="Drupal 7 (https://www.drupal.org)">
+    <link rel="canonical" href="https://drupalize.me/videos/what-version-control">
+    <link rel="shortlink" href="https://drupalize.me/node/691">
+    <meta property="og:site_name" content="Drupalize.Me">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://drupalize.me/videos/what-version-control">
+    <meta property="og:title" content="What Is Version Control?">
+    <meta property="og:description" content="In this lesson we'll explain some of the basic tennents of version control systems and get some terminology out of the way by explaining things like repositories, branches, checkouts, and commits and provide you with a baseline set of concepts that we can build on through the series. Learning Objectives:  Understand the basic terminology of version control including repository, branch, checkout and commit. Understand how this vocabulary relates to Git.">
+    <meta property="og:updated_time" content="2014-04-30T05:33:56-05:00">
+    <meta property="og:image" content="https://drupalize.me/sites/default/files/videoasset_screenshots/git_2.png">
+    <meta property="article:published_time" content="2013-03-13T08:30:43-05:00">
+    <meta property="article:modified_time" content="2014-04-30T05:33:56-05:00">
+    <title>What Is Version Control? | Drupalize.Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="monitor-verification-string" content="Drupalize.Me + Taylor = &lt;3">
+    <link type="text/css" rel="stylesheet" href="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/css_ywqYrtSodM0qVMzAkOSnqZ_iBnAVpkSeD_yPtUN9tBk.css"
+      media="all">
+    <link type="text/css" rel="stylesheet" href="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/css_GIjdLiEynkkG-Z8V0ePacmJ4PVcfxv0eBlYeL2Inan4.css"
+      media="screen">
+    <link type="text/css" rel="stylesheet" href="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/css_fBHtErelcsc4VfLbs13dQi9-IFgBYK9TTttUp_NUVzM.css"
+      media="all">
+    <link type="text/css" rel="stylesheet" href="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/css_qV6aqBTkK_agwn1z1DNm9d_SXeiMzaBLOdtS_rmwULg.css"
+      media="all">
+    <link type="text/css" rel="stylesheet" href="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/css_YmRbCvNBMtO05za9oOInNZHM0Jl_wWTZ2Nuil9afnXg.css"
+      media="all">
+    <script type="text/javascript" src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/js_0RyHJ63yYLuaWsodCPCgSD8dcTIA0dqcDf8-7c2XdBw.js"></script>
+    <script type="text/javascript" src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/js_fVTrO8-7pemKUEq-mo-qZqhH8gbNE-wgjMez4QXZb00.js"></script>
+    <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+    <script type="text/javascript" src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/js_CtrPKfhEyyyvv5wmH20mARoPVeDXdbPHmn_YF4Ay_k0.js"></script>
+    <script type="text/javascript" src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/js_R2O4__-X5kXPRsf53E1cajro8YUfQ8ZPbad8ofOEUYw.js"></script>
+    <script type="text/javascript" src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/jwplayer.js"></script>
+    <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jwplayer.key="5NfuSqroNKVzvdXI5f1VG3eV9qG79Jf/WW0LdQ==";
+//--><!]]>
+</script>
+    <script type="text/javascript" src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/js_uqWx2Bbhh9TiduovvQa8KYv1k_xqwBrQEPbzybx1iKM.js"></script>
+    <script type="text/javascript" src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/fuf6cds.js"></script>
+    <style type="text/css">.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}</style>
+    <style type="text/css">@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/7d485b/00000000000000003b9ad1b1/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/7d485b/00000000000000003b9ad1b1/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/7d485b/00000000000000003b9ad1b1/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/c9cde8/00000000000000003b9ad1b9/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/c9cde8/00000000000000003b9ad1b9/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/c9cde8/00000000000000003b9ad1b9/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/4ba64f/00000000000000003b9ad1ba/27/l?subset_id=2&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/4ba64f/00000000000000003b9ad1ba/27/d?subset_id=2&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/4ba64f/00000000000000003b9ad1ba/27/a?subset_id=2&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}</style>
+    <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+try{Typekit.load();}catch(e){}
+//--><!]]>
+</script>
+    <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WS38CK');
+//--><!]]>
+</script>
+    <script type="text/javascript" src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/js_gFCCECTcVj-XAKNjxGUi2qCvd0DuptvT43Rt_vur6vQ.js"></script>
+    <script type="text/javascript" src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/js_L_Mb3M_ec1e5-mBhb9vyclYkgJ9nvRji4_tfiN_HuwI.js"></script>
+    <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"dmemain","theme_token":"t7_K3mE7vLeX71X64a2lbqJq3AodyKLpw17Gyu1W7A0","js":{"sites\/all\/modules\/contrib\/picture\/picturefill2\/picturefill.min.js":1,"sites\/all\/modules\/contrib\/picture\/picture.min.js":1,"sites\/all\/themes\/dmemain\/js\/playlist.js":1,"0":1,"\/\/www.googleadservices.com\/pagead\/conversion.js":1,"sites\/all\/themes\/dmemain\/js\/pages\/video.js":1,"sites\/all\/themes\/dmemain\/js\/share.js":1,"sites\/all\/themes\/dmemain\/js\/feedback.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/prism\/prism.js":1,"sites\/all\/modules\/contrib\/prism\/js\/prism.settings.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"1":1,"sites\/all\/modules\/custom\/vidhist\/scripts\/vidhist.uuid.js":1,"sites\/all\/modules\/custom\/vidhist\/scripts\/vidhist.js":1,"sites\/all\/modules\/contrib\/ejectorseat\/ejectorseat.js":1,"sites\/all\/modules\/custom\/vidhist\/scripts\/vidhist_jwplayer.js":1,"sites\/all\/modules\/contrib\/flag\/theme\/flag.js":1,"sites\/all\/themes\/dmemain\/js\/knockout.js":1,"sites\/all\/modules\/custom\/drupalizevideofield\/jwplayer\/jwplayer.js":1,"2":1,"sites\/all\/modules\/custom\/jswatchdog\/jswatchdog.js":1,"\/\/use.typekit.net\/fuf6cds.js":1,"3":1,"4":1,"sites\/all\/modules\/contrib\/webform\/js\/webform.js":1,"sites\/all\/modules\/contrib\/datalayer\/datalayer.js":1,"sites\/all\/themes\/dmemain\/js\/script.js":1,"sites\/all\/themes\/dmemain\/js\/jquery.tooltipster.min.js":1,"sites\/all\/themes\/dmemain\/js\/jquery.magnific-popup.min.js":1,"sites\/all\/themes\/dmemain\/js\/draggableviews_table.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/libraries\/prism\/prism.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/contrib\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/custom\/membership_entity\/membership_entity.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/contrib\/picture\/picture_wysiwyg.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/flag\/theme\/flag.css":1,"sites\/all\/themes\/dmemain\/css\/pages\/video.css":1,"public:\/\/honeypot\/honeypot.css":1,"sites\/all\/modules\/contrib\/webform\/css\/webform.css":1,"sites\/all\/themes\/dmemain\/css\/normalize.css":1,"sites\/all\/themes\/dmemain\/css\/style.css":1,"sites\/all\/themes\/dmemain\/modules\/system\/system.menus.css":1,"sites\/all\/themes\/dmemain\/modules\/system\/system.messages.css":1,"sites\/all\/themes\/dmemain\/ds_2col.css":1}},"ejectorSeat":{"interval":"60","url":"\/ejectorseat\/check","ignoreFocus":false},"vidHist":{"nid":"691","uid":"40184","dataPath":"\/?q=_vidhist-post-data","dataInterval":15000,"dataMinimumReportTime":"10","positionPath":"\/?q=_vidhist-get-position","securityToken":"EcVC8D0e8BlnaVliq1A-OAC5Euf7bo2IBCpUqmmc_ts"},"dme":{"nid":"691"},"urlIsAjaxTrusted":{"\/search":true,"\/videos\/what-version-control?p=1173":true},"jwplayer":{"skin":"https:\/\/drupalize.me\/sites\/all\/modules\/custom\/drupalizevideofield\/jwplayer\/skins\/bekle.xml?v=6.12.4950","html5player":"https:\/\/drupalize.me\/sites\/all\/modules\/custom\/drupalizevideofield\/jwplayer\/jwplayer.html5.js?v=6.12.4950","flashplayer":"https:\/\/drupalize.me\/sites\/all\/modules\/custom\/drupalizevideofield\/jwplayer\/jwplayer.flash.swf?v=6.12.4950","width":"100%","primary":"html5","aspectratio":"16:9","playlist":[{"image":"https:\/\/drupalize.me\/sites\/default\/files\/videoasset_screenshots\/git_2.png","tracks":[{"file":"https:\/\/drupalize.me\/v\/captions\/file\/11e3774c-8e0f-4c7a-a8ff-450955d02159---eng.srt","label":"English","kind":"captions"}]}],"abouttext":"Go to Drupalize.Me","aboutlink":"http:\/\/drupalize.me","entity_id":"645","entity_label":"What is Version Control?"},"jswatchdogLimit":3,"dmemain":{"themePath":"https:\/\/drupalize.me\/sites\/all\/themes\/dmemain"},"dataLayer":{"languages":{"en":{"language":"en","name":"English","native":"English","direction":0,"enabled":1,"plurals":0,"formula":"","domain":"","prefix":"","weight":0,"javascript":""}},"defaultLang":"en"}});
+//--><!]]>
+</script> <meta name="apple-mobile-web-app-title" content="Drupalize.Me">
+    <meta name="google-site-verification" content="J6NXI_f01vAsVTXxc2YB-R2l0BXYlElfx7ZK_sbM_v4">
+    <link rel="apple-touch-icon" type="image/png" href="https://drupalize.me/videos/sites/all/themes/dmemain/images/icon.57.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="https://drupalize.me/videos/sites/all/themes/dmemain/images/icon.72.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="https://drupalize.me/videos/sites/all/themes/dmemain/images/icon.114.png">
+    <script src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/a"></script>
+  </head>
+  <body class="html not-front logged-in one-sidebar sidebar-first page-node page-node- page-node-691 node-type-video l-has-sidebar l-has-hero language-php">
+    <!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WS38CK"
+style="display:none;visibility:hidden" width="0" height="0"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="skip-link"> <a href="#main-content" class="element-invisible element-focusable">Skip
+        to main content</a> </div>
+    <header class="l-header" role="banner">
+      <div class="l-container">
+        <h1 class="site-name"><a href="https://drupalize.me/">Drupalize.Me</a></h1>
+        <nav class="l-navigation navigation--container" role="navigation"> <a class="navigation--toggle"><span
+              class="navigation--toggle-icon"> <span></span> <span></span> <span></span>
+              <span></span> </span> Menu</a>
+          <div class="region region-navigation">
+            <div id="block-views-ab071781dda84edd1ed905bc0716b2a1" class="block block-views search--block-form">
+              <div class="content">
+                <form action="/search" method="get" id="views-exposed-form-drupalizesitewidesearch-page"
+                  accept-charset="UTF-8">
+                  <div>
+                    <div class="search--form">
+                      <div class="form-item form-type-textfield form-item-query">
+                        <input id="edit-query" name="query" size="30" maxlength="128"
+                          class="form-text" type="text">
+                      </div>
+                      <input id="edit-submit-drupalizesitewidesearch" name="" value="Search"
+                        class="form-submit" type="submit"></div>
+                    <div class="search--form--resultsinfo"> <span class="search--form--count">Showing
+                        0 results</span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div id="block-dmeblocks-primary-navigation" class="secondary-info block">
+              <div class="content">
+                <!-- dmeblocks-primary_navigation.tpl.php -->
+                <ul class="navigation--menu">
+                  <li class="navigation--menu-item"><a href="https://drupalize.me/?t=1573835547"
+                      alt="Home">Home</a></li>
+                  <li class="navigation--menu-item"><a href="https://drupalize.me/user"
+                      alt="Account">Account</a></li>
+                  <li class="navigation--menu-item"><a href="https://drupalize.me/guides"
+                      alt="Guides">Guides</a></li>
+                  <li class="navigation--menu-item"><a href="https://drupalize.me/user/logout"
+                      alt="Log out">Log out</a></li>
+                </ul>
+                <!-- /dmeblocks-primary_navigation.tpl.php --> </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main role="main">
+      <div class="l-hero">
+        <div class="l-container">
+          <div class="region region-hero">
+            <div id="block-dmeblocks-video-player" class="secondary-info block">
+              <div class="content">
+                <div class="hero--shadow hero--has-playlist hero--has-transcript"
+                  vocab="http://schema.org/" typeof="VideoObject">
+                  <meta property="name" content="What Is Version Control?">
+                  <meta property="description" content="In this lesson we'll explain some of the basic tennents of version control systems and get some terminology out of the way by explaining things like repositories, branches, checkouts, and commits and provide you with a baseline set of concepts that we can build on through the series.
+&lt;strong&gt;Learning Objectives:&lt;/strong&gt;
+&lt;ul&gt;  &lt;li&gt;Understand the basic terminology of version control including repository, branch, checkout and commit.&lt;/li&gt;
+  &lt;li&gt;Understand how this vocabulary relates to Git.&lt;/li&gt;  &lt;li&gt;Be able to explain the difference between centralized and distributed version control systems.&lt;/li&gt;
+&lt;/ul&gt;
+If you would like a more in-depth look at version control, you can also see the &lt;a href=&quot;http://drupalize.me/videos/vision-version-control&quot;&gt;Vision for Version Control presentation&lt;/a&gt; from DIWD 2011.">
+                  <meta property="duration" content="TM4S37">
+                  <meta property="timeRequired" content="TM4S37">
+                  <meta property="thumbnailUrl" content="https://drupalize.me/sites/default/files/videoasset_screenshots/git_2.png">
+                  <meta property="dateCreated" content="2013-03-13T08:30:43-05:00">
+                  <meta property="uploadedDate" content="2013-03-13T08:30:43-05:00">
+                  <meta property="keywords" content="git,version control,Blake Hall,terminology">
+                  <meta property="drupalVersion" content="">
+                  <meta property="isFree" content="no">
+                  <div class="video--player">
+                    <div class="video--wrapper">
+                      <div class="entity entity-videoasset videoasset-videoasset clearfix">
+                        <h2> What is Version Control? </h2>
+                        <div class="content">
+                          <div class="field field-name-field-videoasset-levels field-type-drupalizevideofield field-label-hidden">
+                            <div class="field-items">
+                              <div class="field-item even">
+                                <div id="drupalizeme-video-player" data-video="645"
+                                  class="video_player-processed">
+                                  <p>Video loading...</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hero--sidebar">
+                    <div class="transcript">
+                      <div class="transcript--header">
+                        <ul class="transcript--menu nostyle">
+                          <li> <a href="#" class="scroll-toggle">Auto scroll on</a>
+                          </li>
+                          <li> <a href="#" class="close">Close</a> </li>
+                        </ul>
+                        <form onsubmit="return false;"> <label for="transcript--filter">Transcript
+                            filter</label> <input name="transcript-filter" placeholder="Filter transcript"
+                            class="filter" id="transcript-filter" type="search">
+                        </form>
+                      </div>
+                      <div class="transcript--list-wrapper">
+                        <ul class="transcript--list eng active" property="transcript"
+                          data-scrolling="on">
+                          <li> <a class="time" href="#" data-offset="0" data-offset-end="6">0:00</a>
+                            <div class="text">[What is Version Control?]
+                              [Introduction to Git] [Chapter 2 with Blake Hall]
+                            </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="6" data-offset-end="9">0:06</a>
+                            <div class="text">Before we open up the terminal and
+                              start running some Git commands, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="9" data-offset-end="12">0:09</a>
+                            <div class="text">let's use this lesson to get some
+                              vocabulary terms under our belt. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="12" data-offset-end="16">0:12</a>
+                            <div class="text">We'll take a look at what a
+                              repository is, what a checkout is, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="16" data-offset-end="19">0:16</a>
+                            <div class="text">what a commit is, as well as some
+                              of the differences</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="19" data-offset-end="23">0:19</a>
+                            <div class="text">between distributed version
+                              control systems and more traditional models. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="24" data-offset-end="28">0:24</a>
+                            <div class="text">The first important term is
+                              repository. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="28" data-offset-end="31">0:28</a>
+                            <div class="text">Your repository is where all of
+                              your version control information lives</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="31" data-offset-end="38">0:31</a>
+                            <div class="text">and where Git keeps track of your
+                              different revisions, branches and tags. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="38" data-offset-end="41">0:38</a>
+                            <div class="text">You can think of a repository as
+                              basically a directory, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="41" data-offset-end="43">0:41</a>
+                            <div class="text">or a collection of the files that
+                              you care about</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="43" data-offset-end="46">0:43</a>
+                            <div class="text">that are being stored in version
+                              control. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="49" data-offset-end="52">0:49</a>
+                            <div class="text">The next term we'll take a look at
+                              is a checkout. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="52" data-offset-end="55">0:52</a>
+                            <div class="text">A checkout you can think of as
+                              basically </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="55" data-offset-end="59">0:55</a>
+                            <div class="text">the local files that you're
+                              working on on your machine. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="59" data-offset-end="62">0:59</a>
+                            <div class="text">If you're the only one working on
+                              your repository, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="62" data-offset-end="65">1:02</a>
+                            <div class="text">these might actually be in the
+                              same place, in the same directory, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="65" data-offset-end="68">1:05</a>
+                            <div class="text">but the checkout you can think of
+                              as your working copy. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="68" data-offset-end="71">1:08</a>
+                            <div class="text">These are the files you're
+                              actually editing and making changes to. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="75" data-offset-end="78">1:15</a>
+                            <div class="text">The next important vocabulary term
+                              is a commit. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="78" data-offset-end="81">1:18</a>
+                            <div class="text">A commit is basically a
+                              placeholder of a certain version of the files </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="81" data-offset-end="85">1:21</a>
+                            <div class="text">that you're using Git to manage. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="85" data-offset-end="87">1:25</a>
+                            <div class="text">You'll be making commits pretty
+                              frequently </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="87" data-offset-end="90">1:27</a>
+                            <div class="text">when you want to keep track of a
+                              particular set of changes. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="92" data-offset-end="97">1:32</a>
+                            <div class="text">There are a lot of GUI tools you
+                              can use to view this commit history. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="97" data-offset-end="99">1:37</a>
+                            <div class="text">Here's an example from Drupal 8
+                              core, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="99" data-offset-end="101">1:39</a>
+                            <div class="text">where we're looking at the various
+                              commits that have been made </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="101" data-offset-end="104">1:41</a>
+                            <div class="text">to the Drupal 8 branch. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="109" data-offset-end="112">1:49</a>
+                            <div class="text">The next term we'll take a look at
+                              is branches. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="112" data-offset-end="114">1:52</a>
+                            <div class="text">You can think of branches as
+                              different versions </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="114" data-offset-end="117">1:54</a>
+                            <div class="text">of the group of files that are in
+                              your repository. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="117" data-offset-end="120">1:57</a>
+                            <div class="text">For example, if you're working on
+                              a custom module, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="120" data-offset-end="124">2:00</a>
+                            <div class="text">you might have a different branch
+                              for each version of Drupal core that you're
+                              working with. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="124" data-offset-end="128">2:04</a>
+                            <div class="text">So the Drupal 6 version of your
+                              module will be a branch. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="128" data-offset-end="131">2:08</a>
+                            <div class="text">The Drupal 7 version will be
+                              another branch. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="131" data-offset-end="133">2:11</a>
+                            <div class="text">And the Drupal 8 version will be a
+                              third branch. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="133" data-offset-end="137">2:13</a>
+                            <div class="text">This lets you have one repository
+                              for your custom module files, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="137" data-offset-end="142">2:17</a>
+                            <div class="text">but be able to maintain separate
+                              versions of it in the same place. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="144" data-offset-end="148">2:24</a>
+                            <div class="text">Again, we can use some GUI tools
+                              to help visualize how branches work. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="148" data-offset-end="151">2:28</a>
+                            <div class="text">This example is also from Drupal 8
+                              core development. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="151" data-offset-end="155">2:31</a>
+                            <div class="text">Each one of the vertical colored
+                              lines is a separate branch. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="155" data-offset-end="157">2:35</a>
+                            <div class="text">And as you can see, there are
+                              lines connecting</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="157" data-offset-end="160">2:37</a>
+                            <div class="text">where we've merged code from one
+                              branch to another. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="160" data-offset-end="163">2:40</a>
+                            <div class="text">We'll take a look at merging in a
+                              future lesson. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="168" data-offset-end="172">2:48</a>
+                            <div class="text">It's important to remember that
+                              Git is a distributed version control system, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="172" data-offset-end="176">2:52</a>
+                            <div class="text">which is a little bit different
+                              than some other version control systems</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="176" data-offset-end="179">2:56</a>
+                            <div class="text">you may have used in the past like
+                              Subversion or CVS, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="179" data-offset-end="182">2:59</a>
+                            <div class="text">which aren't distributed, by
+                              nature. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="182" data-offset-end="184">3:02</a>
+                            <div class="text">So what does this actually mean,
+                              and what are the differences? </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="186" data-offset-end="188">3:06</a>
+                            <div class="text">Well, normally with a version
+                              control system</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="188" data-offset-end="191">3:08</a>
+                            <div class="text">you'll have one main central
+                              repository. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="191" data-offset-end="194">3:11</a>
+                            <div class="text">This is the way CVS and SVN work.
+                            </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="194" data-offset-end="197">3:14</a>
+                            <div class="text">Each individual developer will
+                              have a checkout of their repository </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="197" data-offset-end="200">3:17</a>
+                            <div class="text">that they use and work on their
+                              local machine, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="200" data-offset-end="203">3:20</a>
+                            <div class="text">but in order to get the full
+                              information for the repository, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="203" data-offset-end="206">3:23</a>
+                            <div class="text">they have to contact the central
+                              server and the central repository </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="206" data-offset-end="208">3:26</a>
+                            <div class="text">in one single location. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="210" data-offset-end="213">3:30</a>
+                            <div class="text">With a distributed version control
+                              system like Git, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="213" data-offset-end="216">3:33</a>
+                            <div class="text">each checkout contains the full
+                              repository history, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="216" data-offset-end="220">3:36</a>
+                            <div class="text">and since each checkout is a full
+                              repository, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="220" data-offset-end="223">3:40</a>
+                            <div class="text">you can push changes back and
+                              forth between individual checkouts </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="223" data-offset-end="229">3:43</a>
+                            <div class="text">in addition to the main trusted
+                              repository. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="229" data-offset-end="231">3:49</a>
+                            <div class="text">This can make things a little bit
+                              more confusing </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="231" data-offset-end="234">3:51</a>
+                            <div class="text">when it comes to working with
+                              multiple versions of the repository, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="234" data-offset-end="236">3:54</a>
+                            <div class="text">but it's also quite a bit more
+                              powerful. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="239" data-offset-end="242">3:59</a>
+                            <div class="text">Here we can take a look at an
+                              example of a Git checkout</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="242" data-offset-end="245">4:02</a>
+                            <div class="text">actually containing the full
+                              project history. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="245" data-offset-end="249">4:05</a>
+                            <div class="text">If you go to Drupal.org and check
+                              out Drupal core, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="249" data-offset-end="252">4:09</a>
+                            <div class="text">you're pulling in commit changes
+                              all the way back </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="252" data-offset-end="256">4:12</a>
+                            <div class="text">to the very first time Drupal was
+                              committed, in May of 2000, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="256" data-offset-end="258">4:16</a>
+                            <div class="text">as you can see here. This means
+                              that it's really easy</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="258" data-offset-end="262">4:18</a>
+                            <div class="text">when you happen to be offline to
+                              work with the entire repository</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="262" data-offset-end="265">4:22</a>
+                            <div class="text">and any of the changes that have
+                              been made throughout the history of the project. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="265" data-offset-end="268">4:25</a>
+                            <div class="text">Now that we have some basic
+                              vocabulary terms under our belt, </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="268" data-offset-end="271">4:28</a>
+                            <div class="text">we can dive in and actually start
+                              using Git</div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="271" data-offset-end="274">4:31</a>
+                            <div class="text">and becoming more familiar with
+                              some basic Git commands. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="274" data-offset-end="276">4:34</a>
+                            <div class="text">Let's get our hands dirty. </div>
+                          </li>
+                          <li> <a class="time" href="#" data-offset="276" data-offset-end="280">4:36</a>
+                            <div class="text">[Drupalize.Me] [Learn Drupal] </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="playlist">
+                      <div class="playlist--header">
+                        <h2><a href="https://drupalize.me/series/introduction-git">Introduction
+                            to Git</a></h2>
+                      </div>
+                      <div class="playlist--content jquery-once-2-processed">
+                        <div class="playlist--container card-videos-list playlist--autoload processed"
+                          id="playlist-1173" data-playlist="1173" data-loaded="false">
+                          <!-- ko if: isLoading() --><!-- /ko -->
+                          <ul class="playlist--list">
+                            <!-- ko foreach: videos -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/introduction-git-series?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="160" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">1</span>
+                                <span class="playlist--item--title" data-bind="text:title">Introduction
+                                  to the Git Series</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())">
+                                  <span class="playlist--item--free" data-bind="visible:isFree()">Free</span>
+                                  <span class="playlist--item--percent" data-bind="visible:watched()"
+                                    style="display: none;"><span data-bind="text:watchedPercent">0</span>%
+                                    watched</span> </div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">2:40</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video active" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/what-version-control?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="277" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">2</span>
+                                <span class="playlist--item--title" data-bind="text:title">What
+                                  Is Version Control?</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">4:37</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/installing-and-configuring-git?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="648" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">3</span>
+                                <span class="playlist--item--title" data-bind="text:title">Installing
+                                  and Configuring Git</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())">
+                                  <span class="playlist--item--free" data-bind="visible:isFree()">Free</span>
+                                  <span class="playlist--item--percent" data-bind="visible:watched()"
+                                    style="display: none;"><span data-bind="text:watchedPercent">0</span>%
+                                    watched</span> </div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">10:48</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/getting-help-git?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="570" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">4</span>
+                                <span class="playlist--item--title" data-bind="text:title">Getting
+                                  Help with Git</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">9:30</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/git-crash-course?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="720" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">5</span>
+                                <span class="playlist--item--title" data-bind="text:title">Git
+                                  Crash Course</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">12:00</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/working-git-branches-and-tags?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="780" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">6</span>
+                                <span class="playlist--item--title" data-bind="text:title">Working
+                                  with Git Branches and Tags</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">13:00</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/moving-through-git-history?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="519" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">7</span>
+                                <span class="playlist--item--title" data-bind="text:title">Moving
+                                  Through Git History</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">8:39</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/reviewing-changes-and-using-git-diff?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="372" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">8</span>
+                                <span class="playlist--item--title" data-bind="text:title">Reviewing
+                                  Changes and Using Git Diff</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">6:12</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/resolving-conflicts-git?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="820" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">9</span>
+                                <span class="playlist--item--title" data-bind="text:title">Resolving
+                                  Conflicts in Git</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">13:40</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/advanced-git-add-and-gitignore?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="1278" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">10</span>
+                                <span class="playlist--item--title" data-bind="text:title">Advanced
+                                  Git Add and .gitignore</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">21:18</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/quicker-git-commits-and-modifying-previous-commits?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="818" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">11</span>
+                                <span class="playlist--item--title" data-bind="text:title">Quicker
+                                  Git Commits and Modifying Previous Commits</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">13:38</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/removing-moving-and-renaming-files-git?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="390" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">12</span>
+                                <span class="playlist--item--title" data-bind="text:title">Removing,
+                                  Moving and Renaming Files with Git</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">6:30</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/reset-and-clean-git-commands?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="687" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">13</span>
+                                <span class="playlist--item--title" data-bind="text:title">Reset
+                                  and Clean Git Commands</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">11:27</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/reverting-git-commits?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="410" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">14</span>
+                                <span class="playlist--item--title" data-bind="text:title">Reverting
+                                  Git Commits</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">6:50</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/working-remote-git-repositories?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="1157" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">15</span>
+                                <span class="playlist--item--title" data-bind="text:title">Working
+                                  with Remote Git Repositories</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">19:17</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/git-stash-command?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="225" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">16</span>
+                                <span class="playlist--item--title" data-bind="text:title">Git
+                                  Stash Command</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">3:45</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/applying-and-creating-patches-git?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="376" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">17</span>
+                                <span class="playlist--item--title" data-bind="text:title">Applying
+                                  and Creating Patches with Git</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())">
+                                  <span class="playlist--item--free" data-bind="visible:isFree()">Free</span>
+                                  <span class="playlist--item--percent" data-bind="visible:watched()"
+                                    style="display: none;"><span data-bind="text:watchedPercent">0</span>%
+                                    watched</span> </div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">6:16</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/working-git-githubcom?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="226" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">18</span>
+                                <span class="playlist--item--title" data-bind="text:title">Working
+                                  with Git on Github.com</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">3:46</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/git-aliases-and-other-fun-configuration?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="609" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">19</span>
+                                <span class="playlist--item--title" data-bind="text:title">Git
+                                  Aliases and Other Fun Configuration</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">10:09</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/using-git-bisect?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="523" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">20</span>
+                                <span class="playlist--item--title" data-bind="text:title">Using
+                                  Git Bisect</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">8:43</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- ko ifnot:comingSoon() -->
+                            <!-- This block is used for all published items.  -->
+                            <li class="playlist--item video" data-bind="css:addClasses()">
+                              <a href="https://drupalize.me/videos/git-workflow-putting-it-all-together?p=1173"
+                                class="playlist--link" data-bind="attr:{href:url(), 'data-total':duration(), 'data-resume':resumeAt()}"
+                                data-total="476" data-resume="0"> <span data-bind="css: readFlag"
+                                  class="playlist--item--incomplete">&nbsp;</span>
+                                <span class="playlist--item--count" data-bind="text:$index() + 1">21</span>
+                                <span class="playlist--item--title" data-bind="text:title">Git
+                                  Workflow: Putting It All Together</span>
+                                <div class="playlist--item--meta" data-bind="if: (isFree() || watchedPercent())"></div>
+                                <span class="playlist--item--duration" data-bind="visible:totalTime(), text:totalTime">7:56</span>
+                              </a> </li>
+                            <!-- /ko -->
+                            <!-- ko if:comingSoon() --><!-- /ko -->
+                            <!-- /ko -->
+                            <!-- ko foreach: collections --><!-- /ko -->
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="l-container">
+        <article class="l-content"> <a id="main-content"></a>
+          <h1 class="content-title" id="page-title">What Is Version Control?</h1>
+          <div class="region region-content">
+            <div id="block-system-main" class="block block-system">
+              <div class="content">
+                <div id="node-691" class="node node-video clearfix">
+                  <div class="node--loading">Loading...</div>
+                  <div class="content">
+                    <div class="content--meta--wrapper">
+                      <div class="content--meta meta"><span class="content--meta--length">4
+                          minutes 37 seconds</span> <span class="content--meta--divider">//</span>
+                        <span class="content--meta--icons"><span class="icon-hd">HD</span><span
+                            class="icon-cc">CC</span></span> <span class="content--meta--divider">//</span>
+                      </div>
+                      <div class="content--meta--actions"> <span class="flag-wrapper flag-queue flag-queue-691">
+                          <a href="https://drupalize.me/flag/flag/queue/691?destination=node/691%3Fp%3D1173&amp;token=knKLF-K-hAHt9KaUi3ZZ9feuyKP-DqzmA5KwQjDMseo"
+                            title="Add this video to your queue" class="flag flag-action flag-link-toggle flag-processed"
+                            rel="nofollow"><span class="icon"></span><span class="text">Add
+                              to queue</span></a><span class="flag-throbber">&nbsp;</span>
+                        </span> <a href="#share-modal" class="share-link"><span
+                            class="icon"></span><span class="text">Share</span></a>
+                      </div>
+                    </div>
+                    <div class="field field-name-body field-type-text-with-summary field-label-hidden text-content">
+                      <div class="field-items">
+                        <div class="field-item even">
+                          <p>In this lesson we'll explain some of the<b> basic
+                              tennents of version control systems and get some
+                              terminology out of the way by explaining things
+                              like repositories, branches, checkouts, and
+                              commits and provide you with a baseline set of
+                              concepts that we can build on through the series.</b></p>
+                          <p><strong>Learning Objectives:</strong></p>
+                          <ul>
+                            <li><u><b>Understand the basic terminology of
+                                  version control including repository, branch,
+                                  checkout and commit.</b></u></li>
+                            <li><u><b>Understand how this vocabulary relates to
+                                  Git.</b></u></li>
+                            <li><u><b>Be able to explain the difference between
+                                  centralized and distributed version control
+                                  systems.</b></u></li>
+                          </ul>
+                          <p>If you would like a more in-depth look at version
+                            control, you can also see the <a href="https://drupalize.me/videos/vision-version-control">Vision
+                              for Version Control presentation</a> from DIWD
+                            2011.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="field field-name-field-video-resources field-type-text-long field-label-above">
+                      <div class="field-label">Additional resources:&nbsp;</div>
+                      <div class="field-items">
+                        <div class="field-item even"></div>
+                      </div>
+                    </div>
+                    <div class="feedback jquery-once-1-processed">
+                      <form class="webform-client-form webform-client-form-2848"
+                        action="/videos/what-version-control?p=1173" method="post"
+                        id="webform-client-form-2848" accept-charset="UTF-8">
+                        <div>
+                          <div class="webform-progressbar"> </div>
+                          <div class="form-item webform-component webform-component-radios webform-component--yes-no">
+                            <label for="edit-submitted-yes-no">Was this helpful?
+                              <span class="form-required" title="This field is required.">*</span></label>
+                            <div id="edit-submitted-yes-no" class="form-radios">
+                              <div class="form-item form-type-radio form-item-submitted-yes-no">
+                                <input required="required" id="edit-submitted-yes-no-1"
+                                  name="submitted[yes_no]" value="yes" class="form-radio"
+                                  type="radio"> <label class="option" for="edit-submitted-yes-no-1">Yes
+                                  </label></div>
+                              <div class="form-item form-type-radio form-item-submitted-yes-no">
+                                <input required="required" id="edit-submitted-yes-no-2"
+                                  name="submitted[yes_no]" value="no" class="form-radio"
+                                  type="radio"> <label class="option" for="edit-submitted-yes-no-2">No
+                                  </label></div>
+                            </div>
+                          </div>
+                          <div class="form-item webform-component webform-component-textarea webform-component--feedback feedback--hidden">
+                            <label for="edit-submitted-feedback">Any additional
+                              feedback? </label>
+                            <div class="form-textarea-wrapper"><textarea id="edit-submitted-feedback"
+name="submitted[feedback]" cols="60" rows="3" class="form-textarea"></textarea></div>
+                          </div>
+                          <input name="details[sid]" type="hidden">
+                          <input name="details[page_num]" value="1" type="hidden">
+                          <input name="details[page_count]" value="1" type="hidden">
+                          <input name="details[finished]" value="0" type="hidden">
+                          <input name="form_build_id" value="form-geRi7dmATwPBAocUskX5TC2TE94026zIeMQQXum__D8"
+                            type="hidden">
+                          <input name="form_token" value="jQWdN6pWAlCUSVFC-YbeUqe_wl0DdoIBPbdPtaIdCfo"
+                            type="hidden">
+                          <input name="form_id" value="webform_client_form_2848"
+                            type="hidden">
+                          <input name="honeypot_time" value="1573835547|DLTMbHh_C751cV01K0nCInZ6YBKOZ4jy97L3l29_qWQ"
+                            type="hidden">
+                          <div class="twitter_name-textfield">
+                            <div class="form-item form-type-textfield form-item-twitter-name">
+                              <label for="edit-twitter-name">Leave this field
+                                blank </label> <input autocomplete="off" id="edit-twitter-name"
+                                name="twitter_name" size="20" maxlength="128" class="form-text"
+                                type="text">
+                            </div>
+                          </div>
+                          <div class="form-actions feedback--hidden"><input class="webform-submit button-primary form-submit"
+                              name="op" value="Submit" type="submit"></div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-footer">
+            <div class="l-content-footer">
+              <div class="region region-content-footer">
+                <div id="block-dmeblocks-share-modal" class="secondary-info block">
+                  <div class="content">
+                    <div id="share-modal" class="mfp-hide">
+                      <h4>Share</h4>
+                      <div class="share--sns"> <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdrupalize.me%2Fvideos%2Fwhat-version-control"
+                          onclick="javascript:window.open(this.href,
+      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=635');return false;"
+                          class="share--sns-link icon-facebook tooltip tooltipstered">Share
+                          to Facebook</a> <a href="https://twitter.com/intent/tweet?text=Check%20out%20%22What%20Is%20Version%20Control?%22%20on%20Drupalize.Me%20-%20https%3A%2F%2Fdrupalize.me%2Fvideos%2Fwhat-version-control"
+                          onclick="javascript:window.open(this.href,
+      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=635');return false;"
+                          class="share--sns-link icon-twitter tooltip tooltipstered">Share
+                          to Twitter</a> <a href="https://plus.google.com/share?url=https%3A%2F%2Fdrupalize.me%2Fvideos%2Fwhat-version-control"
+                          onclick="javascript:window.open(this.href,
+      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=512');return false;"
+                          class="share--sns-link icon-google tooltip tooltipstered">Share
+                          to Google+</a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <aside class="l-sidebar">
+          <div class="region region-sidebar-first">
+            <div id="block-drupalizecollection-collection-user-stats" class="block block-drupalizecollection">
+              <h2 class="block-title">Series progress</h2>
+              <div class="content"> You haven't started watching any videos in
+                this collection yet! What are you waiting for? </div>
+            </div>
+            <div id="block-dmeblocks-report-problem" class="secondary-info block">
+              <div class="content"> <a href="https://drupalize.me/support?ref_title=What%20Is%20Version%20Control%3F&amp;ref_url=https%3A//drupalize.me/videos/what-version-control%3Fp%3D1173">Report
+                  a problem with this tutorial</a> </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer class="l-footer">
+      <div class="l-container">
+        <div class="region region-footer">
+          <div id="block-menu-menu-footer" class="block block-menu">
+            <div class="content">
+              <ul class="menu">
+                <li class="first leaf"><a href="https://drupalize.me/about" title="Learn more about the Drupalize.Me team">About
+                    us</a></li>
+                <li class="leaf"><a href="https://drupalize.me/blog" title="">Blog</a></li>
+                <li class="leaf"><a href="https://drupalize.me/student-discount"
+                    title="">Student discounts</a></li>
+                <li class="leaf"><a href="https://drupalize.me/faq" title="">FAQ</a></li>
+                <li class="leaf"><a href="https://drupalize.me/support" title="Get support on anything Drupalize.Me related">Support</a></li>
+                <li class="leaf"><a href="https://drupalize.me/privacy" title="">Privacy
+                    policy</a></li>
+                <li class="leaf"><a href="https://drupalize.me/terms-conditions"
+                    title="">Terms of use</a></li>
+                <li class="last leaf"><a href="https://drupalize.me/support" title="Get in touch with us">Contact
+                    us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="block-dmeblocks-newsletter" class="block block-dmeblocks footer--newsletter">
+            <div class="content">
+              <!-- dmeblocks-newsletter.tpl.php -->
+              <h2 class="block-title">Stay Informed</h2>
+              <p> Sign up for our mailing list to get Drupal tips and tricks in
+                your inbox!</p>
+              <script type="text/javascript" src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/embed.js"
+data-dojo-config="usePlainJson: true, isDebug: false"></script>
+              <script type="text/javascript">
+  // Wrap the default mailchimp code in a function so that we can trigger it on
+  // click instead of the default behaviour which is to open the pop-up
+  // immediately.
+  function showMailingPopUp() {
+    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us4.list-manage.com","uuid":"8efa4b8bd449a20f0b8255801","lid":"379eb97e77"}) });
+
+    document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+  }
+</script><button id="open-mailchimp-popup" class="action-link" onclick="showMailingPopUp(); return false;">Subscribe</button>
+              <!-- /dmeblocks-newsletter.tpl.php --> </div>
+          </div>
+          <div id="block-dmeblocks-social-navigation" class="block block-dmeblocks footer--social">
+            <div class="content">
+              <!-- dmeblocks-social_navigation.tpl.php -->
+              <h2 class="block-title">Stay Connected</h2>
+              <ul class="social-nav">
+                <li><a class="drupal" href="https://drupal.org/drupalizeme" alt="Drupal.org"
+                    target="_blank">Drupal.org</a></li>
+                <li><a class="twitter" href="https://twitter.com/drupalizeme" alt="Twitter"
+                    target="_blank">Twitter</a></li>
+                <li><a class="facebook" href="https://www.facebook.com/pages/Drupalizeme/226965084026508"
+                    alt="Facebook" target="_blank">Facebook</a></li>
+                <li><a class="google-plus" href="https://plus.google.com/+DrupalizeMe"
+                    alt="Google+" target="_blank">Google+</a></li>
+                <li><a class="rss" href="https://drupalize.me/blog/feed" alt="RSS">RSS</a></li>
+                <li><a class="youtube" href="https://www.youtube.com/user/Lullabot"
+                    alt="RSS">Youtube</a></li>
+              </ul>
+              <!-- /dmeblocks-social_navigation.tpl.php --> </div>
+          </div>
+          <div id="block-dmeblocks-pantheon" class="block block-dmeblocks footer--pantheon">
+            <div class="content">
+              <!-- dmeblocks-pantheon.tpl.php -->
+              Powered by: <a class="pantheon" href="https://pantheon.io/" target="_blank">Pantheon</a>
+            </div>
+          </div>
+        </div>
+        <p class="footer--copyright"> Drupalize.Me is a service of <a href="https://osiolabs.com/">Osio
+            Labs</a>, © 2019 </p>
+      </div>
+    </footer>
+    <script type="text/javascript" src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/js_7Ukqb3ierdBEL0eowfOKzTkNu-Le97OPm-UqTS5NENU.js"></script>
+    <script type="text/javascript" src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/js_N3sDNtiJtQsmNjLi8W2TXpYWfd6z-tUnOTeCgAv_37U.js"></script>
+    <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var google_conversion_id = 1004527117;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+//--><!]]>
+</script>
+    <script type="text/javascript" src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/conversion.js"></script>
+    <script type="text/javascript" src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/js_xPGmum1nV0acKfxUA2yCj5j2P6S_fPAw9tZ8zWGQmNI.js"></script>
+    <!-- Google Code for Remarketing Tag --> <noscript>
+    <div>
+      <img style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1004527117/?value=0&guid=ON&script=0"
+width="1" height="1">
+    </div>
+  </noscript>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3963617017","applicationID":"29167046","transactionName":"Z1ADYBRXVkYAUEJZCV4aIFcSX1dbTl1ZVANvRQBTA2lOXARE","queueTime":0,"applicationTime":884,"atts":"SxcAFlxNRUg=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+    <script type="text/javascript" id="">window.zEmbed||function(){var a=[];window.zEmbed=function(){a.push(arguments)};window.zE=window.zE||window.zEmbed;document.zendeskHost="drupalizeme.zendesk.com";document.zEQueue=a}();</script>
+    <script type="text/javascript" id="" src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/main.js"></script>
+    <script type="text/javascript" id="">var intercomSettings={app_id:"x3mtrn8v",user_id:google_tag_manager["GTM-WS38CK"].macro(3),name:google_tag_manager["GTM-WS38CK"].macro(4),email:google_tag_manager["GTM-WS38CK"].macro(5),created_at:google_tag_manager["GTM-WS38CK"].macro(6),custom_data:{membership_status:google_tag_manager["GTM-WS38CK"].macro(7),membership_type:google_tag_manager["GTM-WS38CK"].macro(8),custom_attributes:{group_owner:google_tag_manager["GTM-WS38CK"].macro(9),group_seats_active:google_tag_manager["GTM-WS38CK"].macro(10),group_seats_total:google_tag_manager["GTM-WS38CK"].macro(11)}}};
+(function(){function a(){var b=document.createElement("script");b.type="text/javascript";b.async=!0;b.src="https://api.intercom.io/api/js/library.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a)}window.attachEvent?window.attachEvent("onload",a):window.addEventListener("load",a,!1)})();</script>
+    <script type="text/javascript" id="">zE(function(){zE.setLocale("en-US")});</script><iframe
+      data-product="web_widget" title="No content" tabindex="-1" aria-hidden="true"
+      style="width: 0px; height: 0px; border: 0px none; position: absolute; top: -9999px;"
+      src="2.What%20Is%20Version%20Control%3F%20%7C%20Drupalize.Me_files/a_003.html"></iframe>
+    <div><iframe title="Opens a widget where you can find more information" style="border: medium none; background: transparent none repeat scroll 0% 0%; z-index: 999998; transform: translateZ(0px); position: fixed; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); transition-property: opacity, top, bottom; opacity: 1; width: 139px; height: 50px; max-height: 551px; min-height: 50px; margin: 10px 20px; right: 0px; bottom: 0px;width: 139px;"
+        id="launcher" tabindex="0" class="zEWidget-launcher zEWidget-launcher--active"></iframe></div>
+    <div><iframe title="Find more information here" style="border: medium none; background: transparent none repeat scroll 0% 0%; z-index: 999999; transform: translateZ(0px); position: fixed; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); transition-property: opacity, top, bottom; opacity: 0; width: 357px; height: 100%; max-height: 565px; min-height: 150px; margin-left: 8px; margin-right: 8px; top: -9999px; visibility: hidden;"
+        id="webWidget" tabindex="-1" class="zEWidget-webWidget "></iframe></div>
+    <iframe id="intercom-frame" style="position: absolute !important; opacity: 0 !important; width: 1px !important; height: 1px !important; top: 0 !important; left: 0 !important; border: none !important; display: block !important; z-index: -1 !important;"
+      aria-hidden="true" tabindex="-1" title="Intercom"></iframe>
+    <div id="intercom-css-container">
+      <style data-emotion="intercom-global"></style></div>
+    <div id="intercom-container" class="intercom-namespace">
+      <style>html.intercom-mobile-messenger-active,html.intercom-mobile-messenger-active > body,html.intercom-modal-open,#intercom-container-body{overflow:hidden !important;}html.intercom-mobile-messenger-active,html.intercom-mobile-messenger-active > body{position:static !important;}html.intercom-mobile-messenger-active > body{height:0 !important;margin:0 !important;}iframe#intercom-frame{position:absolute !important;opacity:0 !important;width:1px !important;height:1px !important;top:0 !important;left:0 !important;border:none !important;display:block !important;z-index:-1 !important;}</style>
+      <div class="intercom-app" aria-live="polite">
+        <div id="intercom-modal-container"></div>
+      </div>
+    </div>
+  </body>
+</html>
